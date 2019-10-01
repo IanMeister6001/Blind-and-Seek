@@ -40,19 +40,7 @@ char *version = "UC_METHODS"; // name of this application, will be displayed on 
 void DisplayOSData(void)
 {
 	char *functionality =
-"UC_METHODS laat de basale werking van verschillende uC-mechanismen zien. \
-zoals queueing, mailboxing, flagging, semaphores en hoe je makkelijk tasks \
-creeert (taskcreate.c) en de bidirectionele omgang met de UART-comport. \n\r\
-main.c:       startup code, hardware drivers initialization creatie van handles op gebruikte mechanismen \n\r\
-taskcreate.c: automatische creatie van alle user-tasks \n\r\
-mutex.c:      basics van mutex semaphores \n\r\
-mbox.c:       basics van mailboxes \n\r\
-flag.c:       basics van flagging \n\r\
-queue.c:      basics van queues \n\r\
-interrupt.c:  basics van interrupt-handling \n\r\
-studentstuff.c:  simple progam to test example's \n\r\
-terminal-keys 1-6: toggle debug output per task \n\r\
-Michiel Scager (june 2015)\n\r";
+"Dit is de hackerversie van Blind and Seek.\r\n";
 
     UART_puts(functionality);
 	UART_puts("\t[uC/OS-II versie ");    UART_putint(OSVersion());
