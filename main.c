@@ -136,19 +136,6 @@ int main (void)
 	UART_puts("\n\r"); UART_puts((char *)__func__); UART_puts("started");
 	//test LORA
 	LCD_put("functie start");
-
-	UART_puts(sendrecvlora("sys get hweui\r\n"));
-	UART_puts(sendrecvlora("mac set appkey D0A6153C8967FC0508157FE0016DDE2A\r\n"));
-	UART_puts(sendrecvlora("mac set appeui 70B3D57ED0022C2A\r\n"));
-	UART_puts(sendrecvlora("mac save\r\n"));
-	DELAY_ms(500);
-	UART_puts(sendrecvlora("mac join otaa\r\n"));
-	UART_puts("\r\n");
-	UART_puts(recvlora());
-	UART_puts(sendrecvlora("mac tx cnf 1 5A5A\r\n"));
-	UART_puts("\r\n");
-	UART_puts(recvlora());
-	UART_puts(recvlora());
     while(TRUE)
     {
     	/*UART3_puts("mac status\r\n");

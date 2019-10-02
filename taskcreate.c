@@ -12,19 +12,7 @@
 // Create different stacks for the tasks:
 // give each thread/task/process its own stack with size
 // stacks are allocated here statically, because malloc() is not supported
-OS_STK MijnTask1_Stk     [STACK_SIZE];
-OS_STK MutexTask1_Stk    [STACK_SIZE];
-OS_STK MutexTask2_Stk    [STACK_SIZE];
-OS_STK MutexTask3_Stk    [STACK_SIZE];
-OS_STK MutexTask4_Stk    [STACK_SIZE];
-OS_STK MboxPostTask_Stk  [STACK_SIZE];
-OS_STK MboxPendTask_Stk  [STACK_SIZE];
-OS_STK FlagPostTask_Stk  [STACK_SIZE];
-OS_STK FlagPendTask_Stk  [STACK_SIZE];
-OS_STK QueuePostTask_Stk [STACK_SIZE];
-OS_STK QueuePendTask_Stk [STACK_SIZE];
-OS_STK InterruptTask_Stk [STACK_SIZE];
-
+//OS_STK MijnTask1_Stk     [STACK_SIZE];
 
 // allocation of array of structures
 // notes: the last structure is set to zero's, not necessary, but it simplifies
@@ -36,27 +24,6 @@ TASKDATA tasks[] =
 // -------------------------------------------------------------------------------------
 	// in studentstuff.c
 //{   MijnTask1,     MijnTask1_Stk,     MIJNTASK1_PRTY,     STACK_SIZE, OS_TASK_OPT_STK_CHK  },
-    // in mutex.c
-//{   MutexTask1,    MutexTask1_Stk,    MUTEXTASK1_PRTY,    STACK_SIZE, OS_TASK_OPT_STK_CHK  },
-//{   MutexTask2,    MutexTask2_Stk,    MUTEXTASK2_PRTY,    STACK_SIZE, OS_TASK_OPT_STK_CHK  },
-//{   MutexTask3,    MutexTask3_Stk,    MUTEXTASK3_PRTY,    STACK_SIZE, OS_TASK_OPT_STK_CHK  },
-//{   MutexTask4,    MutexTask4_Stk,    MUTEXTASK4_PRTY,    STACK_SIZE, OS_TASK_OPT_STK_CHK  },
-
-    // in mailbox.c
-{   MboxPostTask,  MboxPostTask_Stk,  MBOXPOSTTASK_PRTY,  STACK_SIZE, OS_TASK_OPT_STK_CHK  },
-{   MboxPendTask,  MboxPendTask_Stk,  MBOXPENDTASK_PRTY,  STACK_SIZE, OS_TASK_OPT_STK_CHK  },
-
-    // in flag.c
-{   FlagPostTask,  FlagPostTask_Stk,  FLAGPOSTTASK_PRTY,  STACK_SIZE, OS_TASK_OPT_STK_CHK  },
-{   FlagPendTask,  FlagPendTask_Stk,  FLAGPENDTASK_PRTY,  STACK_SIZE, OS_TASK_OPT_STK_CHK  },
-
-    // in queue.c
-{   QueuePostTask, QueuePostTask_Stk, QUEUEPOSTTASK_PRTY, STACK_SIZE, OS_TASK_OPT_STK_CHK  },
-{   QueuePendTask, QueuePendTask_Stk, QUEUEPENDTASK_PRTY, STACK_SIZE, OS_TASK_OPT_STK_CHK  },
-
-// in interrupt.c
-{   InterruptTask, InterruptTask_Stk, INTERRUPTTASK_PRTY, STACK_SIZE, OS_TASK_OPT_STK_CHK  },
-
     // laatste, niet wissen: nodig om for-loop af te sluiten
 {   NULL,          NULL,              0,                  0,          0                    }
 };

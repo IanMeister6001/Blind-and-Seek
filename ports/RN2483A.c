@@ -32,8 +32,42 @@ void RN2483A_init(void)
 	  //Print startup message
 	  UART3_gets(buf, 0);
 	  UART_puts("\r\nRN2483 Init: ontvangen: "); UART_puts(buf);
+	//join things network
+	  RN2483A_connectLORA();
 }
-
+void RN2483A_connectLORA()
+{
+	int i = 0;
+	//Hweui is nodig voor het connecten van het things network
+	#ifdef LORADEBUG
+		UART_puts(sendrecvlora("sys get hweui\r\n"));
+	#endif
+	//set de appkey en appeui zodat deze overeenkomen met deze van het thingnetwork
+	UART_puts(sendrecvlora("mac set appkey " APPKEY "\r\n"));
+	UART_puts(sendrecvlora("mac set appeui " APPEUI "\r\n"));
+	DELAY_ms(500);
+	#ifdef LORADEBUG
+		UART_puts("\r\n");
+		UART_puts(sendrecvlora("mac get appeui\r\n"));
+	#endif
+	//save de settings
+	UART_puts(sendrecvlora("mac save\r\n"));
+	do
+	{
+		UART_puts("\r\n");
+		UART_puts(sendrecvlora("mac join otaa\r\n"));
+		i = strcmp(recvlora(),"accepted");
+		UART_putint(i);
+	}
+	while(i != 0);
+	UART_puts("he did it.. he did it.. I did it");
+/*
+	UART_puts(sendrecvlora("mac tx cnf 1 5A5A\r\n"));
+	UART_puts("\r\n");
+	UART_puts(recvlora());
+	UART_puts(recvlora());
+*/
+}
 //Function that sends a string to the RN2483A and returns the pointer to the response string.
 char* sendrecvlora(char *sendbuf)
 {
