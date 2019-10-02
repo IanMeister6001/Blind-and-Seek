@@ -80,7 +80,6 @@
 #include "leds.h"
 #include "buzzer.h"
 #include "keys.h"
-#include "RN2483A.h"
 
 #define TRUE		1
 #define FALSE		0

@@ -22,6 +22,16 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
 </presentation>
 </folder>
 </info>
@@ -30,13 +40,53 @@
 <input factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory">&#x0A;<org.coocox.welcome.ui.WelcomePage/>
 </input>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="D:/GitHub/Blind-and-Seek/main.c" title="main.c" tooltip="D:/GitHub/Blind-and-Seek/main.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/main.c" title="main.c" tooltip="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1875" selectionTopPixel="390"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4335" selectionTopPixel="1951"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="RN2483A.c" partName="RN2483A.c" path="D:/GitHub/Blind-and-Seek/ports/RN2483A.c" title="RN2483A.c" tooltip="D:/GitHub/Blind-and-Seek/ports/RN2483A.c" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="RN2483A.c" partName="RN2483A.c" path="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/ports/RN2483A.c" title="RN2483A.c" tooltip="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/ports/RN2483A.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/ports/source/RN2483A.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="178"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2758" selectionTopPixel="377"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="RN2483A.h" partName="RN2483A.h" path="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/ports/RN2483A.h" title="RN2483A.h" tooltip="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/ports/RN2483A.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/ports/header/RN2483A.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="includes.h" partName="includes.h" path="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/uC-OS II/Application specific/includes.h" title="includes.h" tooltip="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/uC-OS II/Application specific/includes.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/uC-OS-II/includes.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2996" selectionTopPixel="625"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="uart.h" partName="uart.h" path="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/ports/uart.h" title="uart.h" tooltip="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/ports/uart.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/ports/header/uart.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="625" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="uart.c" partName="uart.c" path="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/ports/uart.c" title="uart.c" tooltip="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/ports/uart.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/ports/source/uart.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5149" selectionTopPixel="2246"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.h" partName="system_stm32f4xx.h" path="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/cmsis_boot/system_stm32f4xx.h" title="system_stm32f4xx.h" tooltip="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/cmsis_boot/system_stm32f4xx.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/cmsis_boot/system_stm32f4xx.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="795"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.c" partName="system_stm32f4xx.c" path="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/cmsis_boot/system_stm32f4xx.c" title="system_stm32f4xx.c" tooltip="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/cmsis_boot/system_stm32f4xx.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/cmsis_boot/system_stm32f4xx.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx.h" partName="stm32f4xx.h" path="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/cmsis_boot/stm32f4xx.h" title="stm32f4xx.h" tooltip="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/cmsis_boot/stm32f4xx.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/cmsis_boot/stm32f4xx.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="4862"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_conf.h" partName="stm32f4xx_conf.h" path="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/cmsis_boot/stm32f4xx_conf.h" title="stm32f4xx_conf.h" tooltip="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/cmsis_boot/stm32f4xx_conf.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/cmsis_boot/stm32f4xx_conf.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_usart.h" partName="stm32f4xx_usart.h" path="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/cmsis_lib/include/stm32f4xx_usart.h" title="stm32f4xx_usart.h" tooltip="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/cmsis_lib/include/stm32f4xx_usart.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/cmsis_lib/include/stm32f4xx_usart.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1408" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_rcc.h" partName="stm32f4xx_rcc.h" path="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/cmsis_lib/include/stm32f4xx_rcc.h" title="stm32f4xx_rcc.h" tooltip="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/cmsis_lib/include/stm32f4xx_rcc.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/cmsis_lib/include/stm32f4xx_rcc.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="21" selectionOffset="16471" selectionTopPixel="5242"/>
 </editor>
 </editors>
 <views>
@@ -44,13 +94,18 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
 <expanded>
 <element path="/Blind-and-Seek v0.5"/>
+<element path="/Blind-and-Seek v0.5/cmsis"/>
+<element path="/Blind-and-Seek v0.5/cmsis_boot"/>
+<element path="/Blind-and-Seek v0.5/cmsis_lib"/>
+<element path="/Blind-and-Seek v0.5/cmsis_lib/include"/>
 <element path="/Blind-and-Seek v0.5/ports"/>
 <element path="/Blind-and-Seek v0.5/ports/header"/>
 <element path="/Blind-and-Seek v0.5/ports/source"/>
 <element path="/Blind-and-Seek v0.5/stdio"/>
+<element path="/Blind-and-Seek v0.5/uC-OS-II"/>
 </expanded>
 <selection>
-<element path="/Blind-and-Seek v0.5/main.c"/>
+<element path="/Blind-and-Seek v0.5/cmsis_lib/include/stm32f4xx_usart.h"/>
 </selection>
 </viewState>
 </view>
@@ -62,8 +117,8 @@
 </view>
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
 <viewState isPinned="false">
-<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
 <view IMemento.internal.id="org.eclipse.cdt.ui.pdomSearchViewPage" definitionColumnWidth="150" locationColumnWidth="300" matchColumnWidth="300" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" showEnclosingDefinitions="true"/>
+<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
 </viewState>
 </view>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
@@ -125,8 +180,8 @@
 </fastViewBar>
 <fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@f28c8c" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
 <fastViews>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.298445"/>
-<view id="org.eclipse.search.ui.views.SearchView" ratio="0.29964116"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.2975815"/>
+<view id="org.eclipse.search.ui.views.SearchView" ratio="0.298633"/>
 </fastViews>
 </fastViewBar>
 </fastViewBars>
@@ -291,6 +346,17 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/main.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/ports/source/RN2483A.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/ports/header/RN2483A.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/ports/source/RN2483A.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/uC-OS-II/includes.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/ports/header/uart.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/ports/source/uart.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/cmsis_boot/system_stm32f4xx.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/cmsis_boot/system_stm32f4xx.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/cmsis_boot/stm32f4xx.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/cmsis_boot/stm32f4xx_conf.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/cmsis_lib/include/stm32f4xx_usart.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/cmsis_lib/include/stm32f4xx_rcc.h"/>
 </editors>
 <item historyLabel="welcome" index="0"/>
 <item historyLabel="main.c" index="1">
@@ -299,8 +365,146 @@
 <item historyLabel="RN2483A.c" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="main.c" index="3">
+<item historyLabel="main.c" index="3">
 <position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="RN2483A.h" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="RN2483A.c" index="5">
+<position info="not_deleted" x="2758" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="260" y="0"/>
+</item>
+<item historyLabel="includes.h" index="6">
+<position/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="4878" y="0"/>
+</item>
+<item historyLabel="includes.h" index="6">
+<position info="not_deleted" x="2996" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="4878" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="4883" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="4861" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="4951" y="0"/>
+</item>
+<item historyLabel="RN2483A.h" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="RN2483A.c" index="5">
+<position info="not_deleted" x="2758" y="0"/>
+</item>
+<item historyLabel="RN2483A.h" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="RN2483A.c" index="5">
+<position info="not_deleted" x="2758" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="4888" y="0"/>
+</item>
+<item historyLabel="RN2483A.c" index="5">
+<position info="not_deleted" x="2758" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="4888" y="0"/>
+</item>
+<item historyLabel="uart.h" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="uart.c" index="8">
+<position info="not_deleted" x="6598" y="0"/>
+</item>
+<item historyLabel="uart.h" index="7">
+<position info="not_deleted" x="625" y="0"/>
+</item>
+<item historyLabel="uart.c" index="8">
+<position info="not_deleted" x="10530" y="0"/>
+</item>
+<item historyLabel="includes.h" index="6">
+<position info="not_deleted" x="2996" y="0"/>
+</item>
+<item historyLabel="system_stm32f4xx.h" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="system_stm32f4xx.c" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="stm32f4xx.h" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="uart.c" index="8">
+<position info="not_deleted" x="1138" y="0"/>
+</item>
+<item historyLabel="stm32f4xx.h" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_conf.h" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_usart.h" index="13">
+<position info="not_deleted" x="1408" y="0"/>
+</item>
+<item historyLabel="uart.c" index="8">
+<position/>
+</item>
+<item historyLabel="stm32f4xx_rcc.h" index="14">
+<position info="not_deleted" x="15586" y="20"/>
+</item>
+<item historyLabel="uart.c" index="8">
+<position info="not_deleted" x="2837" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_rcc.h" index="14">
+<position info="not_deleted" x="15316" y="0"/>
+</item>
+<item historyLabel="uart.c" index="8">
+<position/>
+</item>
+<item historyLabel="stm32f4xx_rcc.h" index="14">
+<position info="not_deleted" x="16471" y="21"/>
+</item>
+<item historyLabel="uart.c" index="8">
+<position info="not_deleted" x="2870" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_rcc.h" index="14">
+<position info="not_deleted" x="16471" y="21"/>
+</item>
+<item historyLabel="uart.c" index="8">
+<position info="not_deleted" x="7602" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="4888" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="4326" y="0"/>
+</item>
+<item historyLabel="uart.c" index="8">
+<position info="not_deleted" x="7602" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="4487" y="0"/>
+</item>
+<item historyLabel="uart.c" index="8">
+<position info="not_deleted" x="4872" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="4319" y="0"/>
+</item>
+<item historyLabel="uart.c" index="8">
+<position info="not_deleted" x="5149" y="0"/>
+</item>
+<item active="true" historyLabel="main.c" index="3">
+<position info="not_deleted" x="4319" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -309,51 +513,50 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="RN2483A.c" tooltip="Blind-and-Seek v0.5/ports/source/RN2483A.c">
-<persistable path="/Blind-and-Seek v0.5/ports/source/RN2483A.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_rcc.h" tooltip="Blind-and-Seek v0.5/cmsis_lib/include/stm32f4xx_rcc.h">
+<persistable path="/Blind-and-Seek v0.5/cmsis_lib/include/stm32f4xx_rcc.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="Blind-and-Seek v0.5/main.c">
-<persistable path="/Blind-and-Seek v0.5/main.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_usart.h" tooltip="Blind-and-Seek v0.5/cmsis_lib/include/stm32f4xx_usart.h">
+<persistable path="/Blind-and-Seek v0.5/cmsis_lib/include/stm32f4xx_usart.h"/>
 </file>
-<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>&#x0A;<subPage/>
-</persistable>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_conf.h" tooltip="Blind-and-Seek v0.5/cmsis_boot/stm32f4xx_conf.h">
+<persistable path="/Blind-and-Seek v0.5/cmsis_boot/stm32f4xx_conf.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="printf.h" tooltip="Currency converter v0.1/stdio/printf.h">
-<persistable path="/Currency converter v0.1/stdio/printf.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx.h" tooltip="Blind-and-Seek v0.5/cmsis_boot/stm32f4xx.h">
+<persistable path="/Blind-and-Seek v0.5/cmsis_boot/stm32f4xx.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="printf.c" tooltip="Currency converter v0.1/stdio/printf.c">
-<persistable path="/Currency converter v0.1/stdio/printf.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.c" tooltip="Blind-and-Seek v0.5/cmsis_boot/system_stm32f4xx.c">
+<persistable path="/Blind-and-Seek v0.5/cmsis_boot/system_stm32f4xx.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="uart.c" tooltip="Currency converter v0.1/ports/source/uart.c">
-<persistable path="/Currency converter v0.1/ports/source/uart.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.h" tooltip="Blind-and-Seek v0.5/cmsis_boot/system_stm32f4xx.h">
+<persistable path="/Blind-and-Seek v0.5/cmsis_boot/system_stm32f4xx.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="uart.h" tooltip="Currency converter v0.1/ports/header/uart.h">
-<persistable path="/Currency converter v0.1/ports/header/uart.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="uart.c" tooltip="Blind-and-Seek v0.5/ports/source/uart.c">
+<persistable path="/Blind-and-Seek v0.5/ports/source/uart.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" tooltip="Currency converter v0.1/main.h">
-<persistable path="/Currency converter v0.1/main.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="uart.h" tooltip="Blind-and-Seek v0.5/ports/header/uart.h">
+<persistable path="/Blind-and-Seek v0.5/ports/header/uart.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="includes.h" tooltip="Currency converter v0.1/uC-OS-II/includes.h">
-<persistable path="/Currency converter v0.1/uC-OS-II/includes.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="includes.h" tooltip="Blind-and-Seek v0.5/uC-OS-II/includes.h">
+<persistable path="/Blind-and-Seek v0.5/uC-OS-II/includes.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="inputs.c" tooltip="Currency converter v0.1/inputs.c">
-<persistable path="/Currency converter v0.1/inputs.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="RN2483A.h" tooltip="Blind-and-Seek v0.5/ports/header/RN2483A.h">
+<persistable path="/Blind-and-Seek v0.5/ports/header/RN2483A.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="studentstuff.c" tooltip="Currency converter v0.1/studentstuff.c">
-<persistable path="/Currency converter v0.1/studentstuff.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="taskcreate.h" tooltip="Blind-and-Seek v0.5/taskcreate.h">
+<persistable path="/Blind-and-Seek v0.5/taskcreate.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="interrupt.c" tooltip="Currency converter v0.1/interrupt.c">
-<persistable path="/Currency converter v0.1/interrupt.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" tooltip="Blind-and-Seek v0.5/main.h">
+<persistable path="/Blind-and-Seek v0.5/main.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="flag.c" tooltip="Currency converter v0.1/flag.c">
-<persistable path="/Currency converter v0.1/flag.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="taskcreate.c" tooltip="Blind-and-Seek v0.5/taskcreate.c">
+<persistable path="/Blind-and-Seek v0.5/taskcreate.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="mailbox.c" tooltip="Currency converter v0.1/mailbox.c">
-<persistable path="/Currency converter v0.1/mailbox.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="outputs.h" tooltip="Currency converter v0.1/outputs.h">
+<persistable path="/Currency converter v0.1/outputs.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="mailbox.c" tooltip="Currency converter v0.1/mailbox.c">
-<persistable path="/Currency converter v0.1/mailbox.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="outputs.c" tooltip="Currency converter v0.1/outputs.c">
+<persistable path="/Currency converter v0.1/outputs.c"/>
 </file>
 </mruList>
 </workbench>

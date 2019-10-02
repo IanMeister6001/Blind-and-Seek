@@ -117,10 +117,18 @@ int main (void)
 	DELAY_init();
 	UART_init();
 	UART3_init();
+	UARTGPS_init();
 	LCD_init();
 	LED_init();
 	BUZZER_init();
     KEYS_init();
+
+    //Test UARTGPS:
+    /*while(TRUE)
+    {
+    	UARTGPS_puts("Hallo ik ben USART6\r\n");
+    }*/
+
     RN2483A_init(); //Initialize RN2483.
 
     OSInit();
@@ -136,6 +144,15 @@ int main (void)
 	UART_puts("\n\r"); UART_puts((char *)__func__); UART_puts("started");
 	//test LORA
 	LCD_put("functie start");
+
+	//testmeuk:
+	sendlora("hallo\r\n");
+	UART_puts(recvlora());
+
+	UART_puts(sendrecvlora("halloootjes\r\n"));
+
+	resetlora();
+
     while(TRUE)
     {
     	/*UART3_puts("mac status\r\n");
