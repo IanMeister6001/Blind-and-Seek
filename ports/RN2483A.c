@@ -31,6 +31,9 @@ void RN2483A_init(void)
 
 	  //Print startup message
 	  UART3_gets(buf, 0);
+
+	  //Hier wat code toevoegen die de software verder laat gaan als de RN2483A niet is gedetecteerd.
+
 	  UART_puts("\r\nRN2483 Init: ontvangen: "); UART_puts(buf);
 	//join things network
 	  RN2483A_connectLORA();
