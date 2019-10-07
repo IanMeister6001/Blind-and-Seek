@@ -12,7 +12,7 @@
 // Create different stacks for the tasks:
 // give each thread/task/process its own stack with size
 // stacks are allocated here statically, because malloc() is not supported
-//OS_STK MijnTask1_Stk     [STACK_SIZE];
+OS_STK GPSTask_Stk     [STACK_SIZE];
 
 // allocation of array of structures
 // notes: the last structure is set to zero's, not necessary, but it simplifies
@@ -22,9 +22,10 @@ TASKDATA tasks[] =
 {
 //  name           stack              priority            stacksize   option
 // -------------------------------------------------------------------------------------
-	// in studentstuff.c
-//{   MijnTask1,     MijnTask1_Stk,     MIJNTASK1_PRTY,     STACK_SIZE, OS_TASK_OPT_STK_CHK  },
-    // laatste, niet wissen: nodig om for-loop af te sluiten
+
+{   GPSTask,       GPSTask_Stk,       GPSTASK_PRTY,       STACK_SIZE, OS_TASK_OPT_STK_CHK  },
+
+// laatste, niet wissen: nodig om for-loop af te sluiten
 {   NULL,          NULL,              0,                  0,          0                    }
 };
 
