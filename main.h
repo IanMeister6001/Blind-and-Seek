@@ -40,12 +40,12 @@ enum {
 
 // handles, used for semaphore, mailbox, flag, queue
 // defined as a pointer; the os will allocate an OS_EVENT on it
-extern OS_EVENT    *MutexHandle;
+/*extern OS_EVENT    *MutexHandle;
 extern OS_EVENT    *MboxHandle;
 extern OS_EVENT    *StudentstuffHandle;
 extern OS_FLAG_GRP *FlagHandle;
 extern OS_FLAG_GRP *FlagIntHandle;
-extern OS_EVENT    *QueueHandle;
+extern OS_EVENT    *QueueHandle;*/
 
 //Oude queue structuur. Blijf hier staan voor het geval we toch een queue nodig hebben zodat we dit als blauwdruk kunnen maken.
 /*typedef struct queue
