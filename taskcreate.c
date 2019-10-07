@@ -7,12 +7,13 @@
 #include "includes.h"
 #include "taskcreate.h"
 #include "main.h"
+#include "GPS.h"
 
 
 // Create different stacks for the tasks:
 // give each thread/task/process its own stack with size
 // stacks are allocated here statically, because malloc() is not supported
-//OS_STK MijnTask1_Stk     [STACK_SIZE];
+OS_STK GPSTask_Stk     [STACK_SIZE];
 
 // allocation of array of structures
 // notes: the last structure is set to zero's, not necessary, but it simplifies
@@ -23,7 +24,7 @@ TASKDATA tasks[] =
 //  name           stack              priority            stacksize   option
 // -------------------------------------------------------------------------------------
 	// in studentstuff.c
-//{   MijnTask1,     MijnTask1_Stk,     MIJNTASK1_PRTY,     STACK_SIZE, OS_TASK_OPT_STK_CHK  },
+{   GPSTask,     GPSTask_Stk,     GPSTASK_PRTY,     STACK_SIZE, OS_TASK_OPT_STK_CHK  },
     // laatste, niet wissen: nodig om for-loop af te sluiten
 {   NULL,          NULL,              0,                  0,          0                    }
 };
@@ -40,6 +41,7 @@ void CreateTasks()
 {
 	// using a pointer to a structure: pointer is incremented
 	PTASKDATA ptd = tasks; // tasks == &tasks[0]: both are addresses of first struct
+
 	for (; ptd->taskname != NULL; ptd++)
 	{
 		OSTaskCreateExt(
@@ -53,25 +55,6 @@ void CreateTasks()
 			NULL, 								// not used
 			ptd->option);						// enable stackchecking
 	}
-	// or, by using an integer to get the right structure
-	// this version is simpler to understand, but less elegant
-	/*
-	//int       nr_of_tasks = tasks/sizeof(TASKDATA) -1; // nice, but not used
-	int i;
-	for (i=0; tasks[i].taskname != NULL; i++)
-	{
-		OSTaskCreateExt(
-			tasks[i].taskname, 					// taskname
-			NULL, 								// not used
-			&tasks[i].stack[tasks[i].stacksize-1], 	// top of stack
-			tasks[i].priority,					// priority
-            tasks[i].priority, 					// not used
-			tasks[i].stack, 					// bottom of stack
-			tasks[i].stacksize, 				// size of stack
-			NULL, 								// not used
-			tasks[i].option);					// enable stackchecking
-	}
-	*/
 }
 
 
