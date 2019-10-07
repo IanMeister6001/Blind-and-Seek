@@ -79,22 +79,23 @@
   <Files>
     <File name="cmsis_lib/source/stm32f4xx_gpio.c" path="cmsis_lib/source/stm32f4xx_gpio.c" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_usart.c" path="cmsis_lib/source/stm32f4xx_usart.c" type="1"/>
-    <File name="ports/header/delay.h" path="ports/delay.h" type="1"/>
     <File name="uC-OS-II/os_core.c" path="uC-OS II/Processor independent/os_core.c" type="1"/>
+    <File name="ports/header/delay.h" path="ports/delay.h" type="1"/>
     <File name="ports/header" path="" type="2"/>
     <File name="ports/source/lcd.c" path="ports/lcd.c" type="1"/>
     <File name="cmsis_boot" path="" type="2"/>
     <File name="cmsis_lib/include/stm32f4xx_usart.h" path="cmsis_lib/include/stm32f4xx_usart.h" type="1"/>
-    <File name="cmsis_boot/stm32f4xx.h" path="cmsis_boot/stm32f4xx.h" type="1"/>
-    <File name="cmsis_boot/startup" path="" type="2"/>
     <File name="cmsis/core_cm4_simd.h" path="cmsis/core_cm4_simd.h" type="1"/>
+    <File name="cmsis_boot/startup" path="" type="2"/>
+    <File name="cmsis_boot/stm32f4xx.h" path="cmsis_boot/stm32f4xx.h" type="1"/>
     <File name="uC-OS-II/os_cpu_a.s" path="uC-OS II/Processor specific/os_cpu_a.s" type="1"/>
     <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
     <File name="cmsis/core_cm4.h" path="cmsis/core_cm4.h" type="1"/>
     <File name="uC-OS-II/os_mutex.c" path="uC-OS II/Processor independent/os_mutex.c" type="1"/>
+    <File name="GPS.h" path="GPS.h" type="1"/>
     <File name="main.h" path="main.h" type="1"/>
-    <File name="ports/source/RN2483A.c" path="ports/RN2483A.c" type="1"/>
     <File name="cmsis_lib/source/misc.c" path="cmsis_lib/source/misc.c" type="1"/>
+    <File name="ports/source/RN2483A.c" path="ports/RN2483A.c" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_tim.h" path="cmsis_lib/include/stm32f4xx_tim.h" type="1"/>
     <File name="syscalls/syscalls.c" path="syscalls/syscalls.c" type="1"/>
     <File name="ports/source/delay.c" path="ports/delay.c" type="1"/>
@@ -113,9 +114,9 @@
     <File name="uC-OS-II/ucos_ii.h" path="uC-OS II/Processor independent/ucos_ii.h" type="1"/>
     <File name="stdio" path="" type="2"/>
     <File name="cmsis_boot/startup/startup_stm32f4xx.c" path="cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
+    <File name="uC-OS-II/os_q.c" path="uC-OS II/Processor independent/os_q.c" type="1"/>
     <File name="uC-OS-II/os_task.c" path="uC-OS II/Processor independent/os_task.c" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_rcc.c" path="cmsis_lib/source/stm32f4xx_rcc.c" type="1"/>
-    <File name="uC-OS-II/os_q.c" path="uC-OS II/Processor independent/os_q.c" type="1"/>
     <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
     <File name="ports/header/uart.h" path="ports/uart.h" type="1"/>
     <File name="ports/header/lcd.h" path="ports/lcd.h" type="1"/>
@@ -123,8 +124,8 @@
     <File name="uC-OS-II/os_time.c" path="uC-OS II/Processor independent/os_time.c" type="1"/>
     <File name="ports/header/RN2483A.h" path="ports/RN2483A.h" type="1"/>
     <File name="ports/source/leds.c" path="ports/leds.c" type="1"/>
-    <File name="ports/source/uart.c" path="ports/uart.c" type="1"/>
     <File name="cmsis_boot/system_stm32f4xx.c" path="cmsis_boot/system_stm32f4xx.c" type="1"/>
+    <File name="ports/source/uart.c" path="ports/uart.c" type="1"/>
     <File name="ports" path="" type="2"/>
     <File name="uC-OS-II/os_cfg.h" path="uC-OS II/Application specific/os_cfg.h" type="1"/>
     <File name="uC-OS-II/os_mem.c" path="uC-OS II/Processor independent/os_mem.c" type="1"/>
@@ -138,6 +139,7 @@
     <File name="uC-OS-II" path="" type="2"/>
     <File name="uC-OS-II/os_cpu.h" path="uC-OS II/Processor specific/os_cpu.h" type="1"/>
     <File name="syscalls" path="" type="2"/>
+    <File name="GPS.c" path="GPS.c" type="1"/>
     <File name="cmsis_lib/include/misc.h" path="cmsis_lib/include/misc.h" type="1"/>
     <File name="ports/header/buzzer.h" path="ports/buzzer.h" type="1"/>
     <File name="uC-OS-II/os_mbox.c" path="uC-OS II/Processor independent/os_mbox.c" type="1"/>
