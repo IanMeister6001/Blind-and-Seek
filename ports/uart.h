@@ -23,3 +23,9 @@ void UARTGPS_putchar(char c);
 void UARTGPS_puts(char *s);
 char UARTGPS_get(void);
 void UARTGPS_gets(char *s, int echo);
+
+void UARTBT_init(void);
+void UARTBT_putchar(char c);
+void UARTBT_puts(char *s);
+char UARTBT_get(void);
+void UARTBT_gets(char *s, int echo);

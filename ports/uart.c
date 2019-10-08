@@ -184,6 +184,56 @@ USART_Cmd(USART6, ENABLE);
 
 }
 
+void UARTBT_init(void) //Uart voor de Bluetoothmodule.
+{
+
+  /* --------------------------- System Clocks Configuration -----------------*/
+  /* clock enable */
+  RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1, ENABLE);
+
+  /* GPIOC & D clock enable */
+  RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB, ENABLE);
+
+  GPIO_InitTypeDef GPIO_InitStructure;
+
+  /*-------------------------- GPIO Configuration ----------------------------*/
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6 | GPIO_Pin_7;
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+  GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+  GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+  GPIO_Init(GPIOB, &GPIO_InitStructure);
+
+  /* Connect USART pins to AF */
+  GPIO_PinAFConfig(GPIOB, GPIO_PinSource6, GPIO_AF_USART1);   // UART5_TX
+  GPIO_PinAFConfig(GPIOB, GPIO_PinSource7, GPIO_AF_USART1);  // UART5_RX
+
+  USART_InitTypeDef USART_InitStructure;
+
+/* USARTx configuration ------------------------------------------------------*/
+/* USARTx configured as follow:
+      - BaudRate = 115200 baud
+      - Word Length = 8 Bits
+      - One Stop Bit
+      - No parity
+      - Hardware flow control disabled (RTS and CTS signals)
+      - Receive and transmit enabled
+*/
+USART_InitStructure.USART_BaudRate = 115200;
+USART_InitStructure.USART_WordLength = USART_WordLength_8b;
+USART_InitStructure.USART_StopBits = USART_StopBits_1;
+USART_InitStructure.USART_Parity = USART_Parity_No;
+USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
+
+USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
+
+USART_Init(USART1, &USART_InitStructure);
+USART_ITConfig(USART1,USART_IT_RXNE,ENABLE);
+
+USART_Cmd(USART1, ENABLE);
+
+}
+
 void UART_putchar(char c)
 {
 while(USART_GetFlagStatus(USART2, USART_FLAG_TXE) == RESET); // Wait for Empty
@@ -202,6 +252,13 @@ void UARTGPS_putchar(char c)
 {
 while(USART_GetFlagStatus(USART6, USART_FLAG_TXE) == RESET); // Wait for Empty
 USART_SendData(USART6, c);
+
+}
+
+void UARTBT_putchar(char c)
+{
+while(USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET); // Wait for Empty
+USART_SendData(USART1, c);
 
 }
 
@@ -233,6 +290,17 @@ volatile unsigned int i;
 for (i=0; s[i]; i++)
 {
 UARTGPS_putchar(s[i]);
+//while(USART_GetFlagStatus(USART2, USART_FLAG_TXE) == RESET); // Wait for Empty
+//USART_SendData(USART2, s[i]);
+}
+}
+
+void UARTBT_puts(char *s)
+{
+volatile unsigned int i;
+for (i=0; s[i]; i++)
+{
+UARTBT_putchar(s[i]);
 //while(USART_GetFlagStatus(USART2, USART_FLAG_TXE) == RESET); // Wait for Empty
 //USART_SendData(USART2, s[i]);
 }
@@ -383,6 +451,13 @@ char UARTGPS_get(void)
     return uart_char;
 }
 
+char UARTBT_get(void)
+{
+    char uart_char = -1;
+    if (USART_GetFlagStatus(USART1, USART_FLAG_RXNE)== SET)  // check for data available
+    uart_char= USART1->DR & 0xFF; // and read the data from peripheral
+    return uart_char;
+}
 
 // void UART_gets
 // args: char *readbuffer
@@ -451,6 +526,30 @@ continue;
 
 if (echo)              // if output-flag set
 UARTGPS_putchar(*s);  // to read what u entered
+
+if (*s==CR)            // if enter pressed
+{
+*s = '\0';         // ignore char and close string
+    return;            // buf ready, exit loop
+}
+s++;
+}
+}
+
+void UARTBT_gets(char *s, int echo)
+{
+while (TRUE)
+{
+*s = UARTBT_get();
+
+if (*s==-1)             // check for data available
+continue;
+
+if (*s==0xff || *s==LF) // if no data or LF, continue
+continue;
+
+if (echo)              // if output-flag set
+UARTBT_putchar(*s);  // to read what u entered
 
 if (*s==CR)            // if enter pressed
 {

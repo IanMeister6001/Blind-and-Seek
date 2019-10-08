@@ -81,6 +81,7 @@ void InitBoard(void)
 	UART_init();
 	UART3_init();
 	UARTGPS_init();
+	UARTBT_init();
 	LCD_init();
 	LED_init();
 	BUZZER_init();
