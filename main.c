@@ -86,7 +86,7 @@ void InitBoard(void)
 	BUZZER_init();
     KEYS_init();
     //Comment deze weg als de RN2483A niet is aangesloten.
-    //RN2483A_init(); //Initialize RN2483.
+    RN2483A_init(); //Initialize RN2483.
 }
 
 int main (void)
@@ -105,35 +105,9 @@ int main (void)
 	GPIOD -> MODER |= ( 1 << 30 );
 
 	//test LORA
-	LCD_put("functie start");
-
-	//testmeuk:
-	sendlora("hallo\r\n");
-	UART_puts(recvlora());
-
-	UART_puts(sendrecvlora("halloootjes\r\n"));
-
-	resetlora();
-
+	LCD_puts("functie start");
     while(TRUE)
     {
-    	/*UART3_puts("mac status\r\n");
-    	UART3_gets(buf, 0);
-
-    	UART_puts(buf);
-    	DELAY_ms(1000);*/
-
-    	//char *point = sendrecv("mac poep\r\n");
- /*   	UART_puts(sendrecvlora("mac save\r\n")); //Zo mag je de functie eigenlijk niet aanroepen: je moet de pointer die teruggegeven wordt onthouden en daarop free() draaien.
-    	UART_puts("\r\n");
-
-    	sendlora("sys poep\r\n");
-    	UART_puts(recvlora());
-    	UART_puts("\r\n");
-
-    	//DELAY_ms(100);
-    	resetlora();
-    	DELAY_ms(1000);*/
     }
     //test lora start
 

@@ -45,31 +45,35 @@ void RN2483A_connectLORA()
 	#ifdef LORADEBUG
 		UART_puts(sendrecvlora("sys get hweui\r\n"));
 	#endif
-	//set de appkey en appeui zodat deze overeenkomen met deze van het thingnetwork
-	UART_puts(sendrecvlora("mac set appkey " APPKEY "\r\n"));
-	UART_puts(sendrecvlora("mac set appeui " APPEUI "\r\n"));
-	DELAY_ms(500);
-	#ifdef LORADEBUG
-		UART_puts("\r\n");
-		UART_puts(sendrecvlora("mac get appeui\r\n"));
-	#endif
-	//save de settings
-	UART_puts(sendrecvlora("mac save\r\n"));
 	do
 	{
 		UART_puts("\r\n");
+		resetlora();
+		DELAY_ms(100);
+		//set de appkey, appeui zodat deze overeenkomen met deze van het thingnetwork
+		UART_puts(sendrecvlora("mac set appkey " APPKEY "\r\n"));
+		UART_puts(sendrecvlora("mac set appeui " APPEUI "\r\n"));
+		UART_puts(sendrecvlora("mac set deveui " DEVEUI "\r\n"));
+		#ifdef LORADEBUG
+			UART_puts("\r\n");
+			UART_puts(sendrecvlora("mac get appeui\r\n"));
+		#endif
+		//save de settings
+		UART_puts(sendrecvlora("mac save\r\n"));
+		DELAY_ms(100);
+		UART_puts("\r\n");
 		UART_puts(sendrecvlora("mac join otaa\r\n"));
 		i = strcmp(recvlora(),"accepted");
-		UART_putint(i);
 	}
 	while(i != 0);
-	UART_puts("he did it.. he did it.. I did it");
-/*
-	UART_puts(sendrecvlora("mac tx cnf 1 5A5A\r\n"));
+}
+
+void sendmactxlora(char* buf)
+{
+	sendlora("mac tx cnf 1 ");
+    UART3_puts(buf);
 	UART_puts("\r\n");
 	UART_puts(recvlora());
-	UART_puts(recvlora());
-*/
 }
 //Function that sends a string to the RN2483A and returns the pointer to the response string.
 char* sendrecvlora(char *sendbuf)
@@ -82,9 +86,9 @@ char* sendrecvlora(char *sendbuf)
 	UART3_gets(recvbuf, 0); //Receive the returnstring.
 
 	#ifdef LORADEBUG
-	UART_puts("sendrecv: ontvangen: "); UART_puts(recvbuf); UART_puts("\r\n");//Post received string to serial console.
-    LCD_clear();
-	LCD_put(recvbuf);
+		UART_puts("sendrecv: ontvangen: "); UART_puts(recvbuf); UART_puts("\r\n");//Post received string to serial console.
+		LCD_clear();
+		LCD_put(recvbuf);
 	#endif
 
 	return recvbuf;
@@ -107,7 +111,6 @@ char* recvlora(void)
 
 		return recvbuf;
 }
-
 //Function that sends a string to the lora module. Kinda unnecesary, but more legible than calling UART3.
 void sendlora(char* sendbuf)
 {
