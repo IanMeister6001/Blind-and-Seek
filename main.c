@@ -3,7 +3,6 @@
 // Auteur: Projectgroep 2, EV3A
 //////////////////////////////////////////////////////////////////////////////
 
-#include "RN2483A.h"
 #include <includes.h>
 
 #include "taskcreate.h" // for stacksize
