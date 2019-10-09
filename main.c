@@ -106,9 +106,6 @@ int main (void)
 	GPIOD -> MODER |= ( 1 << 28 );
 	GPIOD -> MODER |= ( 1 << 30 );
 
-	//test LORA
-	LCD_put("functie start");
-
 
 
     OSStart();
