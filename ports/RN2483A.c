@@ -49,7 +49,7 @@ void RN2483A_connectLORA()
 	{
 		UART_puts("\r\n");
 		resetlora();
-		DELAY_ms(100);
+		DELAY_ms(500);
 		//set de appkey, appeui zodat deze overeenkomen met deze van het thingnetwork
 		UART_puts(sendrecvlora("mac set appkey " APPKEY "\r\n"));
 		UART_puts(sendrecvlora("mac set appeui " APPEUI "\r\n"));
@@ -70,7 +70,7 @@ void RN2483A_connectLORA()
 
 void sendmactxlora(char* buf)
 {
-	sendlora("mac tx cnf 1 ");
+	sendlora("mac tx cnf");
     UART3_puts(buf);
 	UART_puts("\r\n");
 	UART_puts(recvlora());

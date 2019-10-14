@@ -105,6 +105,7 @@ int main (void)
 
 	//test LORA
 	LCD_puts("functie start");
+	UART_puts(sendrecvlora("mac tx cnf 1 JE\r\n"));
     while(TRUE)
     {
     }
