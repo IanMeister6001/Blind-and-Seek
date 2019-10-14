@@ -57,7 +57,7 @@ void MakeHandles()
 void InitProgram(void)
 {
 
-	InitBoard(); //Initialize all board outputs.
+	//InitBoard(); //Initialize all board outputs.
 
    	LCD_puts(version);
 	UART_puts(version); UART_puts("\n\r");
@@ -95,9 +95,11 @@ int main (void)
 	SystemInit();	// Set SystemCLK
 	// initialize all board-outputs
 
-    InitProgram(); //Initialiseer het programma.
+	InitBoard(); //Initialiseer board-ouputs.
 
     OSInit(); //Initialiseer OS.
+
+    InitProgram(); //Initialiseer het programma: alle os-handles, taken, etc.
 
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
 	GPIOD -> MODER |= ( 1 << 24 );
@@ -105,37 +107,8 @@ int main (void)
 	GPIOD -> MODER |= ( 1 << 28 );
 	GPIOD -> MODER |= ( 1 << 30 );
 
-	//test LORA
-	LCD_put("functie start");
-
-	//testmeuk:
-	sendlora("hallo\r\n");
-	UART_puts(recvlora());
-
-	UART_puts(sendrecvlora("halloootjes\r\n"));
-
-	resetlora();
-
-    while(TRUE)
-    {
-    	/*UART3_puts("mac status\r\n");
-    	UART3_gets(buf, 0);
-
-    	UART_puts(buf);
-    	DELAY_ms(1000);*/
-
-    	//char *point = sendrecv("mac poep\r\n");
- /*   	UART_puts(sendrecvlora("mac save\r\n")); //Zo mag je de functie eigenlijk niet aanroepen: je moet de pointer die teruggegeven wordt onthouden en daarop free() draaien.
-    	UART_puts("\r\n");
-
-    	sendlora("sys poep\r\n");
-    	UART_puts(recvlora());
-    	UART_puts("\r\n");
-
-    	//DELAY_ms(100);
-    	resetlora();
-    	DELAY_ms(1000);*/
-    }
+	//Gebruik dit om zonder het os te testen:
+    //while(TRUE);
     //test lora start
 
     OSStart();
