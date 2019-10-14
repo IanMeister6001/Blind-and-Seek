@@ -74,7 +74,7 @@
       </source>
       <source file="..\..\..\stdio\printf.c" lastModified="16d8bd2b880">
       </source>
-      <source file="..\..\..\ports\uart.h" lastModified="16dac333c87">
+      <source file="..\..\..\ports\uart.h" lastModified="16dca024c91">
       </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="16d8bd2b06f">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
@@ -83,7 +83,7 @@
       </source>
       <source file="..\..\..\syscalls\syscalls.c" lastModified="16d8bd2c052">
       </source>
-      <source file="..\..\..\ports\uart.c" lastModified="16dac4b28d0">
+      <source file="..\..\..\ports\uart.c" lastModified="16dca030a70">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
       </source>
       <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="16d8bd2fe8a">
@@ -114,7 +114,7 @@
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h" lastModified="16d8bd2b071">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\ports\RN2483A.h" lastModified="16dac2a361e">
+      <source file="..\..\..\ports\RN2483A.h" lastModified="16dca133a40">
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="16d8bd2b075">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
@@ -123,10 +123,6 @@
       <source file="..\..\..\uC-OS II\Processor independent\os_mem.c" lastModified="16d8bd2b0b6">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
          <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
-      </source>
-      <source file="..\..\..\ports\RN2483A.c" lastModified="16dafba3f08">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\ports\RN2483A.h"/>
       </source>
       <source file="..\..\..\uC-OS II\Processor independent\os_mutex.c" lastModified="16d8bd2b0b9">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>

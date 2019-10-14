@@ -5,6 +5,7 @@
 /////////////////////////////////////////////////////////////////////////
 
 #include <includes.h>
+#include  <string.h>
 #include "RN2483A.h"
 
 #define BUFLEN 30
@@ -36,19 +37,20 @@ void RN2483A_init(void)
 
 	  UART_puts("\r\nRN2483 Init: ontvangen: "); UART_puts(buf);
 	//join things network
-	  RN2483A_connectLORA();
+	 RN2483A_connectLORA();
 }
 void RN2483A_connectLORA()
 {
 	int i = 0;
-	//Hweui is nodig voor het connecten van het things network
 	#ifdef LORADEBUG
 		UART_puts(sendrecvlora("sys get hweui\r\n"));
+//Hweui is nodig voor het connecten van het things network
 	#endif
 	do
 	{
 		UART_puts("\r\n");
 		resetlora();
+		//restlora zodat de module verbind op channel 1
 		DELAY_ms(500);
 		//set de appkey, appeui zodat deze overeenkomen met deze van het thingnetwork
 		UART_puts(sendrecvlora("mac set appkey " APPKEY "\r\n"));
@@ -61,19 +63,28 @@ void RN2483A_connectLORA()
 		//save de settings
 		UART_puts(sendrecvlora("mac save\r\n"));
 		DELAY_ms(100);
-		UART_puts("\r\n");
 		UART_puts(sendrecvlora("mac join otaa\r\n"));
+		//UART_puts(recvlora());
 		i = strcmp(recvlora(),"accepted");
+        #ifdef LORADEBUG
+		if(i != 0) UART_puts("\r\n DENIED r\n");
+        #endif
+
 	}
 	while(i != 0);
 }
 
-void sendmactxlora(char* buf)
+void sendmactxlora(char* data)
 {
-	sendlora("mac tx cnf");
-    UART3_puts(buf);
-	UART_puts("\r\n");
-	UART_puts(recvlora());
+	int i;
+	UART3_puts("max tx cnf 1 ");
+	for(i = 0; data[i] != NULL;i++)
+	{
+		UART3_putint(data[i]);
+	}
+	UART3_puts("\r\n");
+	//UART3_puts("\r\n");
+	//UART_puts(recvlora());
 }
 //Function that sends a string to the RN2483A and returns the pointer to the response string.
 char* sendrecvlora(char *sendbuf)

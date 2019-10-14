@@ -416,11 +416,52 @@ void UART_putnum(unsigned int num, unsigned char deel)
 
     }
 }
-
-
 // Ontvang een karakter via de UART
 // niet echt nodig als routine maar als wrapper voor compatabiliteit. Let op geen -1 als er geen char is ontvangen!
+void UART3_putint(unsigned int num)
+{
+    UART3_putnum(num, 10);
+}
 
+// Stuurt meegegeven getal uit op de UART in het aangegeven getallenstelsel
+void UART3_putnum(unsigned int num, unsigned char deel)
+{
+    static unsigned char chars[16] = "0123456789ABCDEF";
+    unsigned int rest;
+    signed char c[16];
+    signed int i=15;
+
+    // Zet de integer om naar een string
+    if(num==0)
+    {
+        c[i]='0';
+        i--;
+    }
+    else
+    {
+        while(num>0)
+        {
+            rest=num%deel;
+            num/=deel;
+            c[i]=chars[rest];
+            i--;
+
+            if(i==0) // it ends here
+                num=0;
+        }
+    }
+
+
+    // Stuur de string uit
+    while(i<15)
+    {
+        i++;
+        // Wacht tot de buffer leeg is
+        while(USART_GetFlagStatus(USART3, USART_FLAG_TXE) == RESET); // Wait for Empty
+        USART_SendData(USART3, c[i]);
+
+    }
+}
 char UART_get(void)
 {
     char uart_char = -1;
