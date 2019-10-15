@@ -14,7 +14,7 @@
       <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="16d8be0c1b0">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\GPS.h" lastModified="16dab1f8e75">
+      <source file="..\..\..\GPS.h" lastModified="16dcf17d143">
       </source>
       <source file="..\..\..\taskcreate.c" lastModified="16da6836e19">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
@@ -133,15 +133,22 @@
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
          <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
       </source>
-      <source file="..\..\..\ports\RN2483A.c" lastModified="16da64dbf17">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\ports\RN2483A.h"/>
+      <source file="..\..\..\funcs.h" lastModified="16dcf17d182">
       </source>
       <source file="..\..\..\uC-OS II\Processor independent\os_mutex.c" lastModified="16d8be0c20b">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
          <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
       </source>
+      <source file="..\..\..\ports\RN2483A.c" lastModified="16da64dbf17">
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+         <include file="..\..\..\ports\RN2483A.h"/>
+      </source>
       <source file="..\..\..\uC-OS II\Processor independent\ucos_ii.h" lastModified="16d8be0c213">
+      </source>
+      <source file="..\..\..\funcs.c" lastModified="16dcf17d943">
+         <include file="..\..\..\funcs.h"/>
+         <include file="..\..\..\main.h"/>
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
       </source>
       <source file="..\..\..\ports\buzzer.h" lastModified="16d8be0c1f6">
       </source>
@@ -158,7 +165,7 @@
       </source>
       <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="16d8be0c1ae">
       </source>
-      <source file="..\..\..\uC-OS II\Application specific\includes.h" lastModified="16da6048a57">
+      <source file="..\..\..\uC-OS II\Application specific\includes.h" lastModified="16dceee03eb">
          <include file="..\..\..\uC-OS II\Processor specific\os_cpu.h"/>
          <include file="..\..\..\uC-OS II\Application specific\os_cfg.h"/>
          <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
@@ -179,11 +186,11 @@
       </source>
       <source file="..\..\..\uC-OS II\Processor specific\os_cpu.h" lastModified="16d8be0c214">
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="16d8be0c1b3">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
       <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="16d8be0c1a5">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="16d8be0c1b3">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
       <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="16d8be0c1ae">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>

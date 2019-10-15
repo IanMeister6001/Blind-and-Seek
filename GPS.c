@@ -1,9 +1,20 @@
+#include "GPS.h"
 #include "main.h"
 #include "includes.h"
 #include "string.h"
-#include "GPS.h"
+#include <math.h>
+#include "funcs.h"
 
+union // Voor het omzetten van GPS coordinaten van ints naar 3 bytes voor het verzenden in LoRa
+{
+	int coordInt;
+	INT8U coordByte[3];
+}dataSwap;
 
+struct locatie
+{
+
+};
 //////////////////////////////////////////////////////////////////////////////////////
 //krijgt een string binnen, die deze gaat opdelen tussen de komma's
 //ontvangt de string en de positie die gereturnd moet worden
@@ -23,31 +34,24 @@ char * findToken(char buffer[], int tokenNr)
 	return token;
 }
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
-//krijgt coordinaten als string binnen en zet ze om naar een int waarde
-//neemt 5 decimalen mee
-int RMCtoINT(char RMCval[])
-{
-	float Floatval = atof(RMCval);
-	Floatval *= 1000;
-
-	return (int)Floatval;
-}
-
-
 void GPSTask(void *pdata)
 {
 	char buffer[100];					//om de string die van de GPS komt in te zetten
 	char bufferCopy[100];				//tweede string, omdat buffer aangepast wordt door findToken...
 
-	char test[] = "$GPRMC,091248.00,A,5205.07493,N,00510.10854,E,0.043,,240919,,,A*71";
+
+	while (TRUE) // For testing purposes
+	{
+		//float bearing = calcBearing(52.0507493, 5.1010854, 52.05, 5.1);
+
+	}
 
 	while (TRUE)
 	{
 		UARTGPS_gets(buffer, 0); // krijg data binnen van GPS
 
 		// comment deze weg als de data van de GPS uitgelezen moet worden, wanneer de GPS zn locatie kan vinden dus
-		strcpy(buffer, test);
+		strcpy(buffer, TESTRMCSTRING);
 
 		if (strstr(buffer, DATATYPE) != NULL)
 		{
