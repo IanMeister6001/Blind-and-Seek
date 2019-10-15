@@ -105,10 +105,11 @@ int main (void)
 
 	//test LORA
 	LCD_puts("functie start");
-	char buf[10] = {4,5,2,2};
-	//sendmactxlora(buf);
+	unsigned char buf[10] = {200,30,50,1};
+	sendmactxlora(buf);
     while(TRUE)
     {
+    	recvlora();
     }
     //test lora start
 

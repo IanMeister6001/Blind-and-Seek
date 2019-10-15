@@ -10,4 +10,4 @@ char* recvlora(void);
 void sendlora(char* sendbuf);
 void resetlora(void);
 void RN2483A_connectLORA();
-void sendmactxlora(char*);
+void sendmactxlora(unsigned char*);

@@ -5,7 +5,6 @@
 /////////////////////////////////////////////////////////////////////////
 
 #include <includes.h>
-#include  <string.h>
 #include "RN2483A.h"
 
 #define BUFLEN 30
@@ -74,17 +73,26 @@ void RN2483A_connectLORA()
 	while(i != 0);
 }
 
-void sendmactxlora(char* data)
+void sendmactxlora(unsigned char* data)
 {
 	int i;
-	UART3_puts("max tx cnf 1 ");
+	char buf[2];
+	//buffer waarin de hexadecimale getallen als character worden opgeslagen
+	UART3_puts("mac tx uncnf 1 ");
+	//commandline voor unconfirmed message
 	for(i = 0; data[i] != NULL;i++)
 	{
-		UART3_putint(data[i]);
+		//hexadecimale getallen moeten omgezet worden naar characters
+		//sprintf zorgt ervoor dat dit gebeurt wanneer een decimaal echter maar 1 hexadecimaal getal nodig heeft
+		//wordt alleen dat getal gedisplayed en niet de 0 daarvoor
+		(data[i] < 16)
+				? (sprintf(buf, "0%x", data[i]))
+				: (sprintf(buf, "%x", data[i]));
+		UART3_puts(buf);
 	}
 	UART3_puts("\r\n");
-	//UART3_puts("\r\n");
-	//UART_puts(recvlora());
+	UART_puts(recvlora());
+	LCD_puts(recvlora());
 }
 //Function that sends a string to the RN2483A and returns the pointer to the response string.
 char* sendrecvlora(char *sendbuf)
