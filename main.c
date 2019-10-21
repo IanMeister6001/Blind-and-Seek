@@ -110,7 +110,7 @@ int main (void)
 	/*unsigned char buf[10] = {200,30,50,1};
 	sendmactxlora(buf);
 	*/
-	playFirst();
+    playTrack(3);
     while(TRUE)
     {
     }

@@ -95,11 +95,6 @@
       </source>
       <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="16d8bd2b44b">
       </source>
-      <source file="..\..\..\main.c" lastModified="16dda6a0ae3">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\taskcreate.h"/>
-         <include file="..\..\..\main.h"/>
-      </source>
       <source file="..\..\..\ports\lcd.h" lastModified="16d8bd2b0ac">
       </source>
       <source file="..\..\..\uC-OS II\Processor independent\os_q.c" lastModified="16d8bd2b0b9">
@@ -129,13 +124,13 @@
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
          <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
       </source>
-      <source file="..\..\..\uC-OS II\Processor independent\os_mutex.c" lastModified="16d8bd2b0b9">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
-      </source>
       <source file="..\..\..\ports\RN2483A.c" lastModified="16dcf0c0048">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
          <include file="..\..\..\ports\RN2483A.h"/>
+      </source>
+      <source file="..\..\..\uC-OS II\Processor independent\os_mutex.c" lastModified="16d8bd2b0b9">
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+         <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
       </source>
       <source file="..\..\..\uC-OS II\Processor independent\ucos_ii.h" lastModified="16d8bd2b0bf">
       </source>
@@ -151,6 +146,9 @@
          <include file="..\..\..\cmsis\core_cmInstr.h"/>
          <include file="..\..\..\cmsis\core_cmFunc.h"/>
          <include file="..\..\..\cmsis\core_cm4_simd.h"/>
+      </source>
+      <source file="..\..\..\..\..\projecten ARM\LexBleyenberg\LexBleyenberg\ports\MP3.c" lastModified="16ded9d2bb6">
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
       </source>
       <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="16d8bd2b06c">
       </source>
@@ -175,7 +173,7 @@
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\ports\MP3.h" lastModified="16dda58339f">
+      <source file="..\..\..\ports\MP3.h" lastModified="16ded9d2b96">
       </source>
       <source file="..\..\..\uC-OS II\Processor specific\os_cpu.h" lastModified="16d8bd2b0c1">
       </source>
