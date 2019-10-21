@@ -80,12 +80,14 @@ void InitBoard(void)
 	UART_init();
 	UART3_init();
 	UARTGPS_init();
+	UARTBT_init();
 	LCD_init();
 	LED_init();
 	BUZZER_init();
     KEYS_init();
+    MP3_init();
     //Comment deze weg als de RN2483A niet is aangesloten.
-    RN2483A_init(); //Initialize RN2483.
+    //RN2483A_init(); //Initialize RN2483.
 }
 
 int main (void)
@@ -105,11 +107,12 @@ int main (void)
 
 	//test LORA
 	LCD_puts("functie start");
-	unsigned char buf[10] = {200,30,50,1};
+	/*unsigned char buf[10] = {200,30,50,1};
 	sendmactxlora(buf);
+	*/
+	playFirst();
     while(TRUE)
     {
-    	recvlora();
     }
     //test lora start
 
