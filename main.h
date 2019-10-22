@@ -16,23 +16,8 @@ enum {
     INITTASK_PRTY = 5,
 
     MUTEX_PRTY = 8,       // careful, this one should be highest of all using tasks
-    MUTEXTASK1_PRTY = 10,
-    MUTEXTASK2_PRTY,
-    MUTEXTASK3_PRTY,
-    MUTEXTASK4_PRTY,
 
-    MIJNTASK1_PRTY,
-    MBOXPOSTTASK_PRTY,
-    MBOXPENDTASK_PRTY,
-
-
-    FLAGPOSTTASK_PRTY = 22,
-    FLAGPENDTASK_PRTY,
-
-    QUEUEPOSTTASK_PRTY,
-    QUEUEPENDTASK_PRTY,
-
-    INTERRUPTTASK_PRTY,
+    GPSTASK_PRTY = 10,
 
     DUMMY
 };
@@ -65,18 +50,5 @@ void MakeHandles();
 void InitBoard(void);
 
 // function prototypes of threads/tasks/processes to prevent compiler warnings
-/*extern void MijnTask1     (void *pdata);
-extern void MijnTask2     (void *pdata);
-extern void Postmijntask  (void *pdata);
-extern void MutexTask1    (void *pdata);
-extern void MutexTask2    (void *pdata);
-extern void MutexTask3    (void *pdata);
-extern void MutexTask4    (void *pdata);
-extern void MboxPostTask  (void *pdata);
-extern void MboxPendTask  (void *pdata);
-extern void FlagPostTask  (void *pdata);
-extern void FlagPendTask  (void *pdata);
-extern void QueuePostTask (void *pdata);
-extern void QueuePendTask (void *pdata);
-extern void InterruptTask (void *pdata);*/
+extern void GPSTask(void *pdata);
 

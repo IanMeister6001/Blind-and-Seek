@@ -54,7 +54,7 @@ void InitProgram(void)
 	OSinfo();  //Output OS info to UART.
 
 	MakeHandles();  // create all handles
-	//CreateTasks();    // start all threads/tasks
+	CreateTasks();    // start all threads/tasks
 
 	OS_CPU_SysTickInit(840000);	// 84000 = 1kHz AHB divider staat op 2!
 }
@@ -98,9 +98,9 @@ int main (void)
 	unsigned char buf[10] = {0x11,0x22,0xAA,0x99, 0x88, 0x66, 0x77, 0xAB};
 	sendmactxlora(buf);*/
 
-    while(TRUE)
-    {
-    }
+    //while(TRUE)
+    //{
+    //}
     //test lora start
 
     OSStart();

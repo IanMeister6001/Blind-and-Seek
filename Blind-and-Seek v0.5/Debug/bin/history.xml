@@ -1,39 +1,41 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=output.map -O1 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Blind-and-Seek v0.5 -TC:\CooCox\CoIDE\configuration\ProgramData\Blind-and-Seek v0.5/arm-gcc-link.ld -g">
-      <target file="output.elf" lastModified="16df324d343">
-         <source file="..\obj\delay.o" lastModified="16df324be08"/>
-         <source file="..\obj\os_time.o" lastModified="16df324be97"/>
-         <source file="..\obj\MP3.o" lastModified="16df324bf46"/>
-         <source file="..\obj\os_cpu_a.o" lastModified="16df324bf5e"/>
-         <source file="..\obj\keys.o" lastModified="16df324bfe8"/>
-         <source file="..\obj\buzzer.o" lastModified="16df324c070"/>
-         <source file="..\obj\RN2483A.o" lastModified="16df324c109"/>
-         <source file="..\obj\os_cpu_c.o" lastModified="16df324c19b"/>
-         <source file="..\obj\stm32f4xx_usart.o" lastModified="16df324c249"/>
-         <source file="..\obj\os_flag.o" lastModified="16df324c315"/>
-         <source file="..\obj\uart.o" lastModified="16df324c3fd"/>
-         <source file="..\obj\startup_stm32f4xx.o" lastModified="16df324c485"/>
-         <source file="..\obj\taskcreate.o" lastModified="16df324c511"/>
-         <source file="..\obj\main.o" lastModified="16df324c592"/>
-         <source file="..\obj\stm32f4xx_rcc.o" lastModified="16df324c641"/>
-         <source file="..\obj\printf.o" lastModified="16df324c6f1"/>
-         <source file="..\obj\os_sem.o" lastModified="16df324c798"/>
-         <source file="..\obj\os_core.o" lastModified="16df324c895"/>
-         <source file="..\obj\leds.o" lastModified="16df324c919"/>
-         <source file="..\obj\os_mem.o" lastModified="16df324c9ab"/>
-         <source file="..\obj\stm32f4xx_gpio.o" lastModified="16df324ca2d"/>
-         <source file="..\obj\system_stm32f4xx.o" lastModified="16df324ca99"/>
-         <source file="..\obj\syscalls.o" lastModified="16df324cb03"/>
-         <source file="..\obj\os_q.o" lastModified="16df324cbba"/>
-         <source file="..\obj\os_task.o" lastModified="16df324cc9a"/>
-         <source file="..\obj\os_mutex.o" lastModified="16df324cd51"/>
-         <source file="..\obj\lcd.o" lastModified="16df324cdf9"/>
-         <source file="..\obj\LORA_task.o" lastModified="16df324ce36"/>
-         <source file="..\obj\misc.o" lastModified="16df324ce9d"/>
-         <source file="..\obj\ucos_ii.o" lastModified="16df324cf11"/>
-         <source file="..\obj\os_mbox.o" lastModified="16df324cfb4"/>
-         <source file="..\obj\stm32f4xx_tim.o" lastModified="16df324d0fb"/>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=output.map -O1 --gc-sections -lm -LC:\CooCox\CoIDE\configuration\ProgramData\Blind-and-Seek v0.5 -TC:\CooCox\CoIDE\configuration\ProgramData\Blind-and-Seek v0.5/arm-gcc-link.ld -g">
+      <target file="output.elf" lastModified="16df352e000">
+         <source file="..\obj\delay.o" lastModified="16df352c8f3"/>
+         <source file="..\obj\os_time.o" lastModified="16df352c983"/>
+         <source file="..\obj\MP3.o" lastModified="16df352ca58"/>
+         <source file="..\obj\os_cpu_a.o" lastModified="16df352ca75"/>
+         <source file="..\obj\keys.o" lastModified="16df352cb0f"/>
+         <source file="..\obj\buzzer.o" lastModified="16df352cb9b"/>
+         <source file="..\obj\RN2483A.o" lastModified="16df352cc32"/>
+         <source file="..\obj\os_cpu_c.o" lastModified="16df352ccc4"/>
+         <source file="..\obj\stm32f4xx_usart.o" lastModified="16df352cd73"/>
+         <source file="..\obj\os_flag.o" lastModified="16df352ce3f"/>
+         <source file="..\obj\GPSmath.o" lastModified="16df352cece"/>
+         <source file="..\obj\uart.o" lastModified="16df352cfc0"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="16df352d047"/>
+         <source file="..\obj\taskcreate.o" lastModified="16df352d0d1"/>
+         <source file="..\obj\main.o" lastModified="16df352d158"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="16df352d20d"/>
+         <source file="..\obj\GPS.o" lastModified="16df352d29e"/>
+         <source file="..\obj\printf.o" lastModified="16df352d351"/>
+         <source file="..\obj\os_sem.o" lastModified="16df352d3fb"/>
+         <source file="..\obj\os_core.o" lastModified="16df352d4fd"/>
+         <source file="..\obj\leds.o" lastModified="16df352d584"/>
+         <source file="..\obj\os_mem.o" lastModified="16df352d615"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="16df352d6a9"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="16df352d721"/>
+         <source file="..\obj\syscalls.o" lastModified="16df352d787"/>
+         <source file="..\obj\os_q.o" lastModified="16df352d843"/>
+         <source file="..\obj\os_task.o" lastModified="16df352d926"/>
+         <source file="..\obj\os_mutex.o" lastModified="16df352d9e0"/>
+         <source file="..\obj\lcd.o" lastModified="16df352da8d"/>
+         <source file="..\obj\LORA_task.o" lastModified="16df352dac9"/>
+         <source file="..\obj\misc.o" lastModified="16df352db2c"/>
+         <source file="..\obj\ucos_ii.o" lastModified="16df352dba2"/>
+         <source file="..\obj\os_mbox.o" lastModified="16df352dc49"/>
+         <source file="..\obj\stm32f4xx_tim.o" lastModified="16df352dd96"/>
       </target>
    </processor>
 </history>
