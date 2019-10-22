@@ -20,13 +20,28 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/main.c" title="main.c" tooltip="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/main.c" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/main.c" title="main.c" tooltip="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/main.c"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1610"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="MP3.c" partName="MP3.c" path="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/ports/MP3.c" title="MP3.c" tooltip="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/ports/MP3.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/ports/source/MP3.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1552" selectionTopPixel="123"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="MP3.h" partName="MP3.h" path="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/ports/MP3.h" title="MP3.h" tooltip="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/ports/MP3.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/ports/header/MP3.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="142" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="RN2483A.c" partName="RN2483A.c" path="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/ports/RN2483A.c" title="RN2483A.c" tooltip="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/ports/RN2483A.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/ports/source/RN2483A.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3397" selectionTopPixel="1609"/>
 </editor>
 </editors>
 <views>
@@ -39,7 +54,7 @@
 <element path="/Blind-and-Seek v0.5/ports/source"/>
 </expanded>
 <selection>
-<element path="/Blind-and-Seek v0.5/main.c"/>
+<element path="/Blind-and-Seek v0.5/ports/source/RN2483A.c"/>
 </selection>
 </viewState>
 </view>
@@ -115,6 +130,7 @@
 <fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@f28c8c" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
 <fastViews>
 <view id="org.eclipse.search.ui.views.SearchView" ratio="0.29782608"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
 </fastViewBars>
@@ -284,28 +300,10 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/ports/source/lcd.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/taskcreate.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/ports/source/MP3.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/ports/header/MP3.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/ports/source/RN2483A.c"/>
 </editors>
-<item historyLabel="MP3.c" index="0">
-<position info="not_deleted" x="135" y="0"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="3597" y="0"/>
-</item>
-<item historyLabel="MP3.c" index="0">
-<position info="not_deleted" x="135" y="0"/>
-</item>
-<item historyLabel="MP3.h" index="1">
-<position info="not_deleted" x="281" y="0"/>
-</item>
-<item historyLabel="MP3.h" index="1">
-<position info="not_deleted" x="242" y="0"/>
-</item>
-<item historyLabel="MP3.c" index="0">
-<position info="not_deleted" x="135" y="0"/>
-</item>
-<item historyLabel="MP3.h" index="1">
-<position info="not_deleted" x="240" y="0"/>
-</item>
 <item historyLabel="MP3.c" index="0">
 <position info="not_deleted" x="135" y="0"/>
 </item>
@@ -432,7 +430,28 @@
 <item historyLabel="MP3.h" index="5">
 <position info="not_deleted" x="127" y="0"/>
 </item>
-<item active="true" historyLabel="main.c" index="10">
+<item historyLabel="main.c" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="MP3.c" index="11">
+<position info="not_deleted" x="1552" y="0"/>
+</item>
+<item historyLabel="MP3.h" index="12">
+<position info="not_deleted" x="135" y="0"/>
+</item>
+<item historyLabel="MP3.c" index="11">
+<position info="not_deleted" x="1552" y="0"/>
+</item>
+<item historyLabel="MP3.h" index="12">
+<position info="not_deleted" x="135" y="0"/>
+</item>
+<item historyLabel="MP3.c" index="11">
+<position info="not_deleted" x="1552" y="0"/>
+</item>
+<item historyLabel="MP3.h" index="12">
+<position info="not_deleted" x="142" y="0"/>
+</item>
+<item active="true" historyLabel="RN2483A.c" index="13">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
@@ -442,6 +461,15 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="RN2483A.c" tooltip="Blind-and-Seek v0.5/ports/source/RN2483A.c">
+<persistable path="/Blind-and-Seek v0.5/ports/source/RN2483A.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="MP3.h" tooltip="Blind-and-Seek v0.5/ports/header/MP3.h">
+<persistable path="/Blind-and-Seek v0.5/ports/header/MP3.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="MP3.c" tooltip="Blind-and-Seek v0.5/ports/source/MP3.c">
+<persistable path="/Blind-and-Seek v0.5/ports/source/MP3.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="Blind-and-Seek v0.5/main.c">
 <persistable path="/Blind-and-Seek v0.5/main.c"/>
 </file>
@@ -450,9 +478,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lcd.c" tooltip="Blind-and-Seek v0.5/ports/source/lcd.c">
 <persistable path="/Blind-and-Seek v0.5/ports/source/lcd.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="RN2483A.c" tooltip="Blind-and-Seek v0.5/ports/source/RN2483A.c">
-<persistable path="/Blind-and-Seek v0.5/ports/source/RN2483A.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="LORA_task.c" tooltip="Blind-and-Seek v0.5/LORA_task.c">
 <persistable path="/Blind-and-Seek v0.5/LORA_task.c"/>
@@ -465,12 +490,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="uart.h" tooltip="Blind-and-Seek v0.5/ports/header/uart.h">
 <persistable path="/Blind-and-Seek v0.5/ports/header/uart.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="MP3.c" tooltip="Blind-and-Seek v0.5/ports/source/MP3.c">
-<persistable path="/Blind-and-Seek v0.5/ports/source/MP3.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="MP3.h" tooltip="Blind-and-Seek v0.5/ports/header/MP3.h">
-<persistable path="/Blind-and-Seek v0.5/ports/header/MP3.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="uart.c" tooltip="Blind-and-Seek v0.5/ports/source/uart.c">
 <persistable path="/Blind-and-Seek v0.5/ports/source/uart.c"/>

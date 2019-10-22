@@ -1494,51 +1494,51 @@ LOAD c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm
 END GROUP
 OUTPUT(output.elf elf32-littlearm)
 
-.debug_info     0x00000000     0xb222
+.debug_info     0x00000000     0xb200
  .debug_info    0x00000000      0x226 ..\obj\delay.o
- .debug_info    0x00000226      0x48e ..\obj\MP3.o
- .debug_info    0x000006b4       0xcb ..\obj\os_cpu_a.o
- .debug_info    0x0000077f      0x559 ..\obj\keys.o
- .debug_info    0x00000cd8      0x485 ..\obj\buzzer.o
- .debug_info    0x0000115d      0x664 ..\obj\os_cpu_c.o
- .debug_info    0x000017c1      0xb2b ..\obj\stm32f4xx_usart.o
- .debug_info    0x000022ec      0xe77 ..\obj\os_flag.o
- .debug_info    0x00003163     0x1408 ..\obj\uart.o
- .debug_info    0x0000456b      0x1c9 ..\obj\startup_stm32f4xx.o
- .debug_info    0x00004734      0x49c ..\obj\main.o
- .debug_info    0x00004bd0      0xca2 ..\obj\stm32f4xx_rcc.o
- .debug_info    0x00005872     0x12b4 ..\obj\os_core.o
- .debug_info    0x00006b26      0x4ab ..\obj\leds.o
- .debug_info    0x00006fd1      0x568 ..\obj\os_mem.o
- .debug_info    0x00007539      0x7db ..\obj\stm32f4xx_gpio.o
- .debug_info    0x00007d14      0x5ea ..\obj\system_stm32f4xx.o
- .debug_info    0x000082fe      0xd0a ..\obj\os_q.o
- .debug_info    0x00009008     0x107f ..\obj\os_task.o
- .debug_info    0x0000a087      0xa39 ..\obj\lcd.o
- .debug_info    0x0000aac0      0x762 ..\obj\ucos_ii.o
+ .debug_info    0x00000226      0x46c ..\obj\MP3.o
+ .debug_info    0x00000692       0xcb ..\obj\os_cpu_a.o
+ .debug_info    0x0000075d      0x559 ..\obj\keys.o
+ .debug_info    0x00000cb6      0x485 ..\obj\buzzer.o
+ .debug_info    0x0000113b      0x664 ..\obj\os_cpu_c.o
+ .debug_info    0x0000179f      0xb2b ..\obj\stm32f4xx_usart.o
+ .debug_info    0x000022ca      0xe77 ..\obj\os_flag.o
+ .debug_info    0x00003141     0x1408 ..\obj\uart.o
+ .debug_info    0x00004549      0x1c9 ..\obj\startup_stm32f4xx.o
+ .debug_info    0x00004712      0x49c ..\obj\main.o
+ .debug_info    0x00004bae      0xca2 ..\obj\stm32f4xx_rcc.o
+ .debug_info    0x00005850     0x12b4 ..\obj\os_core.o
+ .debug_info    0x00006b04      0x4ab ..\obj\leds.o
+ .debug_info    0x00006faf      0x568 ..\obj\os_mem.o
+ .debug_info    0x00007517      0x7db ..\obj\stm32f4xx_gpio.o
+ .debug_info    0x00007cf2      0x5ea ..\obj\system_stm32f4xx.o
+ .debug_info    0x000082dc      0xd0a ..\obj\os_q.o
+ .debug_info    0x00008fe6     0x107f ..\obj\os_task.o
+ .debug_info    0x0000a065      0xa39 ..\obj\lcd.o
+ .debug_info    0x0000aa9e      0x762 ..\obj\ucos_ii.o
 
-.debug_abbrev   0x00000000     0x21c6
+.debug_abbrev   0x00000000     0x21ae
  .debug_abbrev  0x00000000      0x116 ..\obj\delay.o
- .debug_abbrev  0x00000116      0x1a0 ..\obj\MP3.o
- .debug_abbrev  0x000002b6       0x14 ..\obj\os_cpu_a.o
- .debug_abbrev  0x000002ca      0x170 ..\obj\keys.o
- .debug_abbrev  0x0000043a      0x178 ..\obj\buzzer.o
- .debug_abbrev  0x000005b2      0x1c4 ..\obj\os_cpu_c.o
- .debug_abbrev  0x00000776      0x1b9 ..\obj\stm32f4xx_usart.o
- .debug_abbrev  0x0000092f      0x1f6 ..\obj\os_flag.o
- .debug_abbrev  0x00000b25      0x28f ..\obj\uart.o
- .debug_abbrev  0x00000db4      0x134 ..\obj\startup_stm32f4xx.o
- .debug_abbrev  0x00000ee8      0x18b ..\obj\main.o
- .debug_abbrev  0x00001073      0x20b ..\obj\stm32f4xx_rcc.o
- .debug_abbrev  0x0000127e      0x2ea ..\obj\os_core.o
- .debug_abbrev  0x00001568      0x158 ..\obj\leds.o
- .debug_abbrev  0x000016c0      0x199 ..\obj\os_mem.o
- .debug_abbrev  0x00001859      0x1e0 ..\obj\stm32f4xx_gpio.o
- .debug_abbrev  0x00001a39      0x161 ..\obj\system_stm32f4xx.o
- .debug_abbrev  0x00001b9a      0x1c4 ..\obj\os_q.o
- .debug_abbrev  0x00001d5e      0x1b8 ..\obj\os_task.o
- .debug_abbrev  0x00001f16      0x207 ..\obj\lcd.o
- .debug_abbrev  0x0000211d       0xa9 ..\obj\ucos_ii.o
+ .debug_abbrev  0x00000116      0x188 ..\obj\MP3.o
+ .debug_abbrev  0x0000029e       0x14 ..\obj\os_cpu_a.o
+ .debug_abbrev  0x000002b2      0x170 ..\obj\keys.o
+ .debug_abbrev  0x00000422      0x178 ..\obj\buzzer.o
+ .debug_abbrev  0x0000059a      0x1c4 ..\obj\os_cpu_c.o
+ .debug_abbrev  0x0000075e      0x1b9 ..\obj\stm32f4xx_usart.o
+ .debug_abbrev  0x00000917      0x1f6 ..\obj\os_flag.o
+ .debug_abbrev  0x00000b0d      0x28f ..\obj\uart.o
+ .debug_abbrev  0x00000d9c      0x134 ..\obj\startup_stm32f4xx.o
+ .debug_abbrev  0x00000ed0      0x18b ..\obj\main.o
+ .debug_abbrev  0x0000105b      0x20b ..\obj\stm32f4xx_rcc.o
+ .debug_abbrev  0x00001266      0x2ea ..\obj\os_core.o
+ .debug_abbrev  0x00001550      0x158 ..\obj\leds.o
+ .debug_abbrev  0x000016a8      0x199 ..\obj\os_mem.o
+ .debug_abbrev  0x00001841      0x1e0 ..\obj\stm32f4xx_gpio.o
+ .debug_abbrev  0x00001a21      0x161 ..\obj\system_stm32f4xx.o
+ .debug_abbrev  0x00001b82      0x1c4 ..\obj\os_q.o
+ .debug_abbrev  0x00001d46      0x1b8 ..\obj\os_task.o
+ .debug_abbrev  0x00001efe      0x207 ..\obj\lcd.o
+ .debug_abbrev  0x00002105       0xa9 ..\obj\ucos_ii.o
 
 .debug_aranges  0x00000000      0x9a0
  .debug_aranges
@@ -1605,69 +1605,69 @@ OUTPUT(output.elf elf32-littlearm)
  .debug_ranges  0x00000738       0x88 ..\obj\os_task.o
  .debug_ranges  0x000007c0       0x78 ..\obj\lcd.o
 
-.debug_line     0x00000000     0x467b
+.debug_line     0x00000000     0x4632
  .debug_line    0x00000000      0x226 ..\obj\delay.o
- .debug_line    0x00000226      0x343 ..\obj\MP3.o
- .debug_line    0x00000569       0xae ..\obj\os_cpu_a.o
- .debug_line    0x00000617      0x283 ..\obj\keys.o
- .debug_line    0x0000089a      0x28f ..\obj\buzzer.o
- .debug_line    0x00000b29      0x2f3 ..\obj\os_cpu_c.o
- .debug_line    0x00000e1c      0x4ab ..\obj\stm32f4xx_usart.o
- .debug_line    0x000012c7      0x464 ..\obj\os_flag.o
- .debug_line    0x0000172b      0x64c ..\obj\uart.o
- .debug_line    0x00001d77      0x204 ..\obj\startup_stm32f4xx.o
- .debug_line    0x00001f7b      0x3b0 ..\obj\main.o
- .debug_line    0x0000232b      0x593 ..\obj\stm32f4xx_rcc.o
- .debug_line    0x000028be      0x58d ..\obj\os_core.o
- .debug_line    0x00002e4b      0x266 ..\obj\leds.o
- .debug_line    0x000030b1      0x2d7 ..\obj\os_mem.o
- .debug_line    0x00003388      0x36c ..\obj\stm32f4xx_gpio.o
- .debug_line    0x000036f4      0x1de ..\obj\system_stm32f4xx.o
- .debug_line    0x000038d2      0x3e3 ..\obj\os_q.o
- .debug_line    0x00003cb5      0x455 ..\obj\os_task.o
- .debug_line    0x0000410a      0x394 ..\obj\lcd.o
- .debug_line    0x0000449e      0x1dd ..\obj\ucos_ii.o
+ .debug_line    0x00000226      0x2fa ..\obj\MP3.o
+ .debug_line    0x00000520       0xae ..\obj\os_cpu_a.o
+ .debug_line    0x000005ce      0x283 ..\obj\keys.o
+ .debug_line    0x00000851      0x28f ..\obj\buzzer.o
+ .debug_line    0x00000ae0      0x2f3 ..\obj\os_cpu_c.o
+ .debug_line    0x00000dd3      0x4ab ..\obj\stm32f4xx_usart.o
+ .debug_line    0x0000127e      0x464 ..\obj\os_flag.o
+ .debug_line    0x000016e2      0x64c ..\obj\uart.o
+ .debug_line    0x00001d2e      0x204 ..\obj\startup_stm32f4xx.o
+ .debug_line    0x00001f32      0x3b0 ..\obj\main.o
+ .debug_line    0x000022e2      0x593 ..\obj\stm32f4xx_rcc.o
+ .debug_line    0x00002875      0x58d ..\obj\os_core.o
+ .debug_line    0x00002e02      0x266 ..\obj\leds.o
+ .debug_line    0x00003068      0x2d7 ..\obj\os_mem.o
+ .debug_line    0x0000333f      0x36c ..\obj\stm32f4xx_gpio.o
+ .debug_line    0x000036ab      0x1de ..\obj\system_stm32f4xx.o
+ .debug_line    0x00003889      0x3e3 ..\obj\os_q.o
+ .debug_line    0x00003c6c      0x455 ..\obj\os_task.o
+ .debug_line    0x000040c1      0x394 ..\obj\lcd.o
+ .debug_line    0x00004455      0x1dd ..\obj\ucos_ii.o
 
-.debug_str      0x00000000     0x2bee
+.debug_str      0x00000000     0x2bda
  .debug_str     0x00000000      0x231 ..\obj\delay.o
                                 0x289 (size before relaxing)
- .debug_str     0x00000231      0x152 ..\obj\MP3.o
-                                0x311 (size before relaxing)
- .debug_str     0x00000383      0x263 ..\obj\keys.o
+ .debug_str     0x00000231      0x13e ..\obj\MP3.o
+                                0x2fd (size before relaxing)
+ .debug_str     0x0000036f      0x263 ..\obj\keys.o
                                 0x426 (size before relaxing)
- .debug_str     0x000005e6       0x7e ..\obj\buzzer.o
+ .debug_str     0x000005d2       0x7e ..\obj\buzzer.o
                                 0x429 (size before relaxing)
- .debug_str     0x00000664      0x442 ..\obj\os_cpu_c.o
+ .debug_str     0x00000650      0x442 ..\obj\os_cpu_c.o
                                 0x5e6 (size before relaxing)
- .debug_str     0x00000aa6      0x460 ..\obj\stm32f4xx_usart.o
+ .debug_str     0x00000a92      0x460 ..\obj\stm32f4xx_usart.o
                                 0x6d6 (size before relaxing)
- .debug_str     0x00000f06      0x25b ..\obj\os_flag.o
+ .debug_str     0x00000ef2      0x25b ..\obj\os_flag.o
                                 0x69c (size before relaxing)
- .debug_str     0x00001161      0x7de ..\obj\uart.o
+ .debug_str     0x0000114d      0x7de ..\obj\uart.o
                                 0xcd3 (size before relaxing)
- .debug_str     0x0000193f       0xbc ..\obj\startup_stm32f4xx.o
+ .debug_str     0x0000192b       0xbc ..\obj\startup_stm32f4xx.o
                                 0x263 (size before relaxing)
- .debug_str     0x000019fb       0xbc ..\obj\main.o
+ .debug_str     0x000019e7       0xbc ..\obj\main.o
                                 0x366 (size before relaxing)
- .debug_str     0x00001ab7      0x565 ..\obj\stm32f4xx_rcc.o
+ .debug_str     0x00001aa3      0x565 ..\obj\stm32f4xx_rcc.o
                                 0x857 (size before relaxing)
- .debug_str     0x0000201c      0x40e ..\obj\os_core.o
+ .debug_str     0x00002008      0x40e ..\obj\os_core.o
                                 0x973 (size before relaxing)
- .debug_str     0x0000242a       0x4d ..\obj\leds.o
+ .debug_str     0x00002416       0x4d ..\obj\leds.o
                                 0x3e7 (size before relaxing)
- .debug_str     0x00002477      0x176 ..\obj\os_mem.o
+ .debug_str     0x00002463      0x176 ..\obj\os_mem.o
                                 0x386 (size before relaxing)
- .debug_str     0x000025ed      0x14b ..\obj\stm32f4xx_gpio.o
+ .debug_str     0x000025d9      0x14b ..\obj\stm32f4xx_gpio.o
                                 0x4c1 (size before relaxing)
- .debug_str     0x00002738      0x104 ..\obj\system_stm32f4xx.o
+ .debug_str     0x00002724      0x104 ..\obj\system_stm32f4xx.o
                                 0x3b1 (size before relaxing)
- .debug_str     0x0000283c      0x113 ..\obj\os_q.o
+ .debug_str     0x00002828      0x113 ..\obj\os_q.o
                                 0x65e (size before relaxing)
- .debug_str     0x0000294f      0x168 ..\obj\os_task.o
+ .debug_str     0x0000293b      0x168 ..\obj\os_task.o
                                 0x770 (size before relaxing)
- .debug_str     0x00002ab7       0xdf ..\obj\lcd.o
+ .debug_str     0x00002aa3       0xdf ..\obj\lcd.o
                                 0x4d5 (size before relaxing)
- .debug_str     0x00002b96       0x58 ..\obj\ucos_ii.o
+ .debug_str     0x00002b82       0x58 ..\obj\ucos_ii.o
                                 0x666 (size before relaxing)
 
 .comment        0x00000000       0x6e

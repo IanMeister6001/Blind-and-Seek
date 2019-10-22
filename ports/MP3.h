@@ -4,8 +4,8 @@
 # define END   		 0xEF
 # define ACK 		 0x00
 
-void SendComand(char,char,char);
-void SetVolume(int);
+void SendCommand(char,char,char);
+void setVolume(char);
 void playFirst();
 void playNext();
 void playTrack(int);
