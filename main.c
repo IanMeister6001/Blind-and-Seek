@@ -8,13 +8,6 @@
 #include "taskcreate.h" // for stacksize
 #include "main.h"       // defines, external declarations, enums, prototypes
 
-// stuff for the queue: 1. handle, 2. my data area, 3. q-array for OS
-/*OS_EVENT           *QueueHandle;        // name of handel on 1 instance of queue-mechanism
-Q                   data_queue[QSIZE];  // data queue, in this case array of Q-structs
-void*               os_queue[QSIZE];    // queue with void-pointers for OS, holds addresses of data-q-members
-*/
-
-// application name
 char *version = "BLIND-AND-SEEK"; // name of this application, will be displayed on uart and lcd
 
 
@@ -55,9 +48,6 @@ void MakeHandles()
 //////////////////////////////////////////////////////////////////////////////
 void InitProgram(void)
 {
-
-	InitBoard(); //Initialize all board outputs.
-
    	LCD_puts(version);
 	UART_puts(version); UART_puts("\n\r");
 
@@ -81,10 +71,6 @@ void InitBoard(void)
 	UART3_init();
 	UARTGPS_init();
 	UARTBT_init();
-	LCD_init();
-	LED_init();
-	BUZZER_init();
-    KEYS_init();
     MP3_init();
     //Comment deze weg als de RN2483A niet is aangesloten.
     //RN2483A_init(); //Initialize RN2483.
@@ -95,9 +81,11 @@ int main (void)
 	SystemInit();	// Set SystemCLK
 	// initialize all board-outputs
 
-    InitProgram(); //Initialiseer het programma.
+	InitBoard(); //Initialiseer alles OS-functies.
 
     OSInit(); //Initialiseer OS.
+
+    InitProgram(); //Initialiseer alles van het programma wat het os gebruikt.
 
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
 	GPIOD -> MODER |= ( 1 << 24 );
@@ -106,11 +94,10 @@ int main (void)
 	GPIOD -> MODER |= ( 1 << 30 );
 
 	//test LORA
-	LCD_puts("functie start");
-	/*unsigned char buf[10] = {200,30,50,1};
-	sendmactxlora(buf);
-	*/
-    playTrack(3);
+	/*UART_puts("functie start");
+	unsigned char buf[10] = {0x11,0x22,0xAA,0x99, 0x88, 0x66, 0x77, 0xAB};
+	sendmactxlora(buf);*/
+
     while(TRUE)
     {
     }

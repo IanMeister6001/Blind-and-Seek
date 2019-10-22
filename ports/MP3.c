@@ -11,7 +11,7 @@ void MP3_init()
 	  resetModule();
 	  SendCommand(0x3F, 0, 0);
 	  DELAY_ms(1000);
-	  setVolume(15);
+	  setVolume(12);
 }
 //////////////////////////////////////////////////////////////////////////////
 // func: SendCommand

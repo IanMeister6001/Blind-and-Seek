@@ -1,15 +1,20 @@
 /////////////////////////////////////////////////////////////////////////
 //	Custom RN2483A functions
 //	Authors: Lex Bleyenberg, Ian Baak
-// 	Date: 18-09-2019
+// 	Date: 06-11-2019
 /////////////////////////////////////////////////////////////////////////
 
 #include <includes.h>
 #include "RN2483A.h"
 
 #define BUFLEN 30
-//app id ildlbbhp_6000_rn2483a_stm32
-//Initialiseert de RN2483A, zodat hij altijd goed werkt bij opstarten.
+
+//////////////////////////////////////////////////////////////////////////////
+// func: RN2483A_init
+// args: void
+// comm: Initialiseert de RN2483A op de juiste wijze, zodat hij na elke reset goed werkt.
+//
+//////////////////////////////////////////////////////////////////////////////
 void RN2483A_init(void)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
@@ -32,11 +37,10 @@ void RN2483A_init(void)
 	  //Print startup message
 	  UART3_gets(buf, 0);
 
-	  //Hier wat code toevoegen die de software verder laat gaan als de RN2483A niet is gedetecteerd.
-
 	  UART_puts("\r\nRN2483 Init: ontvangen: "); UART_puts(buf);
-	//join things network
-	 RN2483A_connectLORA();
+
+	  //join TTN
+	  RN2483A_connectLORA();
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -94,7 +98,7 @@ void sendmactxlora(unsigned char* data)
 	//buffer waarin de hexadecimale getallen als character worden opgeslagen
 	UART3_puts("mac tx uncnf 1 ");
 	//commandline voor unconfirmed message
-	for(i = 0; data[i] != NULL;i++)
+	for(i = 0; i < MSGSIZE; i++) //Deze loop draait voor zes bytes, aangezien dat nodig is om de coordinaten te sturen.
 	{
 		//hexadecimale getallen moeten omgezet worden naar characters
 		//sprintf zorgt ervoor dat dit gebeurt wanneer een decimaal echter maar 1 hexadecimaal getal nodig heeft
@@ -106,7 +110,6 @@ void sendmactxlora(unsigned char* data)
 	}
 	UART3_puts("\r\n");
 	UART_puts(recvlora());
-	LCD_puts(recvlora());
 }
 //////////////////////////////////////////////////////////////////////////////
 // func: sendrecvlora
@@ -155,6 +158,8 @@ char* recvlora(void)
 
 		return recvbuf;
 }
+
+
 //////////////////////////////////////////////////////////////////////////////
 // func: sendlora
 // args: sendbuf:string die verstuurt word
