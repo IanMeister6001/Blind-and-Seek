@@ -1,4 +1,4 @@
-#include "funcs.h"
+#include "GPSmath.h"
 #include "main.h"
 #include "includes.h"
 #include "string.h"

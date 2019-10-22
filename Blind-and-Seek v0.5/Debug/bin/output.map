@@ -1,13 +1,13 @@
 Archive member included to satisfy reference by file (symbol)
 
 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-sf_cos.o)
-                              ..\obj\funcs.o (cosf)
+                              ..\obj\GPSmath.o (cosf)
 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-sf_sin.o)
-                              ..\obj\funcs.o (sinf)
+                              ..\obj\GPSmath.o (sinf)
 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-w_atan2.o)
-                              ..\obj\funcs.o (atan2)
+                              ..\obj\GPSmath.o (atan2)
 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-wf_sqrt.o)
-                              ..\obj\funcs.o (sqrtf)
+                              ..\obj\GPSmath.o (sqrtf)
 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-e_atan2.o)
                               c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-w_atan2.o) (__ieee754_atan2)
 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-ef_rem_pio2.o)
@@ -45,19 +45,19 @@ c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none
 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m\libgcc.a(_arm_fixunsdfsi.o)
                               ..\obj\delay.o (__aeabi_d2uiz)
 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m\libgcc.a(_arm_truncdfsf2.o)
-                              ..\obj\funcs.o (__aeabi_d2f)
+                              ..\obj\GPSmath.o (__aeabi_d2f)
 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m\libgcc.a(_arm_addsubsf3.o)
-                              ..\obj\funcs.o (__aeabi_fsub)
+                              ..\obj\GPSmath.o (__aeabi_fsub)
 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m\libgcc.a(_arm_muldivsf3.o)
-                              ..\obj\funcs.o (__aeabi_fmul)
+                              ..\obj\GPSmath.o (__aeabi_fmul)
 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m\libgcc.a(_arm_cmpsf2.o)
                               c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-ef_rem_pio2.o) (__aeabi_fcmpeq)
 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m\libgcc.a(_arm_unordsf2.o)
                               c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-wf_sqrt.o) (__aeabi_fcmpun)
 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m\libgcc.a(_arm_fixsfsi.o)
-                              ..\obj\funcs.o (__aeabi_f2iz)
+                              ..\obj\GPSmath.o (__aeabi_f2iz)
 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-atof.o)
-                              ..\obj\funcs.o (atof)
+                              ..\obj\GPSmath.o (atof)
 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-errno.o)
                               c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-wf_sqrt.o) (__errno)
 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-strcmp.o)
@@ -181,31 +181,6 @@ Discarded input sections
  .debug_frame   0x00000000       0x98 ..\obj\os_time.o
  .ARM.attributes
                 0x00000000       0x33 ..\obj\os_time.o
- .text          0x00000000        0x0 ..\obj\funcs.o
- .data          0x00000000        0x0 ..\obj\funcs.o
- .bss           0x00000000        0x0 ..\obj\funcs.o
- .text.radians  0x00000000       0x20 ..\obj\funcs.o
- .text.degrees  0x00000000       0x20 ..\obj\funcs.o
- .text.calcBearing
-                0x00000000      0x104 ..\obj\funcs.o
- .text.calcDistance
-                0x00000000       0x3c ..\obj\funcs.o
- .text.IntToFloat
-                0x00000000       0x14 ..\obj\funcs.o
- .text.RMCtoINT
-                0x00000000       0x1c ..\obj\funcs.o
- .debug_info    0x00000000      0x465 ..\obj\funcs.o
- .debug_abbrev  0x00000000      0x182 ..\obj\funcs.o
- .debug_loc     0x00000000      0x418 ..\obj\funcs.o
- .debug_aranges
-                0x00000000       0x48 ..\obj\funcs.o
- .debug_ranges  0x00000000       0x38 ..\obj\funcs.o
- .debug_line    0x00000000      0x249 ..\obj\funcs.o
- .debug_str     0x00000000      0x273 ..\obj\funcs.o
- .comment       0x00000000       0x6f ..\obj\funcs.o
- .debug_frame   0x00000000       0xb4 ..\obj\funcs.o
- .ARM.attributes
-                0x00000000       0x33 ..\obj\funcs.o
  .data          0x00000000        0x0 ..\obj\os_cpu_a.o
  .bss           0x00000000        0x0 ..\obj\os_cpu_a.o
  .text          0x00000000        0x0 ..\obj\keys.o
@@ -330,6 +305,31 @@ Discarded input sections
                 0x00000000      0x108 ..\obj\os_flag.o
  .text.OSFlagPend
                 0x00000000      0x210 ..\obj\os_flag.o
+ .text          0x00000000        0x0 ..\obj\GPSmath.o
+ .data          0x00000000        0x0 ..\obj\GPSmath.o
+ .bss           0x00000000        0x0 ..\obj\GPSmath.o
+ .text.radians  0x00000000       0x20 ..\obj\GPSmath.o
+ .text.degrees  0x00000000       0x20 ..\obj\GPSmath.o
+ .text.calcBearing
+                0x00000000      0x104 ..\obj\GPSmath.o
+ .text.calcDistance
+                0x00000000       0x3c ..\obj\GPSmath.o
+ .text.IntToFloat
+                0x00000000       0x14 ..\obj\GPSmath.o
+ .text.RMCtoINT
+                0x00000000       0x1c ..\obj\GPSmath.o
+ .debug_info    0x00000000      0x465 ..\obj\GPSmath.o
+ .debug_abbrev  0x00000000      0x182 ..\obj\GPSmath.o
+ .debug_loc     0x00000000      0x418 ..\obj\GPSmath.o
+ .debug_aranges
+                0x00000000       0x48 ..\obj\GPSmath.o
+ .debug_ranges  0x00000000       0x38 ..\obj\GPSmath.o
+ .debug_line    0x00000000      0x24b ..\obj\GPSmath.o
+ .debug_str     0x00000000      0x275 ..\obj\GPSmath.o
+ .comment       0x00000000       0x6f ..\obj\GPSmath.o
+ .debug_frame   0x00000000       0xb4 ..\obj\GPSmath.o
+ .ARM.attributes
+                0x00000000       0x33 ..\obj\GPSmath.o
  .text          0x00000000        0x0 ..\obj\uart.o
  .data          0x00000000        0x0 ..\obj\uart.o
  .text.UART3_putchar
@@ -1973,7 +1973,6 @@ Linker script and memory map
                 0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region ram  overflowed with stack)
 LOAD ..\obj\delay.o
 LOAD ..\obj\os_time.o
-LOAD ..\obj\funcs.o
 LOAD ..\obj\os_cpu_a.o
 LOAD ..\obj\keys.o
 LOAD ..\obj\buzzer.o
@@ -1981,6 +1980,7 @@ LOAD ..\obj\RN2483A.o
 LOAD ..\obj\os_cpu_c.o
 LOAD ..\obj\stm32f4xx_usart.o
 LOAD ..\obj\os_flag.o
+LOAD ..\obj\GPSmath.o
 LOAD ..\obj\uart.o
 LOAD ..\obj\startup_stm32f4xx.o
 LOAD ..\obj\taskcreate.o

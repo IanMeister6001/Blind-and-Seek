@@ -3,7 +3,7 @@
 #include "includes.h"
 #include "string.h"
 #include <math.h>
-#include "funcs.h"
+#include "GPSmath.h"
 
 union // Voor het omzetten van GPS coordinaten van ints naar 3 bytes voor het verzenden in LoRa
 {
