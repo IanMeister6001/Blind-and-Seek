@@ -38,6 +38,14 @@ void RN2483A_init(void)
 	//join things network
 	 RN2483A_connectLORA();
 }
+
+//////////////////////////////////////////////////////////////////////////////
+// func: connectlora
+// args: none
+// comm: Blijft verbinden met loranetwerk totdat dat gelukt is.
+// note: Wanneer het datalimiet van het TN bereikt is kan hij niet meer connecten
+//
+//////////////////////////////////////////////////////////////////////////////
 void RN2483A_connectLORA()
 {
 	int i = 0;
@@ -51,7 +59,7 @@ void RN2483A_connectLORA()
 		resetlora();
 		//restlora zodat de module verbind op channel 1
 		DELAY_ms(500);
-		//set de appkey, appeui zodat deze overeenkomen met deze van het thingnetwork
+		//set de appkey, appeui en DEVEUI zodat deze overeenkomen met deze van het thingnetwork
 		UART_puts(sendrecvlora("mac set appkey " APPKEY "\r\n"));
 		UART_puts(sendrecvlora("mac set appeui " APPEUI "\r\n"));
 		UART_puts(sendrecvlora("mac set deveui " DEVEUI "\r\n"));
@@ -62,17 +70,23 @@ void RN2483A_connectLORA()
 		//save de settings
 		UART_puts(sendrecvlora("mac save\r\n"));
 		DELAY_ms(100);
+		//join OTAA netwerk
 		UART_puts(sendrecvlora("mac join otaa\r\n"));
-		//UART_puts(recvlora());
 		i = strcmp(recvlora(),"accepted");
         #ifdef LORADEBUG
-		if(i != 0) UART_puts("\r\n DENIED r\n");
+			if(i != 0) UART_puts("\r\n DENIED r\n");
         #endif
 
 	}
 	while(i != 0);
 }
-
+//////////////////////////////////////////////////////////////////////////////
+// func: sendmactxlora
+// args: data : array van bytes
+// comm: Verstuurt een array van bytes naar het TTN
+// note: Wanneer er heel langer berichten verstuurt worden zal het TTN limiet snel bereikt worden
+//
+//////////////////////////////////////////////////////////////////////////////
 void sendmactxlora(unsigned char* data)
 {
 	int i;
@@ -94,7 +108,13 @@ void sendmactxlora(unsigned char* data)
 	UART_puts(recvlora());
 	LCD_puts(recvlora());
 }
-//Function that sends a string to the RN2483A and returns the pointer to the response string.
+//////////////////////////////////////////////////////////////////////////////
+// func: sendrecvlora
+// args: sendbuf:string die je naar de lora wil sturen
+// comm: functie verstuurt een string naar de RN2483 en stopt de reactie van de module in een string
+// note:
+//
+//////////////////////////////////////////////////////////////////////////////
 char* sendrecvlora(char *sendbuf)
 {
 	//Static, because the array needs to be remembered after function ends.
@@ -112,8 +132,13 @@ char* sendrecvlora(char *sendbuf)
 
 	return recvbuf;
 }
-
-//Function that only listens to the loramodule for a message and returns the pointer to the received string.
+//////////////////////////////////////////////////////////////////////////////
+// func: recvlora
+// args: void
+// comm: wacht op een bericht uit de Loramodule en returnt deze
+// note:
+//
+//////////////////////////////////////////////////////////////////////////////
 char* recvlora(void)
 {
 	//Static, because the array needs to be remembered after function ends.
@@ -130,13 +155,25 @@ char* recvlora(void)
 
 		return recvbuf;
 }
-//Function that sends a string to the lora module. Kinda unnecesary, but more legible than calling UART3.
+//////////////////////////////////////////////////////////////////////////////
+// func: sendlora
+// args: sendbuf:string die verstuurt word
+// comm: Verstuurt een bericht naar de LORAmodule
+// note:
+//
+//////////////////////////////////////////////////////////////////////////////
 void sendlora(char* sendbuf)
 {
 	UART3_puts(sendbuf);
 }
 
-//Function that resets the loramodule in case of malfunctioning
+//////////////////////////////////////////////////////////////////////////////
+// func: resetlora
+// args: void
+// comm: reset de module door een reset bericht te versturen
+// note: dus niet door de resetpin hoog en laag te maken
+//
+//////////////////////////////////////////////////////////////////////////////
 void resetlora(void)
 {
 	sendlora("sys reset\r\n");

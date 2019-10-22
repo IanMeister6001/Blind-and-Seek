@@ -14,6 +14,8 @@
       <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="16d8bd2b06e">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
+      <source file="..\..\..\ports\LORA_task.c" lastModified="16dedcc9e0c">
+      </source>
       <source file="..\..\..\taskcreate.c" lastModified="16d8be64432">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
          <include file="..\..\..\taskcreate.h"/>
@@ -93,6 +95,11 @@
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
          <include file="..\..\..\cmsis_lib\include\misc.h"/>
       </source>
+      <source file="..\..\..\main.c" lastModified="16dedc5be45">
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+         <include file="..\..\..\taskcreate.h"/>
+         <include file="..\..\..\main.h"/>
+      </source>
       <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="16d8bd2b44b">
       </source>
       <source file="..\..\..\ports\lcd.h" lastModified="16d8bd2b0ac">
@@ -124,7 +131,7 @@
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
          <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
       </source>
-      <source file="..\..\..\ports\RN2483A.c" lastModified="16dcf0c0048">
+      <source file="..\..\..\ports\RN2483A.c" lastModified="16df2a72ba1">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
          <include file="..\..\..\ports\RN2483A.h"/>
       </source>
@@ -142,13 +149,13 @@
       <source file="..\..\..\ports\buzzer.c" lastModified="16d8bd2b0a6">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
       </source>
+      <source file="..\..\..\..\..\projecten ARM\LexBleyenberg\LexBleyenberg\ports\MP3.c" lastModified="16df2aca801">
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+      </source>
       <source file="..\..\..\cmsis\core_cm4.h" lastModified="16d8bd2b449">
          <include file="..\..\..\cmsis\core_cmInstr.h"/>
          <include file="..\..\..\cmsis\core_cmFunc.h"/>
          <include file="..\..\..\cmsis\core_cm4_simd.h"/>
-      </source>
-      <source file="..\..\..\..\..\projecten ARM\LexBleyenberg\LexBleyenberg\ports\MP3.c" lastModified="16ded9d2bb6">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
       </source>
       <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="16d8bd2b06c">
       </source>
@@ -173,7 +180,7 @@
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\ports\MP3.h" lastModified="16ded9d2b96">
+      <source file="..\..\..\ports\MP3.h" lastModified="16dedca387a">
       </source>
       <source file="..\..\..\uC-OS II\Processor specific\os_cpu.h" lastModified="16d8bd2b0c1">
       </source>
