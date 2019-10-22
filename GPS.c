@@ -22,6 +22,7 @@ struct locatieGPS //Voor de mailbox
 //krijgt een string binnen, die deze gaat opdelen tussen de komma's
 //ontvangt de string en de positie die gereturnd moet worden
 //returnt de token op de n = tokenNr Positie
+//Auth: Damian van Hoornaar
 //////////////////////////////////////////////////////////////////////////////////////
 char * findToken(char buffer[], int tokenNr)
 {

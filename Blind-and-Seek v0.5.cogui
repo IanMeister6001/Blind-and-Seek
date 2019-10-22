@@ -73,7 +73,7 @@
 </editor>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="GPS.c" partName="GPS.c" path="D:/Blok 2A/Project Blind and Seek/Blind-and-Seek/GPS.c" title="GPS.c" tooltip="D:/Blok 2A/Project Blind and Seek/Blind-and-Seek/GPS.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/GPS.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1332" selectionTopPixel="870"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="678" selectionTopPixel="888"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="includes.h" partName="includes.h" path="D:/Blok 2A/Project Blind and Seek/Blind-and-Seek/uC-OS II/Application specific/includes.h" title="includes.h" tooltip="D:/Blok 2A/Project Blind and Seek/Blind-and-Seek/uC-OS II/Application specific/includes.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/uC-OS-II/includes.h"/>
@@ -93,7 +93,7 @@
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="funcs.c" partName="funcs.c" path="D:/Blok 2A/Project Blind and Seek/Blind-and-Seek/funcs.c" title="funcs.c" tooltip="D:/Blok 2A/Project Blind and Seek/Blind-and-Seek/funcs.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/funcs.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="715" selectionTopPixel="570"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2398" selectionTopPixel="670"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="funcs.h" partName="funcs.h" path="D:/Blok 2A/Project Blind and Seek/Blind-and-Seek/funcs.h" title="funcs.h" tooltip="D:/Blok 2A/Project Blind and Seek/Blind-and-Seek/funcs.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/funcs.h"/>
@@ -109,6 +109,9 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
 <expanded>
 <element path="/Blind-and-Seek v0.5"/>
+<element path="/Blind-and-Seek v0.5/ports"/>
+<element path="/Blind-and-Seek v0.5/ports/source"/>
+<element path="/Blind-and-Seek v0.5/stdio"/>
 </expanded>
 <selection>
 <element path="/Blind-and-Seek v0.5/taskcreate.c"/>
@@ -360,19 +363,9 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/funcs.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/GPS.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/GPS.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/funcs.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/funcs.h"/>
 </editors>
-<item historyLabel="funcs.h" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="includes.h" index="3">
-<position info="not_deleted" x="1838" y="18"/>
-</item>
-<item historyLabel="funcs.h" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="funcs.c" index="1">
-<position info="not_deleted" x="100" y="0"/>
-</item>
 <item historyLabel="funcs.h" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
@@ -508,8 +501,20 @@
 <item historyLabel="GPS.h" index="13">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="GPS.c" index="12">
+<item historyLabel="GPS.c" index="12">
 <position info="not_deleted" x="1212" y="0"/>
+</item>
+<item historyLabel="funcs.c" index="14">
+<position info="not_deleted" x="773" y="0"/>
+</item>
+<item historyLabel="funcs.h" index="15">
+<position info="not_deleted" x="296" y="0"/>
+</item>
+<item historyLabel="funcs.c" index="14">
+<position info="not_deleted" x="2398" y="0"/>
+</item>
+<item active="true" historyLabel="GPS.c" index="12">
+<position info="not_deleted" x="1361" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
