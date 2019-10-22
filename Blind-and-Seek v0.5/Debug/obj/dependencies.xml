@@ -26,6 +26,12 @@
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
          <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
       </source>
+      <source file="..\..\..\GPS.c" lastModified="16dcf1e8daa">
+         <include file="..\..\..\GPS.h"/>
+         <include file="..\..\..\main.h"/>
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+         <include file="..\..\..\funcs.h"/>
+      </source>
       <source file="..\..\..\ports\leds.h" lastModified="16d8be0c1fc">
       </source>
       <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="16d8be0c1b5">
@@ -133,7 +139,7 @@
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
          <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
       </source>
-      <source file="..\..\..\funcs.h" lastModified="16dcf17d182">
+      <source file="..\..\..\funcs.h" lastModified="16dcff7fe41">
       </source>
       <source file="..\..\..\uC-OS II\Processor independent\os_mutex.c" lastModified="16d8be0c20b">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
@@ -144,11 +150,6 @@
          <include file="..\..\..\ports\RN2483A.h"/>
       </source>
       <source file="..\..\..\uC-OS II\Processor independent\ucos_ii.h" lastModified="16d8be0c213">
-      </source>
-      <source file="..\..\..\funcs.c" lastModified="16dcf17d943">
-         <include file="..\..\..\funcs.h"/>
-         <include file="..\..\..\main.h"/>
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
       </source>
       <source file="..\..\..\ports\buzzer.h" lastModified="16d8be0c1f6">
       </source>
@@ -165,7 +166,7 @@
       </source>
       <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="16d8be0c1ae">
       </source>
-      <source file="..\..\..\uC-OS II\Application specific\includes.h" lastModified="16dceee03eb">
+      <source file="..\..\..\uC-OS II\Application specific\includes.h" lastModified="16dcff83608">
          <include file="..\..\..\uC-OS II\Processor specific\os_cpu.h"/>
          <include file="..\..\..\uC-OS II\Application specific\os_cfg.h"/>
          <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
