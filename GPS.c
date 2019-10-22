@@ -11,10 +11,13 @@ union // Voor het omzetten van GPS coordinaten van ints naar 3 bytes voor het ve
 	INT8U coordByte[3];
 }dataSwap;
 
-struct locatie
+struct locatieGPS //Voor de mailbox
 {
-
-};
+	int lat;
+	int lon;
+	float distance;
+	float bearing;
+}lGPS, PlGPS;
 //////////////////////////////////////////////////////////////////////////////////////
 //krijgt een string binnen, die deze gaat opdelen tussen de komma's
 //ontvangt de string en de positie die gereturnd moet worden
@@ -38,7 +41,8 @@ void GPSTask(void *pdata)
 {
 	char buffer[100];					//om de string die van de GPS komt in te zetten
 	char bufferCopy[100];				//tweede string, omdat buffer aangepast wordt door findToken...
-
+	float DestLatFloat = 52.0507582;
+	float DestLonFloat = 5.1096538;
 
 	while (TRUE) // For testing purposes
 	{
@@ -71,6 +75,12 @@ void GPSTask(void *pdata)
 				UART_puts("Found coordinates: ");
 				UART_putint(DegreeLatInt); UART_puts(", "); UART_putint(DegreeLongInt); UART_puts("\r\n");
 			}
+			lGPS.lat = DegreeLatInt;
+			lGPS.lon = DegreeLongInt;
+			lGPS.distance = calcDistance(IntToFloat(DegreeLatInt), IntToFloat(DegreeLongInt), DestLatFloat, DestLonFloat);
+			lGPS.bearing = calcBearing(IntToFloat(DegreeLatInt), IntToFloat(DegreeLongInt), DestLatFloat, DestLonFloat);
+
+			//hier de MboxPost met de struct waar de waardes in staan.
 		}
 		OSTimeDly(LOOP_DELAY);
 	}
