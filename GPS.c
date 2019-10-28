@@ -50,7 +50,7 @@ void GPSTask(void *pdata)
 	UART_puts((char *)__func__);UART_puts(" is gestart.\n\r"); //Debugout die laat weten dat task is gestart.
 	/*while (TRUE) // For testing purposes
 	{
-		//float bearing = calcBearing(52.0507493, 5.1010854, 52.05, 5.1);
+		///float bearing = calcBearing(52.0507493, 5.1010854, 52.05, 5.1);
 
 	}*/
 

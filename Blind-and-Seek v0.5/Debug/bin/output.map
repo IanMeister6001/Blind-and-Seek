@@ -726,7 +726,7 @@ Discarded input sections
  .data          0x00000000        0x0 ..\obj\LORA_task.o
  .bss           0x00000000        0x0 ..\obj\LORA_task.o
  .debug_line    0x00000000        0x0 ..\obj\LORA_task.o
- .debug_str     0x00000000       0xbd ..\obj\LORA_task.o
+ .debug_str     0x00000000       0xb7 ..\obj\LORA_task.o
  .comment       0x00000000       0x6f ..\obj\LORA_task.o
  .ARM.attributes
                 0x00000000       0x33 ..\obj\LORA_task.o
@@ -2225,7 +2225,7 @@ OUTPUT(output.elf elf32-littlearm)
  .debug_ranges  0x00000898       0x88 ..\obj\os_task.o
  .debug_ranges  0x00000920       0x78 ..\obj\lcd.o
 
-.debug_line     0x00000000     0x5160
+.debug_line     0x00000000     0x5166
  .debug_line    0x00000000      0x226 ..\obj\delay.o
  .debug_line    0x00000226      0x27c ..\obj\os_time.o
  .debug_line    0x000004a2      0x2fa ..\obj\MP3.o
@@ -2234,23 +2234,23 @@ OUTPUT(output.elf elf32-littlearm)
  .debug_line    0x00000ad9      0x2f3 ..\obj\os_cpu_c.o
  .debug_line    0x00000dcc      0x4ab ..\obj\stm32f4xx_usart.o
  .debug_line    0x00001277      0x464 ..\obj\os_flag.o
- .debug_line    0x000016db      0x247 ..\obj\GPSmath.o
- .debug_line    0x00001922      0x64c ..\obj\uart.o
- .debug_line    0x00001f6e      0x204 ..\obj\startup_stm32f4xx.o
- .debug_line    0x00002172      0x2cf ..\obj\taskcreate.o
- .debug_line    0x00002441      0x39e ..\obj\main.o
- .debug_line    0x000027df      0x593 ..\obj\stm32f4xx_rcc.o
- .debug_line    0x00002d72      0x306 ..\obj\GPS.o
- .debug_line    0x00003078      0x3ab ..\obj\printf.o
- .debug_line    0x00003423      0x58d ..\obj\os_core.o
- .debug_line    0x000039b0      0x2d7 ..\obj\os_mem.o
- .debug_line    0x00003c87      0x36c ..\obj\stm32f4xx_gpio.o
- .debug_line    0x00003ff3      0x1de ..\obj\system_stm32f4xx.o
- .debug_line    0x000041d1      0x1e6 ..\obj\syscalls.o
- .debug_line    0x000043b7      0x3e3 ..\obj\os_q.o
- .debug_line    0x0000479a      0x455 ..\obj\os_task.o
- .debug_line    0x00004bef      0x394 ..\obj\lcd.o
- .debug_line    0x00004f83      0x1dd ..\obj\ucos_ii.o
+ .debug_line    0x000016db      0x24d ..\obj\GPSmath.o
+ .debug_line    0x00001928      0x64c ..\obj\uart.o
+ .debug_line    0x00001f74      0x204 ..\obj\startup_stm32f4xx.o
+ .debug_line    0x00002178      0x2cf ..\obj\taskcreate.o
+ .debug_line    0x00002447      0x39e ..\obj\main.o
+ .debug_line    0x000027e5      0x593 ..\obj\stm32f4xx_rcc.o
+ .debug_line    0x00002d78      0x306 ..\obj\GPS.o
+ .debug_line    0x0000307e      0x3ab ..\obj\printf.o
+ .debug_line    0x00003429      0x58d ..\obj\os_core.o
+ .debug_line    0x000039b6      0x2d7 ..\obj\os_mem.o
+ .debug_line    0x00003c8d      0x36c ..\obj\stm32f4xx_gpio.o
+ .debug_line    0x00003ff9      0x1de ..\obj\system_stm32f4xx.o
+ .debug_line    0x000041d7      0x1e6 ..\obj\syscalls.o
+ .debug_line    0x000043bd      0x3e3 ..\obj\os_q.o
+ .debug_line    0x000047a0      0x455 ..\obj\os_task.o
+ .debug_line    0x00004bf5      0x394 ..\obj\lcd.o
+ .debug_line    0x00004f89      0x1dd ..\obj\ucos_ii.o
 
 .debug_str      0x00000000     0x3470
  .debug_str     0x00000000      0x22c ..\obj\delay.o
@@ -2267,20 +2267,20 @@ OUTPUT(output.elf elf32-littlearm)
                                 0x6d6 (size before relaxing)
  .debug_str     0x00000f5b      0x21c ..\obj\os_flag.o
                                 0x69c (size before relaxing)
- .debug_str     0x00001177       0xd8 ..\obj\GPSmath.o
-                                0x271 (size before relaxing)
- .debug_str     0x0000124f      0x7d7 ..\obj\uart.o
+ .debug_str     0x00001177       0xde ..\obj\GPSmath.o
+                                0x277 (size before relaxing)
+ .debug_str     0x00001255      0x7d7 ..\obj\uart.o
                                 0xcd3 (size before relaxing)
- .debug_str     0x00001a26       0xbc ..\obj\startup_stm32f4xx.o
+ .debug_str     0x00001a2c       0xbc ..\obj\startup_stm32f4xx.o
                                 0x263 (size before relaxing)
- .debug_str     0x00001ae2      0x134 ..\obj\taskcreate.o
+ .debug_str     0x00001ae8      0x134 ..\obj\taskcreate.o
                                 0x307 (size before relaxing)
- .debug_str     0x00001c16       0xb2 ..\obj\main.o
+ .debug_str     0x00001c1c       0xb2 ..\obj\main.o
                                 0x348 (size before relaxing)
- .debug_str     0x00001cc8      0x565 ..\obj\stm32f4xx_rcc.o
+ .debug_str     0x00001cce      0x565 ..\obj\stm32f4xx_rcc.o
                                 0x857 (size before relaxing)
- .debug_str     0x0000222d      0x11e ..\obj\GPS.o
-                                0x309 (size before relaxing)
+ .debug_str     0x00002233      0x118 ..\obj\GPS.o
+                                0x303 (size before relaxing)
  .debug_str     0x0000234b      0x468 ..\obj\printf.o
                                 0x687 (size before relaxing)
  .debug_str     0x000027b3      0x3af ..\obj\os_core.o
