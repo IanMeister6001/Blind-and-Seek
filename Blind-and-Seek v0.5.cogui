@@ -40,9 +40,9 @@
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/main.c" title="main.c" tooltip="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/main.c" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/main.c" title="main.c" tooltip="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1377" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="303" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="MP3.c" partName="MP3.c" path="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/ports/MP3.c" title="MP3.c" tooltip="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/ports/MP3.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/ports/source/MP3.c"/>
@@ -70,11 +70,11 @@
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" partName="main.h" path="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/main.h" title="main.h" tooltip="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/main.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/main.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="513" selectionTopPixel="39"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="308" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="GPS.c" partName="GPS.c" path="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/GPS.c" title="GPS.c" tooltip="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/GPS.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="GPS.c" partName="GPS.c" path="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/GPS.c" title="GPS.c" tooltip="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/GPS.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/GPS.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="314" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1566" selectionTopPixel="262"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="GPS.h" partName="GPS.h" path="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/ports/GPS.h" title="GPS.h" tooltip="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/ports/GPS.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Blind-and-Seek v0.5/ports/source/GPS.h"/>
@@ -358,11 +358,6 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/ports/header/GPS.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/ports/source/GPS.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/GPSmath.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/taskcreate.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/main.h"/>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
-<org.coocox.builder.ui.editors.ConfigEditor/>
-</editor>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/GPS.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/GPS.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/ports/source/GPSmath.c"/>
@@ -372,26 +367,10 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/cmsis_boot/startup/startup_stm32f4xx.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/ports/source/uart.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/main.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/ports/source/GPSmath.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Blind-and-Seek v0.5/GPS.c"/>
 </editors>
-<item historyLabel="Configuration" index="6"/>
-<item historyLabel="GPS.c" index="1">
-<position info="not_deleted" x="1894" y="0"/>
-</item>
-<item historyLabel="main.h" index="5">
-<position info="not_deleted" x="513" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1963" y="0"/>
-</item>
-<item historyLabel="taskcreate.c" index="4">
-<position info="not_deleted" x="1305" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3037" y="0"/>
-</item>
-<item historyLabel="GPS.c" index="1">
-<position info="not_deleted" x="1085" y="0"/>
-</item>
 <item historyLabel="main.c" index="0">
 <position info="not_deleted" x="2613" y="0"/>
 </item>
@@ -440,86 +419,107 @@
 <item historyLabel="GPS.c" index="1">
 <position info="not_deleted" x="2750" y="0"/>
 </item>
-<item historyLabel="GPS.c" index="7">
+<item historyLabel="GPS.c" index="4">
 <position/>
 </item>
-<item historyLabel="GPS.c" index="7">
+<item historyLabel="GPS.c" index="4">
 <position/>
 </item>
-<item historyLabel="GPS.h" index="8">
+<item historyLabel="GPS.h" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="GPSmath.c" index="9">
+<item historyLabel="GPSmath.c" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="GPSmath.h" index="10">
+<item historyLabel="GPSmath.h" index="7">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="11">
+<item historyLabel="main.c" index="8">
 <position info="not_deleted" x="2613" y="0"/>
 </item>
-<item historyLabel="taskcreate.c" index="12">
+<item historyLabel="taskcreate.c" index="9">
 <position info="not_deleted" x="1305" y="0"/>
 </item>
-<item historyLabel="GPS.c" index="7">
+<item historyLabel="GPS.c" index="4">
 <position/>
 </item>
-<item historyLabel="GPS.h" index="8">
+<item historyLabel="GPS.h" index="5">
 <position info="not_deleted" x="213" y="0"/>
 </item>
-<item historyLabel="GPS.c" index="7">
+<item historyLabel="GPS.c" index="4">
 <position info="not_deleted" x="334" y="0"/>
 </item>
-<item historyLabel="GPS.h" index="8">
+<item historyLabel="GPS.h" index="5">
 <position info="not_deleted" x="213" y="0"/>
 </item>
-<item historyLabel="GPSmath.c" index="9">
+<item historyLabel="GPSmath.c" index="6">
 <position info="not_deleted" x="102" y="0"/>
 </item>
-<item historyLabel="GPS.h" index="8">
+<item historyLabel="GPS.h" index="5">
 <position info="not_deleted" x="213" y="0"/>
 </item>
-<item historyLabel="GPS.c" index="7">
+<item historyLabel="GPS.c" index="4">
 <position info="not_deleted" x="2385" y="0"/>
 </item>
-<item historyLabel="startup_stm32f4xx.c" index="13">
+<item historyLabel="startup_stm32f4xx.c" index="10">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="11">
+<item historyLabel="main.c" index="8">
 <position info="not_deleted" x="2613" y="0"/>
 </item>
-<item historyLabel="uart.c" index="14">
+<item historyLabel="uart.c" index="11">
 <position info="not_deleted" x="15110" y="0"/>
 </item>
-<item historyLabel="GPS.c" index="7">
+<item historyLabel="GPS.c" index="4">
 <position info="not_deleted" x="2385" y="0"/>
 </item>
-<item historyLabel="uart.c" index="14">
+<item historyLabel="uart.c" index="11">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="startup_stm32f4xx.c" index="13">
+<item historyLabel="startup_stm32f4xx.c" index="10">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="11">
+<item historyLabel="main.c" index="8">
 <position info="not_deleted" x="2613" y="0"/>
 </item>
-<item historyLabel="GPS.c" index="7">
+<item historyLabel="GPS.c" index="4">
 <position info="not_deleted" x="2391" y="0"/>
 </item>
-<item historyLabel="GPS.c" index="7">
+<item historyLabel="GPS.c" index="4">
 <position info="not_deleted" x="2420" y="0"/>
 </item>
-<item historyLabel="GPS.c" index="7">
+<item historyLabel="GPS.c" index="4">
 <position info="not_deleted" x="2450" y="0"/>
 </item>
-<item historyLabel="GPS.c" index="7">
+<item historyLabel="GPS.c" index="4">
 <position info="not_deleted" x="2565" y="0"/>
 </item>
-<item historyLabel="GPS.c" index="7">
+<item historyLabel="GPS.c" index="4">
 <position info="not_deleted" x="2750" y="0"/>
 </item>
-<item active="true" historyLabel="main.c" index="15">
+<item historyLabel="main.c" index="12">
 <position info="not_deleted" x="3141" y="0"/>
+</item>
+<item historyLabel="main.h" index="13">
+<position info="not_deleted" x="538" y="0"/>
+</item>
+<item historyLabel="GPSmath.c" index="14">
+<position info="not_deleted" x="102" y="0"/>
+</item>
+<item historyLabel="GPS.c" index="15">
+<position info="not_deleted" x="1379" y="0"/>
+</item>
+<item historyLabel="main.h" index="13">
+<position info="not_deleted" x="931" y="0"/>
+</item>
+<item historyLabel="main.c" index="12">
+<position info="not_deleted" x="303" y="0"/>
+</item>
+<item historyLabel="main.h" index="13">
+<position info="not_deleted" x="308" y="0"/>
+</item>
+<item active="true" historyLabel="GPS.c" index="15">
+<position info="not_deleted" x="1379" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>

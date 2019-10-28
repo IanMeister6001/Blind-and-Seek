@@ -4,6 +4,8 @@
 // auth: Projectgroep 2, EV3A
 //////////////////////////////////////////////////////////////////////////////
 
+#include <includes.h>
+
 //Debugtoggle at compile time.
 #define OUTPUT_DEBUG
 
@@ -23,25 +25,10 @@ enum {
 };
 
 
-// handles, used for semaphore, mailbox, flag, queue
-// defined as a pointer; the os will allocate an OS_EVENT on it
-/*extern OS_EVENT    *MutexHandle;
-extern OS_EVENT    *MboxHandle;
-extern OS_EVENT    *StudentstuffHandle;
-extern OS_FLAG_GRP *FlagHandle;
-extern OS_FLAG_GRP *FlagIntHandle;
-extern OS_EVENT    *QueueHandle;*/
+extern OS_EVENT *GPSDataHandle; //Handle voor de mbox tussen GPS-task en gametask.
+extern OS_EVENT *MessageHandle; //Handle voor de mbox tussen gametask en TTN-task.
+extern OS_FLAG_GRP *KnopFlag;   //Handle voor de flag tussen knoptask en gametask.
 
-//Oude queue structuur. Blijf hier staan voor het geval we toch een queue nodig hebben zodat we dit als blauwdruk kunnen maken.
-/*typedef struct queue
-{
- 	int   nr;        // counter
-	char  text[17];  // text to display
-} Q, *PQ;
-
-extern Q     data_queue[]; // data queue, in this case array of Q-structs
-extern void* os_queue[];   // pointer queue for OS
-*/
 
 //Functieprototypes voor functies binnen de main.
 extern void OSinfo (void);
