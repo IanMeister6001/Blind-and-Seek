@@ -17,6 +17,7 @@ struct locatieGPS //Voor de mailbox
 	int lon;
 	float distance;
 	float bearing;
+	INT8U functiecode;
 }lGPS, PlGPS;
 //////////////////////////////////////////////////////////////////////////////////////
 //krijgt een string binnen, die deze gaat opdelen tussen de komma's
