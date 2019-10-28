@@ -10,6 +10,9 @@
 
 char *version = "BLIND-AND-SEEK"; // name of this application, will be displayed on uart and lcd
 
+OS_EVENT *GPSDataHandle; //Handle voor de mbox tussen GPS-task en gametask.
+OS_EVENT *MessageHandle; //Handle voor de mbox tussen gametask en TTN-task.
+OS_FLAG_GRP *KnopFlag;   //Handle voor de flag tussen knoptask en gametask.
 
 //////////////////////////////////////////////////////////////////////////////
 // Functie: OSinfo
@@ -29,13 +32,19 @@ void OSinfo(void)
 }
 
 //////////////////////////////////////////////////////////////////////////////
-// Functie: MaakHandles
+// Functie: MakeHandles
 // Doel: Maakt alle handles aan voor de OS-mechanismen.
 // Auteur: Projectgroep 2, EV3A
 //////////////////////////////////////////////////////////////////////////////
 void MakeHandles()
 {
-	//INT8U error;
+	INT8U error;
+	GPSDataHandle = OSMboxCreate(NULL); //Maak de handle voor de Mbox tussen gpstask en gametask aan.
+	MessageHandle = OSMboxCreate(NULL); //Maak de handle voor de mbox tussen gametask en ttn-task aan.
+
+	KnopFlag = OSFlagCreate(0x0000, &error);
+
+	//Hier errorhandling voor de knopflag toevoegen.
 
 }	
    
