@@ -191,6 +191,22 @@ Discarded input sections
                 0x00000000       0x14 ..\obj\MP3.o
  .data          0x00000000        0x0 ..\obj\os_cpu_a.o
  .bss           0x00000000        0x0 ..\obj\os_cpu_a.o
+ .text          0x00000000        0x0 ..\obj\button.o
+ .data          0x00000000        0x0 ..\obj\button.o
+ .bss           0x00000000        0x0 ..\obj\button.o
+ .text.Noodknop_Init
+                0x00000000        0x4 ..\obj\button.o
+ .debug_info    0x00000000       0xc7 ..\obj\button.o
+ .debug_abbrev  0x00000000       0x67 ..\obj\button.o
+ .debug_aranges
+                0x00000000       0x20 ..\obj\button.o
+ .debug_ranges  0x00000000       0x10 ..\obj\button.o
+ .debug_line    0x00000000      0x175 ..\obj\button.o
+ .debug_str     0x00000000      0x1d9 ..\obj\button.o
+ .comment       0x00000000       0x6f ..\obj\button.o
+ .debug_frame   0x00000000       0x20 ..\obj\button.o
+ .ARM.attributes
+                0x00000000       0x33 ..\obj\button.o
  .text          0x00000000        0x0 ..\obj\keys.o
  .data          0x00000000        0x0 ..\obj\keys.o
  .bss           0x00000000        0x0 ..\obj\keys.o
@@ -2054,6 +2070,7 @@ LOAD ..\obj\delay.o
 LOAD ..\obj\os_time.o
 LOAD ..\obj\MP3.o
 LOAD ..\obj\os_cpu_a.o
+LOAD ..\obj\button.o
 LOAD ..\obj\keys.o
 LOAD ..\obj\buzzer.o
 LOAD ..\obj\RN2483A.o

@@ -9,6 +9,8 @@
 //Debugtoggle at compile time.
 #define OUTPUT_DEBUG
 
+
+#define NOODKNOP_ON			6	//Waarde die nodig is om te controleren of de noodknop is ingedrukt.
 #define WAIT_FOREVER        0   // to force all OSPends (flag, mutex, mbox etc.) to wait for incoming signal
 #define LOOP_DELAY          30  // standard delay time for tasks
 
