@@ -334,6 +334,26 @@ Discarded input sections
  .bss           0x00000000        0x0 ..\obj\GPSmath.o
  .text.radians  0x00000000       0x20 ..\obj\GPSmath.o
  .text.degrees  0x00000000       0x20 ..\obj\GPSmath.o
+ .text          0x00000000        0x0 ..\obj\speelveld.o
+ .data          0x00000000       0x14 ..\obj\speelveld.o
+ .bss           0x00000000        0x4 ..\obj\speelveld.o
+ .text.veld_binnen
+                0x00000000      0x1b8 ..\obj\speelveld.o
+ .text.veld_ikzoek
+                0x00000000       0x38 ..\obj\speelveld.o
+ .rodata        0x00000000       0x78 ..\obj\speelveld.o
+ .debug_info    0x00000000      0x202 ..\obj\speelveld.o
+ .debug_abbrev  0x00000000      0x11a ..\obj\speelveld.o
+ .debug_loc     0x00000000       0xfa ..\obj\speelveld.o
+ .debug_aranges
+                0x00000000       0x28 ..\obj\speelveld.o
+ .debug_ranges  0x00000000       0x18 ..\obj\speelveld.o
+ .debug_line    0x00000000       0xf2 ..\obj\speelveld.o
+ .debug_str     0x00000000      0x22e ..\obj\speelveld.o
+ .comment       0x00000000       0x6f ..\obj\speelveld.o
+ .debug_frame   0x00000000       0x78 ..\obj\speelveld.o
+ .ARM.attributes
+                0x00000000       0x33 ..\obj\speelveld.o
  .text          0x00000000        0x0 ..\obj\uart.o
  .data          0x00000000        0x0 ..\obj\uart.o
  .text.UART3_putchar
@@ -2061,6 +2081,7 @@ LOAD ..\obj\os_cpu_c.o
 LOAD ..\obj\stm32f4xx_usart.o
 LOAD ..\obj\os_flag.o
 LOAD ..\obj\GPSmath.o
+LOAD ..\obj\speelveld.o
 LOAD ..\obj\uart.o
 LOAD ..\obj\startup_stm32f4xx.o
 LOAD ..\obj\taskcreate.o

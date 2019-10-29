@@ -82,6 +82,7 @@
 #include "keys.h"
 #include "RN2483A.h"
 #include "MP3.h"
+#include "speelveld.h"
 
 #define TRUE		1
 #define FALSE		0
