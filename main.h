@@ -3,9 +3,9 @@
 // comm: external definitions and prototypes for main
 // auth: Projectgroep 2, EV3A
 //////////////////////////////////////////////////////////////////////////////
-
+#include <includes.h>
 //Debugtoggle at compile time.
-#define OUTPUT_DEBUG
+#define NOODKNOPINGEDRUKT  6
 
 #define WAIT_FOREVER        0   // to force all OSPends (flag, mutex, mbox etc.) to wait for incoming signal
 #define LOOP_DELAY          30  // standard delay time for tasks
@@ -13,12 +13,9 @@
 
 // priorities for all tasks and prty of mutex-semaphore itself
 enum {
-    INITTASK_PRTY = 5,
-
     MUTEX_PRTY = 8,       // careful, this one should be highest of all using tasks
-
     GPSTASK_PRTY = 10,
-
+    LORATASK_PRTY,
     DUMMY
 };
 
@@ -42,6 +39,7 @@ extern OS_EVENT    *QueueHandle;*/
 extern Q     data_queue[]; // data queue, in this case array of Q-structs
 extern void* os_queue[];   // pointer queue for OS
 */
+extern OS_EVENT    *MessageHandle;
 
 //Functieprototypes voor functies binnen de main.
 extern void OSinfo (void);
@@ -51,4 +49,5 @@ void InitBoard(void);
 
 // function prototypes of threads/tasks/processes to prevent compiler warnings
 extern void GPSTask(void *pdata);
+extern void LORATask(void *pdata);
 

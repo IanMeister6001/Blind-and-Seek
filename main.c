@@ -4,13 +4,12 @@
 //////////////////////////////////////////////////////////////////////////////
 
 #include <includes.h>
-
 #include "taskcreate.h" // for stacksize
 #include "main.h"       // defines, external declarations, enums, prototypes
 
+OS_EVENT            *MessageHandle;   // name of handle on 1 instance of mutex-mechanism
+
 char *version = "BLIND-AND-SEEK"; // name of this application, will be displayed on uart and lcd
-
-
 //////////////////////////////////////////////////////////////////////////////
 // Functie: OSinfo
 // Doel: print een opstartbericht naar de debug-UART.
@@ -35,8 +34,8 @@ void OSinfo(void)
 //////////////////////////////////////////////////////////////////////////////
 void MakeHandles()
 {
+	MessageHandle    = OSMboxCreate(NULL);
 	//INT8U error;
-
 }	
    
 
@@ -72,37 +71,23 @@ void InitBoard(void)
 	UARTGPS_init();
 	UARTBT_init();
     MP3_init();
+    LCD_init();
     //Comment deze weg als de RN2483A niet is aangesloten.
-    //RN2483A_init(); //Initialize RN2483.
+    RN2483A_init(); //Initialize RN2483.
 }
 
 int main (void)
 {
 	SystemInit();	// Set SystemCLK
 	// initialize all board-outputs
-
 	InitBoard(); //Initialiseer alles OS-functies.
-
     OSInit(); //Initialiseer OS.
-
     InitProgram(); //Initialiseer alles van het programma wat het os gebruikt.
-
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
 	GPIOD -> MODER |= ( 1 << 24 );
 	GPIOD -> MODER |= ( 1 << 26 );
 	GPIOD -> MODER |= ( 1 << 28 );
 	GPIOD -> MODER |= ( 1 << 30 );
-
-	//test LORA
-	/*UART_puts("functie start");
-	unsigned char buf[10] = {0x11,0x22,0xAA,0x99, 0x88, 0x66, 0x77, 0xAB};
-	sendmactxlora(buf);*/
-
-    //while(TRUE)
-    //{
-    //}
-    //test lora start
-
     OSStart();
 	// Nothing comes beyond this point
     while(TRUE);

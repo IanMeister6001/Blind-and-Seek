@@ -24,7 +24,7 @@ float degrees(float radians)
 //ontvangt de twee GPS coordinaten, en returnt de bearing (richting) in graden
 //Auth: Damian van Hoornaar
 //////////////////////////////////////////////////////////////////////////////////////
-float calcBearing(float lat,float lon,float lat2,float lon2)
+float aring(float lat,float lon,float lat2,float lon2)
 {
     float teta1 = radians(lat);
     float teta2 = radians(lat2);
@@ -45,7 +45,7 @@ float calcBearing(float lat,float lon,float lat2,float lon2)
 //ontvangt twee GPS coordinaten, en returnt de afstand ertussen
 //Auth: Damian van Hoornaar
 //////////////////////////////////////////////////////////////////////////////////////
-float calcDistance(float lat, float lon, float lat2, float lon2)
+float calcBecalcDistance(float lat, float lon, float lat2, float lon2)
 {
 	float deltaLatSq = (lat2 - lat)*(lat2 - lat);
 	float deltaLonSq = (lon2 - lon)*(lon2 - lon);

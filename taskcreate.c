@@ -9,7 +9,7 @@
 #include "main.h"
 
 OS_STK GPSTask_Stk	[STACK_SIZE];
-
+OS_STK LORATask_Stk	[STACK_SIZE];
 // Create different stacks for the tasks:
 // give each thread/task/process its own stack with size
 // stacks are allocated here statically, because malloc() is not supported
@@ -24,7 +24,8 @@ TASKDATA tasks[] =
 //  name           stack              priority            stacksize   option
 // -------------------------------------------------------------------------------------
 		//In GPS.c
-		{   GPSTask,     GPSTask_Stk,     GPSTASK_PRTY,     STACK_SIZE, OS_TASK_OPT_STK_CHK  },
+//		{   GPSTask,     GPSTask_Stk,     GPSTASK_PRTY,     STACK_SIZE, OS_TASK_OPT_STK_CHK  },
+		{   LORATask,    LORATask_Stk,    LORATASK_PRTY,     STACK_SIZE, OS_TASK_OPT_STK_CHK  },
 		// laatste, niet wissen: nodig om for-loop af te sluiten
 {   NULL,          NULL,              0,                  0,          0                    }
 };

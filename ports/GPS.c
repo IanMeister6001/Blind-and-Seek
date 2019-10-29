@@ -5,19 +5,6 @@
 #include <math.h>
 #include "GPSmath.h"
 
-union // Voor het omzetten van GPS coordinaten van ints naar 3 bytes voor het verzenden in LoRa
-{
-	int coordInt;
-	INT8U coordByte[3];
-}dataSwap;
-
-struct locatieGPS //Voor de mailbox
-{
-	int lat;
-	int lon;
-	float distance;
-	float bearing;
-}lGPS, PlGPS;
 //////////////////////////////////////////////////////////////////////////////////////
 //krijgt een string binnen, die deze gaat opdelen tussen de komma's
 //ontvangt de string en de positie die gereturnd moet worden
@@ -40,6 +27,7 @@ char * findToken(char buffer[], int tokenNr)
 
 void GPSTask(void *pdata)
 {
+	lGPS locatieGPS;
 	char buffer[100];					//om de string die van de GPS komt in te zetten
 	char bufferCopy[100];				//tweede string, omdat buffer aangepast wordt door findToken...
 
@@ -79,14 +67,14 @@ void GPSTask(void *pdata)
 				UART_puts("Found coordinates: ");
 				UART_putint(DegreeLatInt); UART_puts(", "); UART_putint(DegreeLongInt); UART_puts("\r\n");
 			}
-			lGPS.lat = DegreeLatInt;
-			lGPS.lon = DegreeLongInt;
-			lGPS.distance = calcDistance(IntToFloat(DegreeLatInt), IntToFloat(DegreeLongInt), DestLatFloat, DestLonFloat);
-			lGPS.bearing = calcBearing(IntToFloat(DegreeLatInt), IntToFloat(DegreeLongInt), DestLatFloat, DestLonFloat);
-
+			locatieGPS.lat = DegreeLatInt;
+			locatieGPS.lon = DegreeLongInt;
+			locatieGPS.distance = calcDistance(IntToFloat(DegreeLatInt), IntToFloat(DegreeLongInt), DestLatFloat, DestLonFloat);
+			locatieGPS.bearing = calcBearing(IntToFloat(DegreeLatInt), IntToFloat(DegreeLongInt), DestLatFloat, DestLonFloat);
 
 			//hier de MboxPost met de struct waar de waardes in staan.
 		}
 		OSTimeDly(LOOP_DELAY);
 	}
 }
+

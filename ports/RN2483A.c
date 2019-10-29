@@ -74,6 +74,7 @@ void RN2483A_connectLORA()
 		//save de settings
 		UART_puts(sendrecvlora("mac save\r\n"));
 		DELAY_ms(100);
+		LCD_puts("connecting");
 		//join OTAA netwerk
 		UART_puts(sendrecvlora("mac join otaa\r\n"));
 		i = strcmp(recvlora(),"accepted");
