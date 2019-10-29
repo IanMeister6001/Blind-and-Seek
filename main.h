@@ -23,6 +23,7 @@ enum {
     MUTEX_PRTY = 8,       // careful, this one should be highest of all using tasks
 
     KNOPTASK_PRTY = 10,
+    LORATASK_PRTY,
     GPSTASK_PRTY,
     GAMETASK_PRTY,
 
@@ -45,4 +46,5 @@ void InitBoard(void);
 extern void GPSTask(void *pdata);
 extern void KnopTask(void *pdata);
 extern void GameTask(void *pdata);
+extern void LORATask(void *pdata);
 

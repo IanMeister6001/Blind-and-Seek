@@ -12,6 +12,7 @@
 OS_STK GPSTask_Stk	[STACK_SIZE];
 OS_STK KnopTask_Stk	[STACK_SIZE];
 OS_STK GameTask_Stk	[STACK_SIZE];
+OS_STK LORATask_Stk	[STACK_SIZE];
 
 // Create different stacks for the tasks:
 // give each thread/task/process its own stack with size
@@ -32,6 +33,8 @@ TASKDATA tasks[] =
 		{	KnopTask,	 KnopTask_Stk,	  KNOPTASK_PRTY,	STACK_SIZE, OS_TASK_OPT_STK_CHK	 },
 		//In gametask.c
 		{	GameTask,	GameTask_Stk,	GAMETASK_PRTY,		STACK_SIZE, OS_TASK_OPT_STK_CHK	},
+		//In LORA_task.c
+		{   LORATask,    LORATask_Stk,    LORATASK_PRTY,     STACK_SIZE, OS_TASK_OPT_STK_CHK  },
 		// laatste, niet wissen: nodig om for-loop af te sluiten
 {   NULL,          NULL,              0,                  0,          0                    }
 };
