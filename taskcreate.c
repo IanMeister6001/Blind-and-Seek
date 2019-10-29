@@ -7,8 +7,11 @@
 #include "includes.h"
 #include "taskcreate.h"
 #include "main.h"
+#include "button.h"
 
 OS_STK GPSTask_Stk	[STACK_SIZE];
+OS_STK KnopTask_Stk	[STACK_SIZE];
+OS_STK GameTask_Stk	[STACK_SIZE];
 
 // Create different stacks for the tasks:
 // give each thread/task/process its own stack with size
@@ -25,6 +28,10 @@ TASKDATA tasks[] =
 // -------------------------------------------------------------------------------------
 		//In GPS.c
 		{   GPSTask,     GPSTask_Stk,     GPSTASK_PRTY,     STACK_SIZE, OS_TASK_OPT_STK_CHK  },
+		//In button.c
+		{	KnopTask,	 KnopTask_Stk,	  KNOPTASK_PRTY,	STACK_SIZE, OS_TASK_OPT_STK_CHK	 },
+		//In gametask.c
+		{	GameTask,	GameTask_Stk,	GAMETASK_PRTY,		STACK_SIZE, OS_TASK_OPT_STK_CHK	},
 		// laatste, niet wissen: nodig om for-loop af te sluiten
 {   NULL,          NULL,              0,                  0,          0                    }
 };

@@ -81,6 +81,7 @@ void InitBoard(void)
 	UARTGPS_init();
 	UARTBT_init();
     MP3_init();
+    Knoppen_Init();
     //Comment deze weg als de RN2483A niet is aangesloten.
     //RN2483A_init(); //Initialize RN2483.
 }
@@ -88,9 +89,8 @@ void InitBoard(void)
 int main (void)
 {
 	SystemInit();	// Set SystemCLK
-	// initialize all board-outputs
 
-	InitBoard(); //Initialiseer alles OS-functies.
+	InitBoard(); //Initialiseer alle bord-outputs
 
     OSInit(); //Initialiseer OS.
 
@@ -101,16 +101,6 @@ int main (void)
 	GPIOD -> MODER |= ( 1 << 26 );
 	GPIOD -> MODER |= ( 1 << 28 );
 	GPIOD -> MODER |= ( 1 << 30 );
-
-	//test LORA
-	/*UART_puts("functie start");
-	unsigned char buf[10] = {0x11,0x22,0xAA,0x99, 0x88, 0x66, 0x77, 0xAB};
-	sendmactxlora(buf);*/
-
-    //while(TRUE)
-    //{
-    //}
-    //test lora start
 
     OSStart();
 	// Nothing comes beyond this point
