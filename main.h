@@ -8,8 +8,6 @@
 
 //Debugtoggle at compile time.
 #define OUTPUT_DEBUG
-
-
 #define NOODKNOP_ON			6	//Waarde die nodig is om te controleren of de noodknop is ingedrukt.
 #define	TIPKNOP_ON			85  //Waarde die nodig is om te controleren of de tipknop is ingedrukt.
 #define WAIT_FOREVER        0   // to force all OSPends (flag, mutex, mbox etc.) to wait for incoming signal
@@ -41,6 +39,8 @@ extern void OSinfo (void);
 void InitProgram(void);
 void MakeHandles();
 void InitBoard(void);
+extern void BuildMessage(INT8U,int,int);
+extern void SendZoekLocatie();
 
 // function prototypes of threads/tasks/processes to prevent compiler warnings
 extern void GPSTask(void *pdata);

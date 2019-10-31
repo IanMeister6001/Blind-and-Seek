@@ -83,9 +83,9 @@ void InitBoard(void)
     MP3_init();
     Knoppen_Init();
     //Comment deze weg als de RN2483A niet is aangesloten.
-    //RN2483A_init(); //Initialize RN2483.
+    RN2483A_init(); //Initialize RN2483.
+    SendZoekLocatie();
 }
-
 int main (void)
 {
 	SystemInit();	// Set SystemCLK
