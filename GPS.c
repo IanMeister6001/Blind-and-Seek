@@ -20,7 +20,6 @@ char * findToken(char buffer[], int tokenNr)
 
 	for(i = 1; i < tokenNr; i++)
 		token = strtok(NULL, s);	//NULL omdat strtok() de vorige ingevoerde string neemt
-
 	return token;
 }
 
@@ -28,6 +27,8 @@ void GPSTask(void *pdata)
 {
 	char buffer[100];					//om de string die van de GPS komt in te zetten
 	char bufferCopy[100];				//tweede string, omdat buffer aangepast wordt door findToken...
+
+	INT8U error = 0; //Errorvariabele voor het zenden via mbox.
 
 	//Floats voor destinations, momenteel zijn deze random ingevuld. Huidig doel is net voor de deur van Padualaan 99
 	int DestLat = 5208060;
@@ -54,13 +55,12 @@ void GPSTask(void *pdata)
 			int DegreeLatInt = RMCtoINT(foundLat);
 			int DegreeLongInt = RMCtoINT(foundLong);
 
-
 			if (foundLong != NULL)
 			{
 				UART_puts("Found coordinates: ");
 				UART_putint(DegreeLatInt); UART_puts(", "); UART_putint(DegreeLongInt); UART_puts("\r\n");
-
 			}
+
 			lGPS.lat = DegreeLatInt; lGPS.lon = DegreeLongInt;								//zet de gegevens in de struct
 			lGPS.distance = calcDistance(DegreeLatInt, DegreeLongInt, DestLat, DestLon);
 			lGPS.bearing = calcBearing(DegreeLatInt, DegreeLongInt, DestLat, DestLon);
@@ -68,9 +68,13 @@ void GPSTask(void *pdata)
 			UART_puts("afstand: "); UART_putint(lGPS.distance); UART_puts(", en bearing: "); UART_putint(lGPS.bearing); UART_puts("\r\n"); UART_puts("\r\n");
 
 
+			//OSMboxPost(GPSDataHandle, &lGPS);	//soms geeft de functie een afstand van 0 door, dus deze if filtert die eruit.
 			if(lGPS.distance != 0)
-				//OSMboxPost(GPSDataHandle, &lGPS);	//soms geeft de functie een afstand van 0 door, dus deze if filtert die eruit.
-				OSMboxPost(MessageHandle, &lGPS);
+			{
+				error = OSMboxPost(MessageHandle, &lGPS); //Stuur coordinaten op de mbox en cast de pointer naar de struct als het type structpointer.
+			}
+
+			UART_putint((int)error);
 		}
 		OSTimeDly(LOOP_DELAY);
 	}

@@ -21,8 +21,9 @@ enum {
     MUTEX_PRTY = 8,       // careful, this one should be highest of all using tasks
 
     KNOPTASK_PRTY = 10,
-    LORATASK_PRTY,
+
     GPSTASK_PRTY,
+    LORATASK_PRTY,
     GAMETASK_PRTY,
 
     DUMMY

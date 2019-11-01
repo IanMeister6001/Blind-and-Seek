@@ -4,7 +4,7 @@
 // auth: MSC
 //////////////////////////////////////////////////////////////////////////////
 
-#define STACK_SIZE               100
+#define STACK_SIZE               1000
 
 // structure to simplify the creation of tasks
 typedef struct TaskData

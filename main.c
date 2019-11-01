@@ -80,15 +80,18 @@ void InitBoard(void)
 	UART3_init();
 	UARTGPS_init();
 	UARTBT_init();
+	BUZZER_init();
     MP3_init();
     Knoppen_Init();
-    LCD_init();
+  //  LCD_init();
     playFirst();
     //Comment deze weg als de RN2483A niet is aangesloten.
     RN2483A_init(); //Initialize RN2483.
+    DELAY_ms(2500);
     SendZoekLocatie();
-    DELAY_ms(5000);
+    DELAY_ms(2500);
 }
+
 int main (void)
 {
 	SystemInit();	// Set SystemCLK

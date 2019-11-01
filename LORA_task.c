@@ -21,6 +21,8 @@ void BuildMessage(INT8U functiecode,int lat,int lon)
 	INT8U    Message[3] = {functiecode, latdist, londist};
 	sendmactxlora(Message);
 }
+
+
 void LORATask(void *pdata)
 {
 	INT8U   error;
@@ -32,21 +34,22 @@ void LORATask(void *pdata)
 	while(TRUE)
     {
 		PlocatieGPS = OSMboxPend(MessageHandle, WAIT_FOREVER, &error);
+		//UART_putint((int)error);
+
 
     	//test waardes:
 
     	PlocatieGPS->functiecode = 2;
-		/*
+    	/*
     	PlocatieGPS->lat = 5208040;
     	PlocatieGPS->lon = 517388;
-    	*/
+*/
     	BuildMessage(PlocatieGPS->functiecode, PlocatieGPS->lat, PlocatieGPS->lon);
     	for(i = 0;i < 60;i++)
     	{
     		if(PlocatieGPS->functiecode == NOODKNOP_ON)
     			break;
-    		OSTimeDly(100);
+    		OSTimeDly(50);
     	}
-
     }
 }

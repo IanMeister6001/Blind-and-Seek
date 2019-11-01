@@ -81,7 +81,7 @@ float FloatToInt(float value)
 int RMCtoINT(char RMCval[])
 {
 	float Floatval = atof(RMCval);
-	Floatval *= 1000;
+	Floatval *= 100000;
 
 	return (int)Floatval;
 }
