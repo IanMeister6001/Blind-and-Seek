@@ -28,7 +28,7 @@ TASKDATA tasks[] =
 //  name           stack              priority            stacksize   option
 // -------------------------------------------------------------------------------------
 		//In GPS.c
-//		{   GPSTask,     GPSTask_Stk,     GPSTASK_PRTY,     STACK_SIZE, OS_TASK_OPT_STK_CHK  },
+		{   GPSTask,     GPSTask_Stk,     GPSTASK_PRTY,     STACK_SIZE, OS_TASK_OPT_STK_CHK  },
 		//In button.c
 //		{	KnopTask,	 KnopTask_Stk,	  KNOPTASK_PRTY,	STACK_SIZE, OS_TASK_OPT_STK_CHK	 },
 		//In gametask.c

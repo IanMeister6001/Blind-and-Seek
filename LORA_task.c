@@ -23,7 +23,6 @@ void BuildMessage(INT8U functiecode,int lat,int lon)
 }
 void LORATask(void *pdata)
 {
-
 	INT8U   error;
 	int i;
 	PlGPS    PlocatieGPS;
@@ -35,8 +34,9 @@ void LORATask(void *pdata)
 		PlocatieGPS = OSMboxPend(MessageHandle, WAIT_FOREVER, &error);
 
     	//test waardes:
-		/*
+
     	PlocatieGPS->functiecode = 2;
+		/*
     	PlocatieGPS->lat = 5208040;
     	PlocatieGPS->lon = 517388;
     	*/

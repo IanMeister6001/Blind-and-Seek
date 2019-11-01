@@ -83,6 +83,7 @@ void InitBoard(void)
     MP3_init();
     Knoppen_Init();
     LCD_init();
+    playFirst();
     //Comment deze weg als de RN2483A niet is aangesloten.
     RN2483A_init(); //Initialize RN2483.
     SendZoekLocatie();

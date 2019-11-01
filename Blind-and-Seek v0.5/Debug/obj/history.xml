@@ -25,20 +25,20 @@
       <target file="lcd.o" lastModified="16e26492614">
          <source file="..\..\..\ports\lcd.c" lastModified="16d8bd2b0ab"/>
       </target>
-      <target file="os_flag.o" lastModified="16e26491a7d">
-         <source file="..\..\..\uC-OS II\Processor independent\os_flag.c" lastModified="16d8bd2b0b6"/>
-      </target>
       <target file="stm32f4xx_gpio.o" lastModified="16e238b1795">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="16d8bd2b074"/>
+      </target>
+      <target file="os_flag.o" lastModified="16e26491a7d">
+         <source file="..\..\..\uC-OS II\Processor independent\os_flag.c" lastModified="16d8bd2b0b6"/>
       </target>
       <target file="delay.o" lastModified="16e2649140e">
          <source file="..\..\..\ports\delay.c" lastModified="16d8bd2b0a8"/>
       </target>
-      <target file="os_mbox.o" lastModified="16e2649281e">
-         <source file="..\..\..\uC-OS II\Processor independent\os_mbox.c" lastModified="16d8bd2b0b6"/>
-      </target>
       <target file="gametask.o" lastModified="16e26491998">
          <source file="..\..\..\gametask.c" lastModified="16e2184350f"/>
+      </target>
+      <target file="os_mbox.o" lastModified="16e2649281e">
+         <source file="..\..\..\uC-OS II\Processor independent\os_mbox.c" lastModified="16d8bd2b0b6"/>
       </target>
       <target file="stm32f4xx_usart.o" lastModified="16e238b0f27">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="16d8bd2b075"/>
@@ -58,8 +58,8 @@
       <target file="os_q.o" lastModified="16e26492378">
          <source file="..\..\..\uC-OS II\Processor independent\os_q.c" lastModified="16d8bd2b0b9"/>
       </target>
-      <target file="GPS.o" lastModified="16e26491f84">
-         <source file="..\..\..\GPS.c" lastModified="16e21cd49d3"/>
+      <target file="GPS.o" lastModified="16e2664af4d">
+         <source file="..\..\..\GPS.c" lastModified="16e2662ac4a"/>
       </target>
       <target file="buzzer.o" lastModified="16e26491780">
          <source file="..\..\..\ports\buzzer.c" lastModified="16d8bd2b0a6"/>
@@ -73,8 +73,8 @@
       <target file="MP3.o" lastModified="16e26491567">
          <source file="..\..\..\ports\MP3.c" lastModified="16e11ad9583"/>
       </target>
-      <target file="taskcreate.o" lastModified="16e26491e3f">
-         <source file="..\..\..\taskcreate.c" lastModified="16e2382aca9"/>
+      <target file="taskcreate.o" lastModified="16e2662af92">
+         <source file="..\..\..\taskcreate.c" lastModified="16e2662ac5f"/>
       </target>
       <target file="button.o" lastModified="16e2649161e">
          <source file="..\..\..\ports\button.c" lastModified="16e21843518"/>
@@ -88,11 +88,11 @@
       <target file="printf.o" lastModified="16e238b14d6">
          <source file="..\..\..\stdio\printf.c" lastModified="16d8bd2b0b0"/>
       </target>
-      <target file="LORA_task.o" lastModified="16e264926ca">
-         <source file="..\..\..\LORA_task.c" lastModified="16e26491110"/>
+      <target file="LORA_task.o" lastModified="16e2662b0f2">
+         <source file="..\..\..\LORA_task.c" lastModified="16e2662ac3a"/>
       </target>
-      <target file="GPSmath.o" lastModified="16e26491b36">
-         <source file="..\..\..\ports\GPSmath.c" lastModified="16e218406ab"/>
+      <target file="GPSmath.o" lastModified="16e265a72b6">
+         <source file="..\..\..\GPSmath.c" lastModified="16e264ccad8"/>
       </target>
       <target file="os_mem.o" lastModified="16e26492292">
          <source file="..\..\..\uC-OS II\Processor independent\os_mem.c" lastModified="16d8bd2b0b6"/>
@@ -100,8 +100,8 @@
       <target file="os_cpu_c.o" lastModified="16e264918ed">
          <source file="..\..\..\uC-OS II\Processor specific\os_cpu_c.c" lastModified="16d8bd2b0c1"/>
       </target>
-      <target file="main.o" lastModified="16e26491ed4">
-         <source file="..\..\..\main.c" lastModified="16e264396f9"/>
+      <target file="main.o" lastModified="16e2665d13c">
+         <source file="..\..\..\main.c" lastModified="16e2665cd8d"/>
       </target>
       <target file="RN2483A.o" lastModified="16e2649183a">
          <source file="..\..\..\ports\RN2483A.c" lastModified="16e238d22f6"/>
