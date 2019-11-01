@@ -120,9 +120,9 @@
     <File name="uC-OS-II/ucos_ii.h" path="uC-OS II/Processor independent/ucos_ii.h" type="1"/>
     <File name="cmsis_boot/startup/startup_stm32f4xx.c" path="cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
     <File name="stdio" path="" type="2"/>
-    <File name="uC-OS-II/os_task.c" path="uC-OS II/Processor independent/os_task.c" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_rcc.c" path="cmsis_lib/source/stm32f4xx_rcc.c" type="1"/>
     <File name="uC-OS-II/os_q.c" path="uC-OS II/Processor independent/os_q.c" type="1"/>
+    <File name="uC-OS-II/os_task.c" path="uC-OS II/Processor independent/os_task.c" type="1"/>
     <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
     <File name="ports/header/uart.h" path="ports/uart.h" type="1"/>
     <File name="ports/header/lcd.h" path="ports/lcd.h" type="1"/>

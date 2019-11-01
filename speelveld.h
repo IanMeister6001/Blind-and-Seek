@@ -12,7 +12,6 @@ typedef struct Veld_Gps {
 } VELD_GPS, *VELD_PGPS;
 
 ////////// Global Declarations ////////////////////////////////////////////////
-
 extern const VELD_GPS veld_midden;  // middelpunt van het speelveld, referentie voor differentiele upload
 extern const VELD_GPS veld_rand[];  // punten die de randen van het speelveld bepalen
 extern const VELD_GPS veld_zoek[];  // mogelijke locaties van de verstopper

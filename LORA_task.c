@@ -33,12 +33,13 @@ void LORATask(void *pdata)
 	while(TRUE)
     {
 		PlocatieGPS = OSMboxPend(MessageHandle, WAIT_FOREVER, &error);
-		/*
+
     	//test waardes:
+		/*
     	PlocatieGPS->functiecode = 2;
-    	PlocatieGPS->lat = 5208050;
-    	PlocatieGPS->lon = 517384;
-		*/
+    	PlocatieGPS->lat = 5208040;
+    	PlocatieGPS->lon = 517388;
+    	*/
     	BuildMessage(PlocatieGPS->functiecode, PlocatieGPS->lat, PlocatieGPS->lon);
     	for(i = 0;i < 60;i++)
     	{

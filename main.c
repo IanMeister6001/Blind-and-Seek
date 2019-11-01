@@ -82,9 +82,11 @@ void InitBoard(void)
 	UARTBT_init();
     MP3_init();
     Knoppen_Init();
+    LCD_init();
     //Comment deze weg als de RN2483A niet is aangesloten.
     RN2483A_init(); //Initialize RN2483.
     SendZoekLocatie();
+    DELAY_ms(5000);
 }
 int main (void)
 {

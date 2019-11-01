@@ -80,7 +80,7 @@ void RN2483A_connectLORA()
         #ifdef LORADEBUG
 			if(i != 0) UART_puts("\r\n DENIED r\n");
         #endif
-
+		LCD_puts("connecting");
 	}
 	while(i != 0);
 }
