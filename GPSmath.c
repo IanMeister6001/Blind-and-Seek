@@ -80,7 +80,9 @@ float FloatToInt(float value)
 ///////////////////////////////////////////////////////////////////////////////////////
 int RMCtoINT(char RMCval[])
 {
-	float Floatval = atof(RMCval);
+	UART_puts("\r\n RMCval:   \r\n");
+	UART_puts(RMCval);
+	double Floatval = atof(RMCval);
 	Floatval *= 100000;
 
 	return (int)Floatval;

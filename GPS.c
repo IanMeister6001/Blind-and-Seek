@@ -38,15 +38,15 @@ void GPSTask(void *pdata)
 
 	while (TRUE)
 	{
-		UARTGPS_gets(buffer, 0); // krijg data binnen van GPS, comment weg als je wilt testen zon gps-module.
+		//UARTGPS_gets(buffer, 0); // krijg data binnen van GPS, comment weg als je wilt testen zon gps-module.
 
 		// comment deze weg als de data van de GPS uitgelezen moet worden, wanneer de GPS zn locatie kan vinden dus
-		//strcpy(buffer, TESTRMCSTRING);
+		strcpy(buffer, TESTRMCSTRING);
 
 		if (strstr(buffer, DATATYPE) != NULL)
 		{
-			UART_puts(buffer);
-			UART_puts("\r\n");
+			//UART_puts(buffer);
+			//UART_puts("\r\n");
 
 			strcpy(bufferCopy, buffer);  // maak een kopie, omda t buffer aangepast wordt in de eerste findToken
 			char * foundLat = findToken(buffer, 4);			// latitude op 4de positie
@@ -65,14 +65,14 @@ void GPSTask(void *pdata)
 			lGPS.distance = calcDistance(DegreeLatInt, DegreeLongInt, DestLat, DestLon);
 			lGPS.bearing = calcBearing(DegreeLatInt, DegreeLongInt, DestLat, DestLon);
 
-			UART_puts("afstand: "); UART_putint(lGPS.distance); UART_puts(", en bearing: "); UART_putint(lGPS.bearing); UART_puts("\r\n"); UART_puts("\r\n");
+			//UART_puts("afstand: "); UART_putint(lGPS.distance); UART_puts(", en bearing: "); UART_putint(lGPS.bearing); UART_puts("\r\n"); UART_puts("\r\n");
 
 
-			//OSMboxPost(GPSDataHandle, &lGPS);	//soms geeft de functie een afstand van 0 door, dus deze if filtert die eruit.
-			if(lGPS.distance != 0)
-			{
+			OSMboxPost(GPSDataHandle, &lGPS);	//soms geeft de functie een afstand van 0 door, dus deze if filtert die eruit.
+			//if(lGPS.distance != 0)
+			//{
 				error = OSMboxPost(MessageHandle, &lGPS); //Stuur coordinaten op de mbox en cast de pointer naar de struct als het type structpointer.
-			}
+			//}
 
 			UART_putint((int)error);
 		}

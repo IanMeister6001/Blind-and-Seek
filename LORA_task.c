@@ -40,16 +40,23 @@ void LORATask(void *pdata)
     	//test waardes:
 
     	PlocatieGPS->functiecode = 2;
-    	/*
+        /*
     	PlocatieGPS->lat = 5208040;
     	PlocatieGPS->lon = 517388;
-*/
-    	BuildMessage(PlocatieGPS->functiecode, PlocatieGPS->lat, PlocatieGPS->lon);
+
+    */
+		UART_puts("lat: \r\n");
+    	UART_putint(PlocatieGPS->lat);
+    	UART_puts("lon: \r\n");
+        UART_putint(PlocatieGPS->lon);
+    	/*BuildMessage(PlocatieGPS->functiecode, PlocatieGPS->lat, PlocatieGPS->lon);
     	for(i = 0;i < 60;i++)
     	{
     		if(PlocatieGPS->functiecode == NOODKNOP_ON)
     			break;
     		OSTimeDly(50);
     	}
+    	*/
+
     }
 }
