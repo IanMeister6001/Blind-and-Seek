@@ -49,8 +49,8 @@
       <target file="stm32f4xx_rcc.o" lastModified="16e31246d3c">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="16d8bd2b074"/>
       </target>
-      <target file="speelveld.o" lastModified="16e31246a9c">
-         <source file="..\..\..\speelveld.c" lastModified="16e218406b4"/>
+      <target file="speelveld.o" lastModified="16e31619b03">
+         <source file="..\..\..\speelveld.c" lastModified="16e316131d8"/>
       </target>
       <target file="os_time.o" lastModified="16e31246560">
          <source file="..\..\..\uC-OS II\Processor independent\os_time.c" lastModified="16d8bd2b0bd"/>
@@ -58,8 +58,8 @@
       <target file="os_q.o" lastModified="16e3124723d">
          <source file="..\..\..\uC-OS II\Processor independent\os_q.c" lastModified="16d8bd2b0b9"/>
       </target>
-      <target file="GPS.o" lastModified="16e312b58a2">
-         <source file="..\..\..\GPS.c" lastModified="16e312034b4"/>
+      <target file="GPS.o" lastModified="16e3182eca0">
+         <source file="..\..\..\GPS.c" lastModified="16e318277b0"/>
       </target>
       <target file="buzzer.o" lastModified="16e31246731">
          <source file="..\..\..\ports\buzzer.c" lastModified="16d8bd2b0a6"/>
@@ -88,11 +88,11 @@
       <target file="printf.o" lastModified="16e31246e45">
          <source file="..\..\..\stdio\printf.c" lastModified="16d8bd2b0b0"/>
       </target>
-      <target file="LORA_task.o" lastModified="16e312b591f">
-         <source file="..\..\..\LORA_task.c" lastModified="16e31264886"/>
+      <target file="LORA_task.o" lastModified="16e324545d4">
+         <source file="..\..\..\LORA_task.c" lastModified="16e32450fee"/>
       </target>
-      <target file="GPSmath.o" lastModified="16e31246a3e">
-         <source file="..\..\..\GPSmath.c" lastModified="16e312034b9"/>
+      <target file="GPSmath.o" lastModified="16e324544b3">
+         <source file="..\..\..\GPSmath.c" lastModified="16e3244ad83"/>
       </target>
       <target file="os_mem.o" lastModified="16e31247087">
          <source file="..\..\..\uC-OS II\Processor independent\os_mem.c" lastModified="16d8bd2b0b6"/>
@@ -100,11 +100,11 @@
       <target file="os_cpu_c.o" lastModified="16e3124682b">
          <source file="..\..\..\uC-OS II\Processor specific\os_cpu_c.c" lastModified="16d8bd2b0c1"/>
       </target>
-      <target file="RN2483A.o" lastModified="16e312d0c1a">
-         <source file="..\..\..\ports\RN2483A.c" lastModified="16e312d099a"/>
+      <target file="main.o" lastModified="16e32454531">
+         <source file="..\..\..\main.c" lastModified="16e32451005"/>
       </target>
-      <target file="main.o" lastModified="16e312b5825">
-         <source file="..\..\..\main.c" lastModified="16e31264896"/>
+      <target file="RN2483A.o" lastModified="16e3184aab5">
+         <source file="..\..\..\ports\RN2483A.c" lastModified="16e3184a860"/>
       </target>
       <target file="system_stm32f4xx.o" lastModified="16e31247143">
          <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="16d8bd2b06c"/>

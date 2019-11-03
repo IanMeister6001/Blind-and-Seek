@@ -87,9 +87,10 @@ void InitBoard(void)
     playFirst();
     //Comment deze weg als de RN2483A niet is aangesloten.
     RN2483A_init(); //Initialize RN2483.
-    DELAY_ms(2500);
+    DELAY_ms(3000);
     SendZoekLocatie();
-    DELAY_ms(2500);
+    DELAY_ms(3000);
+
 }
 
 int main (void)

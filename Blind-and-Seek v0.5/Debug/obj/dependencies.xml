@@ -27,7 +27,7 @@
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
          <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
       </source>
-      <source file="..\..\..\GPS.c" lastModified="16e31203c84">
+      <source file="..\..\..\GPS.c" lastModified="16e31827f80">
          <include file="..\..\..\GPS.h"/>
          <include file="..\..\..\main.h"/>
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
@@ -86,7 +86,7 @@
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
          <include file="..\..\..\main.h"/>
       </source>
-      <source file="..\..\..\speelveld.c" lastModified="16e21840a9c">
+      <source file="..\..\..\speelveld.c" lastModified="16e316135c0">
          <include file="..\..\..\speelveld.h"/>
       </source>
       <source file="..\..\..\uC-OS II\Processor specific\os_cpu_a.s" lastModified="16d8bd2b0c1">
@@ -112,11 +112,6 @@
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
          <include file="..\..\..\cmsis_lib\include\misc.h"/>
-      </source>
-      <source file="..\..\..\main.c" lastModified="16e31264896">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\taskcreate.h"/>
-         <include file="..\..\..\main.h"/>
       </source>
       <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="16d8bd2b44b">
       </source>
@@ -149,14 +144,13 @@
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
          <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
       </source>
+      <source file="..\..\..\ports\RN2483A.c" lastModified="16e3184a860">
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+         <include file="..\..\..\ports\RN2483A.h"/>
+      </source>
       <source file="..\..\..\uC-OS II\Processor independent\os_mutex.c" lastModified="16d8bd2b0b9">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
          <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
-      </source>
-      <source file="..\..\..\LORA_task.c" lastModified="16e31264886">
-         <include file="..\..\..\main.h"/>
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\GPS.h"/>
       </source>
       <source file="..\..\..\uC-OS II\Processor independent\ucos_ii.h" lastModified="16d8bd2b0bf">
       </source>
@@ -176,11 +170,6 @@
          <include file="..\..\..\cmsis\core_cmInstr.h"/>
          <include file="..\..\..\cmsis\core_cmFunc.h"/>
          <include file="..\..\..\cmsis\core_cm4_simd.h"/>
-      </source>
-      <source file="..\..\..\GPSmath.c" lastModified="16e31203c89">
-         <include file="..\..\..\GPSmath.h"/>
-         <include file="..\..\..\main.h"/>
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
       </source>
       <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="16d8bd2b06c">
       </source>

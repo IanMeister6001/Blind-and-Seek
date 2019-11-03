@@ -38,10 +38,10 @@ void GPSTask(void *pdata)
 
 	while (TRUE)
 	{
-		//UARTGPS_gets(buffer, 0); // krijg data binnen van GPS, comment weg als je wilt testen zon gps-module.
+		UARTGPS_gets(buffer, 0); // krijg data binnen van GPS, comment weg als je wilt testen zon gps-module.
 
 		// comment deze weg als de data van de GPS uitgelezen moet worden, wanneer de GPS zn locatie kan vinden dus
-		strcpy(buffer, TESTRMCSTRING);
+		//strcpy(buffer, TESTRMCSTRING);
 
 		if (strstr(buffer, DATATYPE) != NULL)
 		{

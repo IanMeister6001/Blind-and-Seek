@@ -53,7 +53,7 @@ void LORATask(void *pdata)
     	{
     		if(PlocatieGPS->functiecode == NOODKNOP_ON)
     			break;
-    		OSTimeDly(50);
+    		OSTimeDly(100);
     	}
 
     }

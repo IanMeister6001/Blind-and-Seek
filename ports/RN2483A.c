@@ -38,7 +38,6 @@ void RN2483A_init(void)
 	  UART3_gets(buf, 0);
 
 	  UART_puts("\r\nRN2483 Init: ontvangen: "); UART_puts(buf);
-
 	  //join TTN
 	  RN2483A_connectLORA();
 }
@@ -76,7 +75,9 @@ void RN2483A_connectLORA()
 		DELAY_ms(100);
 		//join OTAA netwerk
 		UART_puts(sendrecvlora("mac join otaa\r\n"));
+		DELAY_ms(1500);
 		i = strcmp(recvlora(),"accepted");
+		//UART_puts(recvlora());
         #ifdef LORADEBUG
 			if(i != 0) UART_puts("\r\n DENIED r\n");
         #endif
@@ -95,7 +96,7 @@ void sendmactxlora(unsigned char* data)
 	int i;
 	char buf[2];
 	//buffer waarin de hexadecimale getallen als character worden opgeslagen
-	UART3_puts("mac tx uncnf 1 ");
+	UART3_puts("mac tx cnf 1 ");
 	//commandline voor unconfirmed message
 	for(i = 0; i < MSGSIZE; i++) //Deze loop draait voor zes bytes, aangezien dat nodig is om de coordinaten te sturen.
 	{
