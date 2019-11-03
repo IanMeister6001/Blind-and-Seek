@@ -18,13 +18,13 @@
 <attrib name="charStart" value="-1"/>
 <attrib name="path" value="/"/>
 <attrib name="charEnd" value="-1"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="false"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
 <resource path="/Blind-and-Seek v0.5/GPS.c" type="1"/>
-<marker lineNumber="55" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<marker lineNumber="52" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
 <attrib name="enabled" value="true"/>
 <attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
 <attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
@@ -38,11 +38,11 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5/GPS.c"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:\Users\LexBl\Documents\GitHub\Blind-and-Seek\GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
-<breakpoint enabled="true" persistant="true" registered="true">
+<breakpoint enabled="false" persistant="true" registered="true">
 <resource path="/Blind-and-Seek v0.5/GPS.c" type="1"/>
 <marker lineNumber="41" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
 <attrib name="enabled" value="true"/>
@@ -59,6 +59,86 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5/GPS.c"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:\Users\LexBl\Documents\GitHub\Blind-and-Seek\GPS.c"/>
+<attrib name="org.eclipse.debug.core.enabled" value="false"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/Blind-and-Seek v0.5" type="4"/>
+<marker lineNumber="56" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
+<attrib name="persistant" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+<attrib name="message" value="Line breakpoint: GPS.c [line: 56]"/>
+<attrib name="registered" value="true"/>
+<attrib name="path" value="/Blind-and-Seek v0.5"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/Blind-and-Seek v0.5" type="4"/>
+<marker lineNumber="42" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
+<attrib name="persistant" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+<attrib name="message" value="Line breakpoint: GPS.c [line: 42]"/>
+<attrib name="registered" value="true"/>
+<attrib name="path" value="/Blind-and-Seek v0.5"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/Blind-and-Seek v0.5" type="4"/>
+<marker lineNumber="56" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
+<attrib name="persistant" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+<attrib name="message" value="Line breakpoint: GPS.c [line: 56]"/>
+<attrib name="registered" value="true"/>
+<attrib name="path" value="/Blind-and-Seek v0.5"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/Blind-and-Seek v0.5" type="4"/>
+<marker lineNumber="42" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
+<attrib name="persistant" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+<attrib name="message" value="Line breakpoint: GPS.c [line: 42]"/>
+<attrib name="registered" value="true"/>
+<attrib name="path" value="/Blind-and-Seek v0.5"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
 <attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
 </marker>
@@ -159,8 +239,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -179,8 +259,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -199,8 +279,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -219,8 +299,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -239,8 +319,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -259,8 +339,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -279,8 +359,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -299,8 +379,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -319,8 +399,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -339,8 +419,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -359,8 +439,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -379,8 +459,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -399,8 +479,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -419,8 +499,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -439,8 +519,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -459,8 +539,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -479,8 +559,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -499,8 +579,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -519,8 +599,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -539,8 +619,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -559,8 +639,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -579,8 +659,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -599,8 +679,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -619,8 +699,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -639,8 +719,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -659,8 +739,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -679,8 +759,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -699,8 +779,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -719,8 +799,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
@@ -739,93 +819,13 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
-</marker>
-</breakpoint>
-<breakpoint enabled="true" persistant="true" registered="true">
-<resource path="/Blind-and-Seek v0.5" type="4"/>
-<marker lineNumber="56" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
-<attrib name="enabled" value="true"/>
-<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
-<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
-<attrib name="workingset_name" value=""/>
-<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
-<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
-<attrib name="persistant" value="true"/>
-<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
-<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
-<attrib name="message" value="Line breakpoint: GPS.c [line: 56]"/>
-<attrib name="registered" value="true"/>
-<attrib name="path" value="/Blind-and-Seek v0.5"/>
-<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
 <attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
-<attrib name="org.eclipse.debug.core.enabled" value="true"/>
-</marker>
-</breakpoint>
-<breakpoint enabled="true" persistant="true" registered="true">
-<resource path="/Blind-and-Seek v0.5" type="4"/>
-<marker lineNumber="42" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
-<attrib name="enabled" value="true"/>
-<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
-<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
-<attrib name="workingset_name" value=""/>
-<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
-<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
-<attrib name="persistant" value="true"/>
-<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
-<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
-<attrib name="message" value="Line breakpoint: GPS.c [line: 42]"/>
-<attrib name="registered" value="true"/>
-<attrib name="path" value="/Blind-and-Seek v0.5"/>
-<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
-<attrib name="org.eclipse.debug.core.enabled" value="true"/>
-</marker>
-</breakpoint>
-<breakpoint enabled="true" persistant="true" registered="true">
-<resource path="/Blind-and-Seek v0.5" type="4"/>
-<marker lineNumber="56" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
-<attrib name="enabled" value="true"/>
-<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
-<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
-<attrib name="workingset_name" value=""/>
-<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
-<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
-<attrib name="persistant" value="true"/>
-<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
-<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
-<attrib name="message" value="Line breakpoint: GPS.c [line: 56]"/>
-<attrib name="registered" value="true"/>
-<attrib name="path" value="/Blind-and-Seek v0.5"/>
-<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
-<attrib name="org.eclipse.debug.core.enabled" value="true"/>
-</marker>
-</breakpoint>
-<breakpoint enabled="true" persistant="true" registered="true">
-<resource path="/Blind-and-Seek v0.5" type="4"/>
-<marker lineNumber="42" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
-<attrib name="enabled" value="true"/>
-<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
-<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
-<attrib name="workingset_name" value=""/>
-<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
-<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
-<attrib name="persistant" value="true"/>
-<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
-<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
-<attrib name="message" value="Line breakpoint: GPS.c [line: 42]"/>
-<attrib name="registered" value="true"/>
-<attrib name="path" value="/Blind-and-Seek v0.5"/>
-<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
-<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
-<attrib name="org.eclipse.debug.core.enabled" value="true"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
 <resource path="/Blind-and-Seek v0.5/GPS.c" type="1"/>
-<marker lineNumber="55" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<marker lineNumber="52" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
 <attrib name="enabled" value="true"/>
 <attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
 <attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
@@ -838,8 +838,113 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/Blind-and-Seek v0.5/GPS.c"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:\Users\vaati\Documents\GitHub\Blind-and-Seek\GPS.c"/>
-<attrib name="org.eclipse.debug.core.enabled" value="true"/>
 <attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/Blind-and-Seek v0.5/GPSmath.c" type="1"/>
+<marker lineNumber="84" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="message" value="Line breakpoint: GPSmath.c [line: 85]"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="D:\Blok 2A\Project Blind and Seek\Blind-and-Seek\GPSmath.c"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/Blind-and-Seek v0.5" type="4"/>
+<marker lineNumber="55" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="message" value="Line breakpoint: GPS.c [line: 55]"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/Blind-and-Seek v0.5" type="4"/>
+<marker lineNumber="41" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="message" value="Line breakpoint: GPS.c [line: 41]"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/Blind-and-Seek v0.5" type="4"/>
+<marker lineNumber="55" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="message" value="Line breakpoint: GPS.c [line: 55]"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/GPS.c"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/Blind-and-Seek v0.5" type="4"/>
+<marker lineNumber="55" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="message" value="Line breakpoint: GPS.c [line: 55]"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/Blind-and-Seek v0.5" type="4"/>
+<marker lineNumber="41" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="message" value="Line breakpoint: GPS.c [line: 41]"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/LexBl/Documents/GitHub/Blind-and-Seek/GPS.c"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/Blind-and-Seek v0.5" type="4"/>
+<marker lineNumber="55" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="message" value="Line breakpoint: GPS.c [line: 55]"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:/Users/vaati/Documents/GitHub/Blind-and-Seek/GPS.c"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
 </marker>
 </breakpoint>
 </breakpoints>

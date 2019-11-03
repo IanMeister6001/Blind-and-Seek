@@ -75,15 +75,14 @@ float FloatToInt(float value)
 
 ///////////////////////////////////////////////////////////////////////////////////////
 //krijgt coordinaten als string binnen en zet ze om naar een int waarde
-//neemt 5 decimalen mee
+//neemt 5 decimalen mee bij Floatval *= 1000, elke 0 die toegevoegd of eraf gehaald wordt
+//zal een decimaal meer of minder respectievelijk betekenen.
 //Auth: Damian van Hoornaar
 ///////////////////////////////////////////////////////////////////////////////////////
 int RMCtoINT(char RMCval[])
 {
-	UART_puts("\r\n RMCval:   \r\n");
-	UART_puts(RMCval);
 	double Floatval = atof(RMCval);
-	Floatval *= 100000;
+	Floatval *= 1000;
 
 	return (int)Floatval;
 }

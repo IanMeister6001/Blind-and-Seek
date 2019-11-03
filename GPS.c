@@ -45,9 +45,6 @@ void GPSTask(void *pdata)
 
 		if (strstr(buffer, DATATYPE) != NULL)
 		{
-			//UART_puts(buffer);
-			//UART_puts("\r\n");
-
 			strcpy(bufferCopy, buffer);  // maak een kopie, omda t buffer aangepast wordt in de eerste findToken
 			char * foundLat = findToken(buffer, 4);			// latitude op 4de positie
 			char * foundLong = findToken(bufferCopy, 6);	// longitude op 6de positie
@@ -68,11 +65,11 @@ void GPSTask(void *pdata)
 			//UART_puts("afstand: "); UART_putint(lGPS.distance); UART_puts(", en bearing: "); UART_putint(lGPS.bearing); UART_puts("\r\n"); UART_puts("\r\n");
 
 
-			OSMboxPost(GPSDataHandle, &lGPS);	//soms geeft de functie een afstand van 0 door, dus deze if filtert die eruit.
-			//if(lGPS.distance != 0)
-			//{
+			//OSMboxPost(GPSDataHandle, &lGPS);
+			if(lGPS.distance != 0)	//soms geeft de functie een afstand van 0 door, dus deze if filtert die eruit.
+			{
 				error = OSMboxPost(MessageHandle, &lGPS); //Stuur coordinaten op de mbox en cast de pointer naar de struct als het type structpointer.
-			//}
+			}
 
 			UART_putint((int)error);
 		}
