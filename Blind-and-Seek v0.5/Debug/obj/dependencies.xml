@@ -11,8 +11,6 @@
       </source>
       <source file="..\..\..\taskcreate.h" lastModified="16d8be0c201">
       </source>
-      <source file="..\..\..\GPS.h" lastModified="16e11d0d798">
-      </source>
       <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="16d8be0c1b0">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
@@ -24,12 +22,6 @@
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
          <include file="..\..\..\taskcreate.h"/>
          <include file="..\..\..\main.h"/>
-      </source>
-      <source file="..\..\..\GPS.c" lastModified="16e17602740">
-         <include file="..\..\..\GPS.h"/>
-         <include file="..\..\..\main.h"/>
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\ports\GPSmath.h"/>
       </source>
       <source file="..\..\..\ports\leds.h" lastModified="16d8be0c1fc">
       </source>

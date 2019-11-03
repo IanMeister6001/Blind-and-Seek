@@ -5,21 +5,6 @@
 #include <math.h>
 #include "GPSmath.h"
 
-union // Voor het omzetten van GPS coordinaten van ints naar 3 bytes voor het verzenden in LoRa
-{
-	int coordInt;
-	INT8U coordByte[3];
-}dataSwap;
-
-typedef struct locatieGPS//Voor de mailbox
-{
-	double lat;
-	double lon;
-	int distance;
-	int bearing;
-	INT8U functiecode;
-}lGPS, *PlGPS;
-
 //////////////////////////////////////////////////////////////////////////////////////
 //krijgt een string binnen, die deze gaat opdelen tussen de komma's
 //ontvangt de string en de positie die gereturnd moet worden
