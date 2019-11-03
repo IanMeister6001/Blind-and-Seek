@@ -83,14 +83,13 @@ void InitBoard(void)
 	BUZZER_init();
     MP3_init();
     Knoppen_Init();
-  //  LCD_init();
+    //LCD_init();
     playFirst();
     //Comment deze weg als de RN2483A niet is aangesloten.
-    /*RN2483A_init(); //Initialize RN2483.
+    RN2483A_init(); //Initialize RN2483.
     DELAY_ms(2500);
     SendZoekLocatie();
     DELAY_ms(2500);
-    */
 }
 
 int main (void)

@@ -34,7 +34,7 @@ void LORATask(void *pdata)
 	while(TRUE)
     {
 		PlocatieGPS = OSMboxPend(MessageHandle, WAIT_FOREVER, &error);
-		//UART_putint((int)error);
+		UART_putint((int)error);
 
 
     	//test waardes:
@@ -43,20 +43,18 @@ void LORATask(void *pdata)
         /*
     	PlocatieGPS->lat = 5208040;
     	PlocatieGPS->lon = 517388;
-
-    */
 		UART_puts("lat: \r\n");
     	UART_putint(PlocatieGPS->lat);
     	UART_puts("lon: \r\n");
         UART_putint(PlocatieGPS->lon);
-    	/*BuildMessage(PlocatieGPS->functiecode, PlocatieGPS->lat, PlocatieGPS->lon);
+        */
+    	BuildMessage(PlocatieGPS->functiecode, PlocatieGPS->lat, PlocatieGPS->lon);
     	for(i = 0;i < 60;i++)
     	{
     		if(PlocatieGPS->functiecode == NOODKNOP_ON)
     			break;
     		OSTimeDly(50);
     	}
-    	*/
 
     }
 }
