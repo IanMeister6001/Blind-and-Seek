@@ -85,6 +85,7 @@
 #include "speelveld.h"
 #include "button.h"
 #include "i2c.h"
+#include "compass.h"
 
 #define TRUE		1
 #define FALSE		0

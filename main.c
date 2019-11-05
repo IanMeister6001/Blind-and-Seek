@@ -83,6 +83,7 @@ void InitBoard(void)
 	BUZZER_init();
     MP3_init();
     I2C_Initialize();
+    Compass_Initialize();
     Knoppen_Init();
     //LCD_init();
     playFirst();
