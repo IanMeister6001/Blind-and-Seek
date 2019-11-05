@@ -1,6 +1,5 @@
 #include "main.h"
 #include <includes.h>
-#include "GPS.h"
 //#include "speelveld.h"
 void SendZoekLocatie()
 {
@@ -33,7 +32,7 @@ void LORATask(void *pdata)
 
 	while(TRUE)
     {
-		PlocatieGPS = OSMboxPend(MessageHandle, WAIT_FOREVER, &error);
+		PlocatieGPS = OSMboxPend(GPSDataHandle, WAIT_FOREVER, &error);
 		UART_putint((int)error);
 
     	//test waardes:
@@ -47,11 +46,12 @@ void LORATask(void *pdata)
         UART_putint(PlocatieGPS->lon);
         */
     	BuildMessage(PlocatieGPS->functiecode, PlocatieGPS->lat, PlocatieGPS->lon);
-    	for(i = 0;i < 60;i++)
+    	for(i = 0;i < 30;i++)
     	{
-    		PlocatieGPS = OSMboxPend(MessageHandle, WAIT_FOREVER, &error);
+    		PlocatieGPS = OSMboxPend(GPSDataHandle, WAIT_FOREVER, &error);
     		if(PlocatieGPS->functiecode == NOODKNOP_ON)
     			break;
+    		OSTimeDly(LOOP_DELAY);
     	}
 
     }

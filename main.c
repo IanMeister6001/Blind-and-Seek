@@ -86,7 +86,7 @@ void InitBoard(void)
     Compass_Initialize();
     Knoppen_Init();
     //LCD_init();
-    playFirst();
+    //playFirst();
     //Comment deze weg als de RN2483A niet is aangesloten.
     RN2483A_init(); //Initialize RN2483.
     DELAY_ms(4000);

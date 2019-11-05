@@ -1,4 +1,3 @@
-#include "GPS.h"
 #include "main.h"
 #include "includes.h"
 #include "string.h"
@@ -32,24 +31,33 @@ void GPSTask(void *pdata)
 
 	//Floats voor destinations, momenteel zijn deze random ingevuld. Huidig doel is net voor de deur van Padualaan 99
 	lGPS lGPS;
+
+	int DestLat;
+	int DestLon;
+
+	char * foundLat;
+	char * foundLong;
+	int DegreeLatInt;
+	int DegreeLongInt;
+
 	UART_puts((char *)__func__);UART_puts(" is gestart.\n\r"); //Debugout die laat weten dat task is gestart.
 
 	while (TRUE)
 	{
 		UARTGPS_gets(buffer, 0); // krijg data binnen van GPS, comment weg als je wilt testen zon gps-module.
-		int DestLat = verstopper.lat;
-		int DestLon = verstopper.lon;
+		DestLat = verstopper.lat * 100000;
+		DestLon = verstopper.lon * 100000;
 		// comment deze weg als de data van de GPS uitgelezen moet worden, wanneer de GPS zn locatie kan vinden dus
 		//strcpy(buffer, TESTRMCSTRING);
 
 		if (strstr(buffer, DATATYPE) != NULL)
 		{
 			strcpy(bufferCopy, buffer);  // maak een kopie, omda t buffer aangepast wordt in de eerste findToken
-			char * foundLat = findToken(buffer, 4);			// latitude op 4de positie
-			char * foundLong = findToken(bufferCopy, 6);	// longitude op 6de positie
+			foundLat = findToken(buffer, 4);			// latitude op 4de positie
+			foundLong = findToken(bufferCopy, 6);	// longitude op 6de positie
 
-			int DegreeLatInt = RMCtoINT(foundLat);
-			int DegreeLongInt = RMCtoINT(foundLong);
+			DegreeLatInt = RMCtoINT(foundLat);
+			DegreeLongInt = RMCtoINT(foundLong);
 
 			if (foundLong != NULL)
 			{
@@ -60,6 +68,7 @@ void GPSTask(void *pdata)
 			lGPS.lat = DegreeLatInt; lGPS.lon = DegreeLongInt;								//zet de gegevens in de struct
 			lGPS.distance = calcDistance(DegreeLatInt, DegreeLongInt, DestLat, DestLon);
 			lGPS.bearing = calcBearing(DegreeLatInt, DegreeLongInt, DestLat, DestLon);
+			lGPS.functiecode = 2;
 
 			//UART_puts("afstand: "); UART_putint(lGPS.distance); UART_puts(", en bearing: "); UART_putint(lGPS.bearing); UART_puts("\r\n"); UART_puts("\r\n");
 
@@ -67,7 +76,7 @@ void GPSTask(void *pdata)
 			//OSMboxPost(GPSDataHandle, &lGPS);
 			if(lGPS.distance != 0)	//soms geeft de functie een afstand van 0 door, dus deze if filtert die eruit.
 			{
-				error = OSMboxPost(MessageHandle, &lGPS); //Stuur coordinaten op de mbox en cast de pointer naar de struct als het type structpointer.
+				error = OSMboxPost(GPSDataHandle, &lGPS); //Stuur coordinaten op de mbox en cast de pointer naar de struct als het type structpointer.
 			}
 
 			UART_putint((int)error);

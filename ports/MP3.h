@@ -4,6 +4,12 @@
 # define END   		 0xEF
 # define ACK 		 0x00
 
+#define LEFTMP3 2
+#define RIGHTMP3 1
+#define FORWARDMP3 5
+#define BACKWARDMP3 4
+#define DORAMP3 3
+
 void SendCommand(char,char,char);
 void setVolume(char);
 void playFirst();

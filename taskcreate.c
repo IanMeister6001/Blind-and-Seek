@@ -30,9 +30,9 @@ TASKDATA tasks[] =
 		//In GPS.c
 		{   GPSTask,     GPSTask_Stk,     GPSTASK_PRTY,     STACK_SIZE, OS_TASK_OPT_STK_CHK  },
 		//In button.c
-//		{	KnopTask,	 KnopTask_Stk,	  KNOPTASK_PRTY,	STACK_SIZE, OS_TASK_OPT_STK_CHK	 },
+		{	KnopTask,	 KnopTask_Stk,	  KNOPTASK_PRTY,	STACK_SIZE, OS_TASK_OPT_STK_CHK	 },
 		//In gametask.c
-//		{	GameTask,	GameTask_Stk,	  GAMETASK_PRTY,		STACK_SIZE, OS_TASK_OPT_STK_CHK	},
+		{	GameTask,	GameTask_Stk,	  GAMETASK_PRTY,		STACK_SIZE, OS_TASK_OPT_STK_CHK	},
 		//In LORA_task.c
 		{   LORATask,    LORATask_Stk,    LORATASK_PRTY,     STACK_SIZE, OS_TASK_OPT_STK_CHK  },
 		// laatste, niet wissen: nodig om for-loop af te sluiten
