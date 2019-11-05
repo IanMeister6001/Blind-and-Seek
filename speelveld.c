@@ -13,6 +13,7 @@
 // het verschil -4 is, dat is unsigned: 252, en hex: FC. Je complete locatie
 // past daarmee in 2 (signed) chars = 4 hex digits = 4 data bytes voor LoRa.
 const VELD_GPS veld_midden = { 52.080600f, 5.173860f };
+VELD_GPS verstopper;
 // Randpunten van het speelveld. De punten definieren een gesloten veelhoek
 // (polygoon). Gebruik de functie veld_binnen() om te testen of een bepaald
 // punt binnen of buiten de grenzen van het speelveld valt.

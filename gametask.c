@@ -21,6 +21,7 @@ void GameTask(void *pdata)
 
 	while (TRUE)
 	{
+
 		//Ontvang ingedrukte knop van de knoptask.
 		gedrukt = OSFlagPend(KnopFlag,
 				                   0x0fff,

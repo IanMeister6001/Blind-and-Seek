@@ -47,7 +47,6 @@ int i;
 void setVolume(char volume)
 {
   SendCommand(0x06, 0, volume); // Set the volume (0x00 tot 0x30)
-  DELAY_ms(100);
 }
 //////////////////////////////////////////////////////////////////////////////
 // func: playFirst
@@ -59,7 +58,6 @@ void setVolume(char volume)
 void playFirst()
 {
   SendCommand(0x11,0,1);
-  DELAY_ms(100);
 }
 //////////////////////////////////////////////////////////////////////////////
 // func: playNext
@@ -71,7 +69,6 @@ void playFirst()
 void playNext()
 {
   SendCommand(0x01,0,0);
-  DELAY_ms(100);
 }
 //////////////////////////////////////////////////////////////////////////////
 // func: resetModule
@@ -95,7 +92,6 @@ void resetModule()
 void playTrack(int track)
 {
   SendCommand(0x03, 0, track);
-  DELAY_ms(100);
 }
 
 

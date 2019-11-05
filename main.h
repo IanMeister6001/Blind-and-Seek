@@ -13,7 +13,6 @@
 #define WAIT_FOREVER        0   // to force all OSPends (flag, mutex, mbox etc.) to wait for incoming signal
 #define LOOP_DELAY          30  // standard delay time for tasks
 
-
 // priorities for all tasks and prty of mutex-semaphore itself
 enum {
     INITTASK_PRTY = 5,

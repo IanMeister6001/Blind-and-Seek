@@ -31,15 +31,14 @@ void GPSTask(void *pdata)
 	INT8U error = 0; //Errorvariabele voor het zenden via mbox.
 
 	//Floats voor destinations, momenteel zijn deze random ingevuld. Huidig doel is net voor de deur van Padualaan 99
-	int DestLat = 5208060;
-	int DestLon = 517386;
 	lGPS lGPS;
 	UART_puts((char *)__func__);UART_puts(" is gestart.\n\r"); //Debugout die laat weten dat task is gestart.
 
 	while (TRUE)
 	{
 		UARTGPS_gets(buffer, 0); // krijg data binnen van GPS, comment weg als je wilt testen zon gps-module.
-
+		int DestLat = verstopper.lat;
+		int DestLon = verstopper.lon;
 		// comment deze weg als de data van de GPS uitgelezen moet worden, wanneer de GPS zn locatie kan vinden dus
 		//strcpy(buffer, TESTRMCSTRING);
 

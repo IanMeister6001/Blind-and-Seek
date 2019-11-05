@@ -1,124 +1,163 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dependencies>
-   <includePath signature="/I..\..\..\..\..\stm32\Blind-and-Seek\uC-OS II\Application specific /I..\..\..\..\..\stm32\Blind-and-Seek\uC-OS II /I..\..\..\..\..\stm32 /I..\..\..\..\..\stm32\Blind-and-Seek\uC-OS II\Processor independent /I..\..\..\..\..\stm32\Blind-and-Seek\uC-OS II\Processor specific /I..\..\..\..\.. /I..\..\..\..\..\stm32\Blind-and-Seek /I..\..\..\..\..\stm32\Blind-and-Seek\cmsis_lib /I..\..\..\..\..\stm32\i2c test /I..\..\..\..\..\stm32\Blind-and-Seek\ports /I..\..\..\..\..\stm32\Blind-and-Seek\cmsis_boot /I..\..\..\..\..\stm32\Blind-and-Seek\cmsis /I..\..\..\..\..\stm32\Blind-and-Seek\cmsis_lib\include">
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="16e3ad306e0">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+   <includePath signature="/I..\..\..\..\..\Users\LexBl\Documents\GitHub\Blind-and-Seek\cmsis /I..\..\..\..\..\Users\LexBl\Documents\GitHub /I..\..\..\..\..\Users\LexBl\Documents\GitHub\Blind-and-Seek\uC-OS II\Processor specific /I..\..\..\..\..\Users\LexBl\Documents\GitHub\Blind-and-Seek\uC-OS II\Processor independent /I..\..\..\..\..\Users\LexBl\Documents /I..\..\..\..\..\Users\LexBl\Documents\GitHub\Blind-and-Seek\ports /I..\..\..\..\..\Users\LexBl\Documents\GitHub\Blind-and-Seek\cmsis_lib /I..\..\..\..\..\Users\LexBl\Documents\GitHub\Blind-and-Seek /I..\..\..\..\..\Users\LexBl\Documents\GitHub\Blind-and-Seek\cmsis_lib\include /I..\..\..\..\..\Users\LexBl\Documents\GitHub\Blind-and-Seek\uC-OS II\Application specific /I..\..\..\..\..\Users\LexBl\Documents\GitHub\Blind-and-Seek\uC-OS II /I..\..\..\..\..\Users\LexBl\Documents\GitHub\Blind-and-Seek\cmsis_boot">
+      <source file="..\..\..\ports\button.h" lastModified="16e21843519">
       </source>
-      <source file="..\..\..\uC-OS II\Processor independent\os_core.c" lastModified="16e3ad3071e">
+      <source file="..\..\..\ports\button.c" lastModified="16e21843518">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
-      </source>
-      <source file="..\..\..\taskcreate.h" lastModified="16e3ad3070f">
-      </source>
-      <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="16e3ad306e0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\GPS.h" lastModified="16e3ad306d0">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-      </source>
-      <source file="..\..\..\taskcreate.c" lastModified="16e3ad3070f">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\taskcreate.h"/>
          <include file="..\..\..\main.h"/>
          <include file="..\..\..\ports\button.h"/>
       </source>
-      <source file="..\..\..\uC-OS II\Processor independent\os_sem.c" lastModified="16e3ad3071e">
+      <source file="..\..\..\GPSmath.h" lastModified="16e264ccaee">
+      </source>
+      <source file="..\..\..\GPSmath.c" lastModified="16e324a1206">
+         <include file="..\..\..\GPSmath.h"/>
+         <include file="..\..\..\main.h"/>
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+      </source>
+      <source file="..\..\..\ports\compass.h" lastModified="16e3af48431">
+      </source>
+      <source file="..\..\..\ports\uart.h" lastModified="16e11ad9592">
+      </source>
+      <source file="..\..\..\ports\MP3.h" lastModified="16e11ad9587">
+      </source>
+      <source file="..\..\..\uC-OS II\Application specific\os_cfg.h" lastModified="16d8bd2b0b5">
+      </source>
+      <source file="..\..\..\ports\compass.c" lastModified="16e3af48811">
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm4.h" lastModified="16d8bd2b449">
+         <include file="..\..\..\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis\core_cmFunc.h"/>
+         <include file="..\..\..\cmsis\core_cm4_simd.h"/>
+      </source>
+      <source file="..\..\..\ports\uart.c" lastModified="16e2d2c1601">
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_i2c.c" lastModified="16e3aebed9c">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\ports\MP3.c" lastModified="16e3af7b8e8">
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+      </source>
+      <source file="..\..\..\uC-OS II\Processor independent\os_task.c" lastModified="16d8bd2b0bb">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
          <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
       </source>
-      <source file="..\..\..\GPS.c" lastModified="16e3ad30ea0">
+      <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="16d8bd2b06e">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="16d8bd2b075">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\ports\lcd.h" lastModified="16d8bd2b0ac">
+      </source>
+      <source file="..\..\..\uC-OS II\Processor independent\os_mutex.c" lastModified="16d8bd2b0b9">
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+         <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
+      </source>
+      <source file="..\..\..\ports\lcd.c" lastModified="16d8bd2b0ab">
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+      </source>
+      <source file="..\..\..\uC-OS II\Processor independent\os_sem.c" lastModified="16d8bd2b0bb">
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+         <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="16d8bd2b072">
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\GPS.h" lastModified="16e3129b21a">
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+      </source>
+      <source file="..\..\..\GPS.c" lastModified="16e3afd90cf">
          <include file="..\..\..\GPS.h"/>
          <include file="..\..\..\main.h"/>
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
          <include file="..\..\..\GPSmath.h"/>
       </source>
-      <source file="..\..\..\ports\leds.h" lastModified="16e3ad3070f">
-      </source>
-      <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="16e3ad306e0">
-         <include file="..\..\..\cmsis_lib\include\misc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="16e3ad306e0">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\ports\leds.c" lastModified="16e3ad3070f">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-      </source>
-      <source file="..\..\..\uC-OS II\Processor independent\os_flag.c" lastModified="16e3ad3071e">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="16e3ad306e0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\ports\keys.h" lastModified="16e3ad3070f">
-      </source>
-      <source file="..\..\..\ports\keys.c" lastModified="16e3ad3070f">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-      </source>
-      <source file="..\..\..\uC-OS II\Processor independent\os_mbox.c" lastModified="16e3ad3071e">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
-      </source>
-      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="16e3ad30ab8">
-      </source>
-      <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="16e3ad30ab8">
-      </source>
-      <source file="..\..\..\uC-OS II\Processor independent\os_task.c" lastModified="16e3ad3071e">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
-      </source>
-      <source file="..\..\..\uC-OS II\Processor independent\os_time.c" lastModified="16e3ad3071e">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="16e3ad30ab8">
+      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="16d8bd2b44e">
          <include file="..\..\..\cmsis\core_cm4.h"/>
          <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
       </source>
-      <source file="..\..\..\uC-OS II\Processor specific\os_cpu_c.c" lastModified="16e3ad3071e">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-      </source>
-      <source file="..\..\..\speelveld.h" lastModified="16e3ad3070f">
-      </source>
-      <source file="..\..\..\..\i2c test\i2c.h" lastModified="16dab2ac86e">
-      </source>
-      <source file="..\..\..\gametask.c" lastModified="16e3ad306ff">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\main.h"/>
-      </source>
-      <source file="..\..\..\speelveld.c" lastModified="16e3ad30af7">
-         <include file="..\..\..\speelveld.h"/>
-      </source>
-      <source file="..\..\..\uC-OS II\Processor specific\os_cpu_a.s" lastModified="16e3ad3071e">
-      </source>
-      <source file="..\..\..\..\i2c test\i2c.c" lastModified="16e317f5d32">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-      </source>
-      <source file="..\..\..\stdio\printf.c" lastModified="16e3ad30edf">
-      </source>
-      <source file="..\..\..\ports\uart.h" lastModified="16e3ad3070f">
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="16e3ad306e0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_i2c.c" lastModified="16e3ad516e1">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="16d8bd2b075">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\main.h" lastModified="16e3ad3070f">
+      <source file="..\..\..\uC-OS II\Processor specific\os_cpu_a.s" lastModified="16d8bd2b0c1">
+      </source>
+      <source file="..\..\..\ports\buzzer.h" lastModified="16d8bd2b0a8">
+      </source>
+      <source file="..\..\..\uC-OS II\Processor independent\os_mbox.c" lastModified="16d8bd2b0b6">
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+         <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
+      </source>
+      <source file="..\..\..\uC-OS II\Processor specific\os_cpu_c.c" lastModified="16d8bd2b0c1">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
       </source>
-      <source file="..\..\..\syscalls\syscalls.c" lastModified="16e3ad316af">
-      </source>
-      <source file="..\..\..\ports\uart.c" lastModified="16e3ad3070f">
+      <source file="..\..\..\ports\buzzer.c" lastModified="16d8bd2b0a6">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h" lastModified="16e3ad516c1">
+      <source file="..\..\..\uC-OS II\Processor independent\os_mem.c" lastModified="16d8bd2b0b6">
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+         <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
+      </source>
+      <source file="..\..\..\taskcreate.h" lastModified="16e2d2c1609">
+      </source>
+      <source file="..\..\..\uC-OS II\Processor independent\os_q.c" lastModified="16d8bd2b0b9">
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+         <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="16d8bd2b06f">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="16e3ad35108">
+      <source file="..\..\..\taskcreate.c" lastModified="16e2662ac5f">
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+         <include file="..\..\..\taskcreate.h"/>
+         <include file="..\..\..\main.h"/>
+         <include file="..\..\..\ports\button.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="16d8bd2b06c">
+      </source>
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="16d8bd2b44b">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="16d8bd2b06c">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\ports\RN2483A.h" lastModified="16e21843514">
+      </source>
+      <source file="..\..\..\ports\RN2483A.c" lastModified="16e3184a860">
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+         <include file="..\..\..\ports\RN2483A.h"/>
+      </source>
+      <source file="..\..\..\uC-OS II\Processor independent\os_flag.c" lastModified="16d8bd2b0b6">
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+         <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
+      </source>
+      <source file="..\..\..\ports\i2c.h" lastModified="16e3af48576">
+      </source>
+      <source file="..\..\..\syscalls\syscalls.c" lastModified="16d8bd2c052">
+      </source>
+      <source file="..\..\..\ports\i2c.c" lastModified="16e3af4856d">
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+      </source>
+      <source file="..\..\..\stdio\printf.c" lastModified="16d8bd2b880">
+      </source>
+      <source file="..\..\..\ports\leds.h" lastModified="16d8bd2b0ad">
+      </source>
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="16d8bd2b44b">
+      </source>
+      <source file="..\..\..\ports\leds.c" lastModified="16d8bd2b0ac">
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h" lastModified="16d8bd2b071">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\speelveld.h" lastModified="16e3b06a349">
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="16d8bd2faa2">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
@@ -126,77 +165,56 @@
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
          <include file="..\..\..\cmsis_lib\include\misc.h"/>
       </source>
-      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="16e3ad30ab8">
-      </source>
-      <source file="..\..\..\ports\lcd.h" lastModified="16e3ad3070f">
-      </source>
-      <source file="..\..\..\uC-OS II\Processor independent\os_q.c" lastModified="16e3ad3071e">
+      <source file="..\..\..\uC-OS II\Processor independent\os_time.c" lastModified="16d8bd2b0bd">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
          <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
       </source>
-      <source file="..\..\..\uC-OS II\Application specific\os_cfg.h" lastModified="16e3ad3071e">
+      <source file="..\..\..\uC-OS II\Processor specific\os_cpu.h" lastModified="16d8bd2b0c1">
       </source>
-      <source file="..\..\..\ports\delay.h" lastModified="16e3ad3070f">
+      <source file="..\..\..\uC-OS II\Processor independent\ucos_ii.h" lastModified="16d8bd2b0bf">
       </source>
-      <source file="..\..\..\ports\lcd.c" lastModified="16e3ad3070f">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-      </source>
-      <source file="..\..\..\ports\delay.c" lastModified="16e3ad3070f">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h" lastModified="16e3ad306e0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\ports\RN2483A.h" lastModified="16e3ad3070f">
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="16e3ad306e0">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="16d8bd2b074">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\uC-OS II\Processor independent\os_mem.c" lastModified="16e3ad3071e">
+      <source file="..\..\..\uC-OS II\Processor independent\ucos_ii.c" lastModified="16d8bd2b0be">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
       </source>
-      <source file="..\..\..\ports\RN2483A.c" lastModified="16e3ad3070f">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\ports\RN2483A.h"/>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="16d8bd2b074">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\uC-OS II\Processor independent\os_mutex.c" lastModified="16e3ad3071e">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
+      <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="16d8bd2b44b">
       </source>
-      <source file="..\..\..\LORA_task.c" lastModified="16e3ad306d0">
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h" lastModified="16e3aebed9a">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\LORA_task.c" lastModified="16e3b03bd02">
          <include file="..\..\..\main.h"/>
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
          <include file="..\..\..\GPS.h"/>
       </source>
-      <source file="..\..\..\uC-OS II\Processor independent\ucos_ii.h" lastModified="16e3ad3071e">
-      </source>
-      <source file="..\..\..\ports\buzzer.h" lastModified="16e3ad3070f">
-      </source>
-      <source file="..\..\..\uC-OS II\Processor independent\ucos_ii.c" lastModified="16e3ad3071e">
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="16d8bd2b066">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
       </source>
-      <source file="..\..\..\ports\buzzer.c" lastModified="16e3ad3070f">
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="16d8bd2b06f">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="16d8bd2b070">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\main.h" lastModified="16e3b00cbb3">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
       </source>
-      <source file="..\..\..\GPSmath.h" lastModified="16e3ad306d0">
-      </source>
-      <source file="..\..\..\ports\button.h" lastModified="16e3ad3070f">
-      </source>
-      <source file="..\..\..\cmsis\core_cm4.h" lastModified="16e3ad30ab8">
-         <include file="..\..\..\cmsis\core_cmInstr.h"/>
-         <include file="..\..\..\cmsis\core_cmFunc.h"/>
-         <include file="..\..\..\cmsis\core_cm4_simd.h"/>
-      </source>
-      <source file="..\..\..\GPSmath.c" lastModified="16e3ad30ea0">
-         <include file="..\..\..\GPSmath.h"/>
+      <source file="..\..\..\main.c" lastModified="16e3affb870">
+         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+         <include file="..\..\..\taskcreate.h"/>
          <include file="..\..\..\main.h"/>
+      </source>
+      <source file="..\..\..\gametask.c" lastModified="16e3aebdd35">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
+         <include file="..\..\..\main.h"/>
       </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="16e3ad306d0">
-      </source>
-      <source file="..\..\..\uC-OS II\Application specific\includes.h" lastModified="16e3ad9e069">
+      <source file="..\..\..\uC-OS II\Application specific\includes.h" lastModified="16e3aec012a">
          <include file="..\..\..\uC-OS II\Processor specific\os_cpu.h"/>
          <include file="..\..\..\uC-OS II\Application specific\os_cfg.h"/>
          <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
@@ -215,203 +233,21 @@
          <include file="..\..\..\ports\MP3.h"/>
          <include file="..\..\..\speelveld.h"/>
          <include file="..\..\..\ports\button.h"/>
-         <include file="..\..\..\..\i2c test\i2c.h"/>
-         <include file="..\..\..\..\i2c test\compass.h"/>
+         <include file="..\..\..\ports\i2c.h"/>
+         <include file="..\..\..\ports\compass.h"/>
       </source>
-      <source file="..\..\..\ports\button.c" lastModified="16e3ad3070f">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\main.h"/>
-         <include file="..\..\..\ports\button.h"/>
+      <source file="..\..\..\ports\delay.h" lastModified="16d8bd2b0a8">
       </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="16e3ad306e0">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\ports\MP3.h" lastModified="16e3ad3070f">
-      </source>
-      <source file="..\..\..\uC-OS II\Processor specific\os_cpu.h" lastModified="16e3ad3071e">
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="16e3ad306e0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="16e3ad306d0">
+      <source file="..\..\..\ports\delay.c" lastModified="16d8bd2b0a8">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
       </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="16e3ad306d0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      <source file="..\..\..\ports\keys.h" lastModified="16d8bd2b0aa">
       </source>
-      <source file="..\..\..\ports\MP3.c" lastModified="16e3ad3070f">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-      </source>
-   </includePath>
-   <includePath signature="/I..\..\..\..\..\stm32\Blind-and-Seek\uC-OS II\Application specific /I..\..\..\..\..\stm32\Blind-and-Seek\ports /I..\..\..\..\..\stm32\Blind-and-Seek\uC-OS II /I..\..\..\..\..\stm32\Blind-and-Seek\cmsis_boot /I..\..\..\..\..\stm32 /I..\..\..\..\..\stm32\Blind-and-Seek\uC-OS II\Processor independent /I..\..\..\..\..\stm32\Blind-and-Seek\uC-OS II\Processor specific /I..\..\..\..\..\stm32\Blind-and-Seek\cmsis /I..\..\..\..\.. /I..\..\..\..\..\stm32\Blind-and-Seek\cmsis_lib\include /I..\..\..\..\..\stm32\Blind-and-Seek /I..\..\..\..\..\stm32\Blind-and-Seek\cmsis_lib">
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="16e3ad306e0">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\uC-OS II\Processor independent\os_core.c" lastModified="16e3ad3071e">
+      <source file="..\..\..\uC-OS II\Processor independent\os_core.c" lastModified="16d8bd2b0b6">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
          <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
       </source>
-      <source file="..\..\..\taskcreate.h" lastModified="16e3ad3070f">
-      </source>
-      <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="16e3ad306e0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\GPS.h" lastModified="16e3ad306d0">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-      </source>
-      <source file="..\..\..\taskcreate.c" lastModified="16e3ad3070f">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\taskcreate.h"/>
-         <include file="..\..\..\main.h"/>
-         <include file="..\..\..\ports\button.h"/>
-      </source>
-      <source file="..\..\..\uC-OS II\Processor independent\os_sem.c" lastModified="16e3ad3071e">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
-      </source>
-      <source file="..\..\..\ports\leds.h" lastModified="16e3ad3070f">
-      </source>
-      <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="16e3ad306e0">
-         <include file="..\..\..\cmsis_lib\include\misc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="16e3ad306e0">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\ports\leds.c" lastModified="16e3ad3070f">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-      </source>
-      <source file="..\..\..\uC-OS II\Processor independent\os_flag.c" lastModified="16e3ad3071e">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="16e3ad306e0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\ports\keys.h" lastModified="16e3ad3070f">
-      </source>
-      <source file="..\..\..\ports\keys.c" lastModified="16e3ad3070f">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-      </source>
-      <source file="..\..\..\uC-OS II\Processor independent\os_mbox.c" lastModified="16e3ad3071e">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
-      </source>
-      <source file="..\..\..\uC-OS II\Processor independent\os_task.c" lastModified="16e3ad3071e">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
-      </source>
-      <source file="..\..\..\uC-OS II\Processor independent\os_time.c" lastModified="16e3ad3071e">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
-      </source>
-      <source file="..\..\..\uC-OS II\Processor specific\os_cpu_c.c" lastModified="16e3ad3071e">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-      </source>
-      <source file="..\..\..\speelveld.h" lastModified="16e3ad3070f">
-      </source>
-      <source file="..\..\..\gametask.c" lastModified="16e3ad306ff">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\main.h"/>
-      </source>
-      <source file="..\..\..\uC-OS II\Processor specific\os_cpu_a.s" lastModified="16e3ad3071e">
-      </source>
-      <source file="..\..\..\ports\uart.h" lastModified="16e3ad3070f">
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="16e3ad306e0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\main.h" lastModified="16e3ad3070f">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-      </source>
-      <source file="..\..\..\ports\uart.c" lastModified="16e3ad3070f">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h" lastModified="16e3ad516c1">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\ports\lcd.h" lastModified="16e3ad3070f">
-      </source>
-      <source file="..\..\..\uC-OS II\Processor independent\os_q.c" lastModified="16e3ad3071e">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
-      </source>
-      <source file="..\..\..\uC-OS II\Application specific\os_cfg.h" lastModified="16e3ad3071e">
-      </source>
-      <source file="..\..\..\ports\delay.h" lastModified="16e3ad3070f">
-      </source>
-      <source file="..\..\..\ports\lcd.c" lastModified="16e3ad3070f">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-      </source>
-      <source file="..\..\..\ports\delay.c" lastModified="16e3ad3070f">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h" lastModified="16e3ad306e0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\ports\RN2483A.h" lastModified="16e3ad3070f">
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="16e3ad306e0">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\uC-OS II\Processor independent\os_mem.c" lastModified="16e3ad3071e">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
-      </source>
-      <source file="..\..\..\ports\RN2483A.c" lastModified="16e3ad3070f">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\ports\RN2483A.h"/>
-      </source>
-      <source file="..\..\..\uC-OS II\Processor independent\os_mutex.c" lastModified="16e3ad3071e">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\uC-OS II\Processor independent\ucos_ii.h"/>
-      </source>
-      <source file="..\..\..\LORA_task.c" lastModified="16e3ad306d0">
-         <include file="..\..\..\main.h"/>
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\GPS.h"/>
-      </source>
-      <source file="..\..\..\uC-OS II\Processor independent\ucos_ii.h" lastModified="16e3ad3071e">
-      </source>
-      <source file="..\..\..\ports\buzzer.h" lastModified="16e3ad3070f">
-      </source>
-      <source file="..\..\..\uC-OS II\Processor independent\ucos_ii.c" lastModified="16e3ad3071e">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-      </source>
-      <source file="..\..\..\ports\buzzer.c" lastModified="16e3ad3070f">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-      </source>
-      <source file="..\..\..\GPSmath.h" lastModified="16e3ad306d0">
-      </source>
-      <source file="..\..\..\ports\button.h" lastModified="16e3ad3070f">
-      </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="16e3ad306d0">
-      </source>
-      <source file="..\..\..\ports\button.c" lastModified="16e3ad3070f">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-         <include file="..\..\..\main.h"/>
-         <include file="..\..\..\ports\button.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="16e3ad306e0">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\ports\MP3.h" lastModified="16e3ad3070f">
-      </source>
-      <source file="..\..\..\uC-OS II\Processor specific\os_cpu.h" lastModified="16e3ad3071e">
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="16e3ad306e0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="16e3ad306d0">
-         <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="16e3ad306d0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\ports\MP3.c" lastModified="16e3ad3070f">
+      <source file="..\..\..\ports\keys.c" lastModified="16d8bd2b0aa">
          <include file="..\..\..\uC-OS II\Application specific\includes.h"/>
       </source>
    </includePath>
