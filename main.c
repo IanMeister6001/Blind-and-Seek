@@ -82,6 +82,7 @@ void InitBoard(void)
 	UARTBT_init();
 	BUZZER_init();
     MP3_init();
+    I2C_Initialize();
     Knoppen_Init();
     //LCD_init();
     playFirst();

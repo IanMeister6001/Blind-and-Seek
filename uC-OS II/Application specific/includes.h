@@ -67,7 +67,7 @@
 #include "stm32f4xx_rcc.h"
 #include "stm32f4xx_gpio.h"
 #include "stm32f4xx_usart.h"
-
+#include "stm32f4xx_i2c.h"
 /*
 *********************************************************************************************************
 *                                            INCLUDES END
@@ -84,6 +84,7 @@
 #include "MP3.h"
 #include "speelveld.h"
 #include "button.h"
+#include "i2c.h"
 
 #define TRUE		1
 #define FALSE		0
