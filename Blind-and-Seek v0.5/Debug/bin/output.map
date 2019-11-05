@@ -233,7 +233,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x30 ..\obj\keys.o
  .debug_ranges  0x00000000       0x20 ..\obj\keys.o
- .debug_line    0x00000000      0x246 ..\obj\keys.o
+ .debug_line    0x00000000      0x234 ..\obj\keys.o
  .debug_str     0x00000000      0x413 ..\obj\keys.o
  .comment       0x00000000       0x6f ..\obj\keys.o
  .debug_frame   0x00000000       0x6c ..\obj\keys.o
@@ -318,7 +318,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 ..\obj\gametask.o
  .debug_ranges  0x00000000       0x10 ..\obj\gametask.o
- .debug_line    0x00000000      0x237 ..\obj\gametask.o
+ .debug_line    0x00000000      0x225 ..\obj\gametask.o
  .debug_str     0x00000000      0x27e ..\obj\gametask.o
  .comment       0x00000000       0x6f ..\obj\gametask.o
  .debug_frame   0x00000000       0x30 ..\obj\gametask.o
@@ -541,7 +541,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x58 ..\obj\os_sem.o
  .debug_ranges  0x00000000       0x48 ..\obj\os_sem.o
- .debug_line    0x00000000      0x31a ..\obj\os_sem.o
+ .debug_line    0x00000000      0x326 ..\obj\os_sem.o
  .debug_str     0x00000000      0x5c2 ..\obj\os_sem.o
  .comment       0x00000000       0x6f ..\obj\os_sem.o
  .debug_frame   0x00000000      0x108 ..\obj\os_sem.o
@@ -582,7 +582,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x28 ..\obj\leds.o
  .debug_ranges  0x00000000       0x18 ..\obj\leds.o
- .debug_line    0x00000000      0x229 ..\obj\leds.o
+ .debug_line    0x00000000      0x217 ..\obj\leds.o
  .debug_str     0x00000000      0x3d4 ..\obj\leds.o
  .comment       0x00000000       0x6f ..\obj\leds.o
  .debug_frame   0x00000000       0x60 ..\obj\leds.o
@@ -712,7 +712,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x50 ..\obj\os_mutex.o
  .debug_ranges  0x00000000       0x40 ..\obj\os_mutex.o
- .debug_line    0x00000000      0x35f ..\obj\os_mutex.o
+ .debug_line    0x00000000      0x36b ..\obj\os_mutex.o
  .debug_str     0x00000000      0x620 ..\obj\os_mutex.o
  .comment       0x00000000       0x6f ..\obj\os_mutex.o
  .debug_frame   0x00000000       0xe8 ..\obj\os_mutex.o
@@ -2531,105 +2531,105 @@ OUTPUT(output.elf elf32-littlearm)
  .debug_ranges  0x00000be8       0x20 ..\obj\LORA_task.o
  .debug_ranges  0x00000c08       0x48 ..\obj\os_mbox.o
 
-.debug_line     0x00000000     0x63e8
- .debug_line    0x00000000      0x200 ..\obj\delay.o
- .debug_line    0x00000200      0x256 ..\obj\os_time.o
- .debug_line    0x00000456      0x2a6 ..\obj\MP3.o
- .debug_line    0x000006fc       0x97 ..\obj\os_cpu_a.o
- .debug_line    0x00000793      0x317 ..\obj\i2c.o
- .debug_line    0x00000aaa      0x2ca ..\obj\button.o
- .debug_line    0x00000d74      0x252 ..\obj\buzzer.o
- .debug_line    0x00000fc6      0x36f ..\obj\RN2483A.o
- .debug_line    0x00001335      0x2cd ..\obj\os_cpu_c.o
- .debug_line    0x00001602      0x44f ..\obj\stm32f4xx_usart.o
- .debug_line    0x00001a51      0x43e ..\obj\os_flag.o
- .debug_line    0x00001e8f      0x24a ..\obj\GPSmath.o
- .debug_line    0x000020d9       0xdb ..\obj\speelveld.o
- .debug_line    0x000021b4      0x60f ..\obj\uart.o
- .debug_line    0x000027c3      0x1de ..\obj\startup_stm32f4xx.o
- .debug_line    0x000029a1      0x27b ..\obj\taskcreate.o
- .debug_line    0x00002c1c      0x316 ..\obj\compass.o
- .debug_line    0x00002f32      0x35f ..\obj\main.o
- .debug_line    0x00003291      0x537 ..\obj\stm32f4xx_rcc.o
- .debug_line    0x000037c8      0x2ca ..\obj\GPS.o
- .debug_line    0x00003a92      0x394 ..\obj\printf.o
- .debug_line    0x00003e26      0x567 ..\obj\os_core.o
- .debug_line    0x0000438d      0x2b1 ..\obj\os_mem.o
- .debug_line    0x0000463e      0x310 ..\obj\stm32f4xx_gpio.o
- .debug_line    0x0000494e      0x1b0 ..\obj\system_stm32f4xx.o
- .debug_line    0x00004afe      0x1cf ..\obj\syscalls.o
- .debug_line    0x00004ccd      0x3bd ..\obj\os_q.o
- .debug_line    0x0000508a      0x42f ..\obj\os_task.o
- .debug_line    0x000054b9      0x357 ..\obj\lcd.o
- .debug_line    0x00005810      0x47e ..\obj\stm32f4xx_i2c.o
- .debug_line    0x00005c8e      0x280 ..\obj\LORA_task.o
- .debug_line    0x00005f0e      0x1b7 ..\obj\ucos_ii.o
- .debug_line    0x000060c5      0x323 ..\obj\os_mbox.o
+.debug_line     0x00000000     0x63a0
+ .debug_line    0x00000000      0x1ee ..\obj\delay.o
+ .debug_line    0x000001ee      0x262 ..\obj\os_time.o
+ .debug_line    0x00000450      0x294 ..\obj\MP3.o
+ .debug_line    0x000006e4       0x97 ..\obj\os_cpu_a.o
+ .debug_line    0x0000077b      0x323 ..\obj\i2c.o
+ .debug_line    0x00000a9e      0x2b8 ..\obj\button.o
+ .debug_line    0x00000d56      0x240 ..\obj\buzzer.o
+ .debug_line    0x00000f96      0x35d ..\obj\RN2483A.o
+ .debug_line    0x000012f3      0x2d9 ..\obj\os_cpu_c.o
+ .debug_line    0x000015cc      0x44f ..\obj\stm32f4xx_usart.o
+ .debug_line    0x00001a1b      0x44a ..\obj\os_flag.o
+ .debug_line    0x00001e65      0x256 ..\obj\GPSmath.o
+ .debug_line    0x000020bb       0xdb ..\obj\speelveld.o
+ .debug_line    0x00002196      0x5fd ..\obj\uart.o
+ .debug_line    0x00002793      0x1cc ..\obj\startup_stm32f4xx.o
+ .debug_line    0x0000295f      0x269 ..\obj\taskcreate.o
+ .debug_line    0x00002bc8      0x322 ..\obj\compass.o
+ .debug_line    0x00002eea      0x34d ..\obj\main.o
+ .debug_line    0x00003237      0x537 ..\obj\stm32f4xx_rcc.o
+ .debug_line    0x0000376e      0x2b8 ..\obj\GPS.o
+ .debug_line    0x00003a26      0x394 ..\obj\printf.o
+ .debug_line    0x00003dba      0x573 ..\obj\os_core.o
+ .debug_line    0x0000432d      0x2bd ..\obj\os_mem.o
+ .debug_line    0x000045ea      0x310 ..\obj\stm32f4xx_gpio.o
+ .debug_line    0x000048fa      0x1b0 ..\obj\system_stm32f4xx.o
+ .debug_line    0x00004aaa      0x1cf ..\obj\syscalls.o
+ .debug_line    0x00004c79      0x3c9 ..\obj\os_q.o
+ .debug_line    0x00005042      0x43b ..\obj\os_task.o
+ .debug_line    0x0000547d      0x345 ..\obj\lcd.o
+ .debug_line    0x000057c2      0x47e ..\obj\stm32f4xx_i2c.o
+ .debug_line    0x00005c40      0x26e ..\obj\LORA_task.o
+ .debug_line    0x00005eae      0x1c3 ..\obj\ucos_ii.o
+ .debug_line    0x00006071      0x32f ..\obj\os_mbox.o
 
-.debug_str      0x00000000     0x3da9
+.debug_str      0x00000000     0x3dc1
  .debug_str     0x00000000      0x219 ..\obj\delay.o
                                 0x276 (size before relaxing)
  .debug_str     0x00000219      0x388 ..\obj\os_time.o
                                 0x524 (size before relaxing)
  .debug_str     0x000005a1      0x120 ..\obj\MP3.o
                                 0x2ea (size before relaxing)
- .debug_str     0x000006c1      0x409 ..\obj\i2c.o
-                                0x629 (size before relaxing)
- .debug_str     0x00000aca      0x11d ..\obj\button.o
+ .debug_str     0x000006c1      0x415 ..\obj\i2c.o
+                                0x635 (size before relaxing)
+ .debug_str     0x00000ad6      0x11d ..\obj\button.o
                                 0x4c3 (size before relaxing)
- .debug_str     0x00000be7       0x70 ..\obj\buzzer.o
+ .debug_str     0x00000bf3       0x70 ..\obj\buzzer.o
                                 0x416 (size before relaxing)
- .debug_str     0x00000c57       0xa4 ..\obj\RN2483A.o
+ .debug_str     0x00000c63       0xa4 ..\obj\RN2483A.o
                                 0x451 (size before relaxing)
- .debug_str     0x00000cfb      0x189 ..\obj\os_cpu_c.o
+ .debug_str     0x00000d07      0x189 ..\obj\os_cpu_c.o
                                 0x5d3 (size before relaxing)
- .debug_str     0x00000e84      0x449 ..\obj\stm32f4xx_usart.o
+ .debug_str     0x00000e90      0x449 ..\obj\stm32f4xx_usart.o
                                 0x6bf (size before relaxing)
- .debug_str     0x000012cd      0x1a6 ..\obj\os_flag.o
+ .debug_str     0x000012d9      0x1a6 ..\obj\os_flag.o
                                 0x689 (size before relaxing)
- .debug_str     0x00001473       0xd2 ..\obj\GPSmath.o
+ .debug_str     0x0000147f       0xd2 ..\obj\GPSmath.o
                                 0x277 (size before relaxing)
- .debug_str     0x00001545       0xaa ..\obj\speelveld.o
+ .debug_str     0x00001551       0xaa ..\obj\speelveld.o
                                 0x200 (size before relaxing)
- .debug_str     0x000015ef      0x778 ..\obj\uart.o
+ .debug_str     0x000015fb      0x778 ..\obj\uart.o
                                 0xcc0 (size before relaxing)
- .debug_str     0x00001d67       0xa5 ..\obj\startup_stm32f4xx.o
+ .debug_str     0x00001d73       0xa5 ..\obj\startup_stm32f4xx.o
                                 0x250 (size before relaxing)
- .debug_str     0x00001e0c      0x168 ..\obj\taskcreate.o
+ .debug_str     0x00001e18      0x168 ..\obj\taskcreate.o
                                 0x345 (size before relaxing)
- .debug_str     0x00001f74      0x38a ..\obj\compass.o
-                                0x610 (size before relaxing)
- .debug_str     0x000022fe       0xd4 ..\obj\main.o
+ .debug_str     0x00001f80      0x396 ..\obj\compass.o
+                                0x61c (size before relaxing)
+ .debug_str     0x00002316       0xd4 ..\obj\main.o
                                 0x4a2 (size before relaxing)
- .debug_str     0x000023d2      0x54e ..\obj\stm32f4xx_rcc.o
+ .debug_str     0x000023ea      0x54e ..\obj\stm32f4xx_rcc.o
                                 0x840 (size before relaxing)
- .debug_str     0x00002920       0xcb ..\obj\GPS.o
+ .debug_str     0x00002938       0xcb ..\obj\GPS.o
                                 0x34f (size before relaxing)
- .debug_str     0x000029eb      0x451 ..\obj\printf.o
+ .debug_str     0x00002a03      0x451 ..\obj\printf.o
                                 0x659 (size before relaxing)
- .debug_str     0x00002e3c      0x398 ..\obj\os_core.o
+ .debug_str     0x00002e54      0x398 ..\obj\os_core.o
                                 0x960 (size before relaxing)
- .debug_str     0x000031d4      0x157 ..\obj\os_mem.o
+ .debug_str     0x000031ec      0x157 ..\obj\os_mem.o
                                 0x373 (size before relaxing)
- .debug_str     0x0000332b      0x134 ..\obj\stm32f4xx_gpio.o
+ .debug_str     0x00003343      0x134 ..\obj\stm32f4xx_gpio.o
                                 0x4aa (size before relaxing)
- .debug_str     0x0000345f       0xed ..\obj\system_stm32f4xx.o
+ .debug_str     0x00003477       0xed ..\obj\system_stm32f4xx.o
                                 0x39a (size before relaxing)
- .debug_str     0x0000354c      0x158 ..\obj\syscalls.o
+ .debug_str     0x00003564      0x158 ..\obj\syscalls.o
                                 0x322 (size before relaxing)
- .debug_str     0x000036a4       0xfc ..\obj\os_q.o
+ .debug_str     0x000036bc       0xfc ..\obj\os_q.o
                                 0x64b (size before relaxing)
- .debug_str     0x000037a0      0x14b ..\obj\os_task.o
+ .debug_str     0x000037b8      0x14b ..\obj\os_task.o
                                 0x75d (size before relaxing)
- .debug_str     0x000038eb       0xd6 ..\obj\lcd.o
+ .debug_str     0x00003903       0xd6 ..\obj\lcd.o
                                 0x4c2 (size before relaxing)
- .debug_str     0x000039c1      0x28d ..\obj\stm32f4xx_i2c.o
+ .debug_str     0x000039d9      0x28d ..\obj\stm32f4xx_i2c.o
                                 0x67e (size before relaxing)
- .debug_str     0x00003c4e       0x72 ..\obj\LORA_task.o
+ .debug_str     0x00003c66       0x72 ..\obj\LORA_task.o
                                 0x32f (size before relaxing)
- .debug_str     0x00003cc0       0x41 ..\obj\ucos_ii.o
+ .debug_str     0x00003cd8       0x41 ..\obj\ucos_ii.o
                                 0x653 (size before relaxing)
- .debug_str     0x00003d01       0xa8 ..\obj\os_mbox.o
+ .debug_str     0x00003d19       0xa8 ..\obj\os_mbox.o
                                 0x5d7 (size before relaxing)
 
 .comment        0x00000000       0x6e
