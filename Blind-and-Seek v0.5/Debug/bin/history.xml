@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=output.map -O1 --gc-sections -lm -LC:\CooCox\CoIDE\configuration\ProgramData\Blind-and-Seek v0.5 -TC:\CooCox\CoIDE\configuration\ProgramData\Blind-and-Seek v0.5/arm-gcc-link.ld -g">
-      <target file="output.elf" lastModified="16e412a4b6d">
+      <target file="output.elf" lastModified="16e41376890">
          <source file="..\obj\delay.o" lastModified="16e40f2a4b0"/>
          <source file="..\obj\os_time.o" lastModified="16e40f2a5d0"/>
          <source file="..\obj\MP3.o" lastModified="16e40f2a6c9"/>
@@ -20,7 +20,7 @@
          <source file="..\obj\uart.o" lastModified="16e40f2b1fc"/>
          <source file="..\obj\startup_stm32f4xx.o" lastModified="16e40f2b2f8"/>
          <source file="..\obj\taskcreate.o" lastModified="16e40f2b3f0"/>
-         <source file="..\obj\compass.o" lastModified="16e412a477f"/>
+         <source file="..\obj\compass.o" lastModified="16e413765b0"/>
          <source file="..\obj\main.o" lastModified="16e40f2b630"/>
          <source file="..\obj\stm32f4xx_rcc.o" lastModified="16e40c9b7b4"/>
          <source file="..\obj\GPS.o" lastModified="16e412a4881"/>

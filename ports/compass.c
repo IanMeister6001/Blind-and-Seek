@@ -153,8 +153,8 @@ float Compass_GetHeading(void)
 	uint8_t data[6];
 	I2C_ReadMulti(I2CINTERFACE, HMC5883L_ADDRESS, HMC5883L_REG_OUT_X_M, &data, 6);
 
-	INT16S xheading = ((data[0] << 8) + data[1]) - -202;
-	INT16S yheading = ((data[4] << 8) + data[5]) - -284;
+	INT16S xheading = ((data[0] << 8) + data[1]) - -78;
+	INT16S yheading = ((data[4] << 8) + data[5]) - 33;
 
 	float HeadingX = xheading * MGPerDigit;
 	float HeadingY = yheading * MGPerDigit;

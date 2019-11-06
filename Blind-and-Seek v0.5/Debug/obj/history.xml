@@ -13,8 +13,8 @@
       <target file="os_cpu_a.o" lastModified="16e40c9a349">
          <source file="..\..\..\uC-OS II\Processor specific\os_cpu_a.s" lastModified="16d8be0c215"/>
       </target>
-      <target file="compass.o" lastModified="16e412a477f">
-         <source file="..\..\..\ports\compass.c" lastModified="16e412a4065"/>
+      <target file="compass.o" lastModified="16e413765b0">
+         <source file="..\..\..\ports\compass.c" lastModified="16e41376026"/>
       </target>
       <target file="i2c.o" lastModified="16e40f2a803">
          <source file="..\..\..\ports\i2c.c" lastModified="16e3af49827"/>
@@ -109,11 +109,11 @@
       <target file="os_cpu_c.o" lastModified="16e40f2acf3">
          <source file="..\..\..\uC-OS II\Processor specific\os_cpu_c.c" lastModified="16d8be0c216"/>
       </target>
-      <target file="main.o" lastModified="16e40f2b630">
-         <source file="..\..\..\main.c" lastModified="16e40da325f"/>
-      </target>
       <target file="RN2483A.o" lastModified="16e40f2abef">
          <source file="..\..\..\ports\RN2483A.c" lastModified="16e40e995ef"/>
+      </target>
+      <target file="main.o" lastModified="16e40f2b630">
+         <source file="..\..\..\main.c" lastModified="16e40da325f"/>
       </target>
       <target file="system_stm32f4xx.o" lastModified="16e40c9c1a1">
          <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="16d8be0c1ae"/>
