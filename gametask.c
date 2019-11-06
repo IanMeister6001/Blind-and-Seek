@@ -47,26 +47,36 @@ void GameTask(void *pdata)
 		//Haal de heading op van het kompas
 		heading = Compass_GetHeading();
 
-		//Bereken het verschi tussen de heading die de speler heeft en de heading die de speler moet hebben.
+		//Bereken het verschil tussen de heading die de speler heeft en de heading die de speler moet hebben.
 		headingDifference = heading - GPSData->bearing;
+        if(headingDifference < 0){
+        	UART_puts("negatief: ");
+        	int bulshit = headingDifference * -1;
+		UART_putint(bulshit);
+        }
+        if(headingDifference > 0){
+        	UART_puts("positief: ");
+		UART_putint(headingDifference);
+        }
+		UART_puts("\r\n");
 
 		//Het verschil in heading is negatief.
 		// Dit betekent dat de speler naar rechts moet
-		if(headingDifference < -BEARINGMARGIN)
+		if(headingDifference < -30 && headingDifference > -180)
 		{
 			UART_puts("We gaan naar rechts! \r\n");
 			mp3 = RIGHTMP3;
 		}
 		//Het verschil in heading ligt binnen de marges.
 		//Dit betekent dat de speler naar voren moet
-		else if(headingDifference > -BEARINGMARGIN && headingDifference < BEARINGMARGIN)
+		else if(headingDifference > -30 && headingDifference < BEARINGMARGIN)
 		{
 			UART_puts("We gaan vooruit! \r\n");
 			mp3 = FORWARDMP3;
 		}
 		//Het verschil in heading is positief.
 		//Dit betekent dat de speler naar links moet
-		else if(headingDifference > BEARINGMARGIN)
+		else if(headingDifference > BEARINGMARGIN && headingDifference < 180 )
 		{
 			UART_puts("We gaan naar links! \r\n");
 			mp3 = LEFTMP3;
@@ -102,5 +112,5 @@ void GameTask(void *pdata)
 
 		OSTimeDly(LOOP_DELAY);
 	}
-
 }
+

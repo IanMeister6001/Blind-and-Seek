@@ -34,7 +34,7 @@ TASKDATA tasks[] =
 		//In gametask.c
 		{	GameTask,	GameTask_Stk,	  GAMETASK_PRTY,		STACK_SIZE, OS_TASK_OPT_STK_CHK	},
 		//In LORA_task.c
-		{   LORATask,    LORATask_Stk,    LORATASK_PRTY,     STACK_SIZE, OS_TASK_OPT_STK_CHK  },
+//		{   LORATask,    LORATask_Stk,    LORATASK_PRTY,     STACK_SIZE, OS_TASK_OPT_STK_CHK  },
 		// laatste, niet wissen: nodig om for-loop af te sluiten
 {   NULL,          NULL,              0,                  0,          0                    }
 };

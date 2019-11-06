@@ -70,8 +70,8 @@ void GPSTask(void *pdata)
 			lGPS.bearing = calcBearing(DegreeLatInt, DegreeLongInt, DestLat, DestLon);
 			lGPS.functiecode = 2;
 
-			//UART_puts("afstand: "); UART_putint(lGPS.distance); UART_puts(", en bearing: "); UART_putint(lGPS.bearing); UART_puts("\r\n"); UART_puts("\r\n");
-
+			UART_puts("afstand: "); UART_putint(lGPS.distance); UART_puts(", en bearing: "); UART_putint(lGPS.bearing); UART_puts("\r\n"); UART_puts("\r\n");
+			UART_puts("kompas: ");UART_putint(Compass_GetHeading()); UART_puts("\r\n");
 
 			//OSMboxPost(GPSDataHandle, &lGPS);
 			if(lGPS.distance != 0)	//soms geeft de functie een afstand van 0 door, dus deze if filtert die eruit.

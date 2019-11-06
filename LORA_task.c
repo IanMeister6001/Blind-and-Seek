@@ -5,7 +5,7 @@ void SendZoekLocatie()
 {
 	//VELD_GPS verstopper;
 	verstopper = veld_ikzoek();  // locatie van de verstopper
-	BuildMessage(42,verstopper.lat*100000,verstopper.lon*100000);
+	//BuildMessage(42,verstopper.lat*100000,verstopper.lon*100000);
 }
 
 void BuildMessage(INT8U functiecode,int lat,int lon)
@@ -32,7 +32,7 @@ void LORATask(void *pdata)
 
 	while(TRUE)
     {
-		PlocatieGPS = OSMboxPend(GPSDataHandle, WAIT_FOREVER, &error);
+		PlocatieGPS = OSMboxPend(MessageHandle, WAIT_FOREVER, &error);
 		UART_putint((int)error);
 
     	//test waardes:
@@ -48,10 +48,10 @@ void LORATask(void *pdata)
     	BuildMessage(PlocatieGPS->functiecode, PlocatieGPS->lat, PlocatieGPS->lon);
     	for(i = 0;i < 30;i++)
     	{
-    		PlocatieGPS = OSMboxPend(GPSDataHandle, WAIT_FOREVER, &error);
+    		PlocatieGPS = OSMboxPend(MessageHandle, WAIT_FOREVER, &error);
     		if(PlocatieGPS->functiecode == NOODKNOP_ON)
     			break;
-    		OSTimeDly(LOOP_DELAY);
+    		OSTimeDly(5);
     	}
 
     }

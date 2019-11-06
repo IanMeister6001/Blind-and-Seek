@@ -96,7 +96,7 @@ void sendmactxlora(unsigned char* data)
 	int i;
 	char buf[2];
 	//buffer waarin de hexadecimale getallen als character worden opgeslagen
-	UART3_puts("mac tx cnf 1 ");
+	UART3_puts("mac tx uncnf 1 ");
 	//commandline voor unconfirmed message
 	for(i = 0; i < MSGSIZE; i++) //Deze loop draait voor zes bytes, aangezien dat nodig is om de coordinaten te sturen.
 	{
