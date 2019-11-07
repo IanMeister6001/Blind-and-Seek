@@ -19,23 +19,11 @@ void Knoppen_Init(void)
 
 	GPIO_InitTypeDef GPIO_InitStructure;
 
-	/*-------------------------- GPIO Configuration for PD6, de noodknop ----------------------------*/
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6;
+	/*-------------------------- GPIO Configuration for PD6, de noodknop en PD7, de tipknop ----------------------------*/
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6 | GPIO_Pin_7;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN;
-	//GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
 	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_DOWN;
-	//GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_Init(GPIOD, &GPIO_InitStructure);
-
-	GPIO_InitTypeDef GPIO_InitStructure2;
-
-	/*-------------------------- GPIO Configuration for PD7, de tipknop ----------------------------*/
-	GPIO_InitStructure2.GPIO_Pin = GPIO_Pin_7;
-	GPIO_InitStructure2.GPIO_Mode = GPIO_Mode_IN;
-	//GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
-	GPIO_InitStructure2.GPIO_PuPd = GPIO_PuPd_DOWN;
-	//GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-	GPIO_Init(GPIOD, &GPIO_InitStructure2);
 }
 
 /////////////////////////////////////////////////////////////////////////

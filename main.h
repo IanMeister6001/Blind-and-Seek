@@ -39,8 +39,6 @@ extern void OSinfo (void);
 void InitProgram(void);
 void MakeHandles();
 void InitBoard(void);
-extern void BuildMessage(INT8U,int,int);
-extern void SendZoekLocatie();
 
 // function prototypes of threads/tasks/processes to prevent compiler warnings
 extern void GPSTask(void *pdata);

@@ -411,7 +411,6 @@ static void Default_Handler(void)
 	/* Go into an infinite loop. */
 	while (1)
 	{
-		BUZZER_set(50);
 		DELAY_ms(500);
 	}
 }

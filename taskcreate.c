@@ -64,53 +64,5 @@ void CreateTasks()
 			NULL, 								// not used
 			ptd->option);						// enable stackchecking
 	}
-	// or, by using an integer to get the right structure
-	// this version is simpler to understand, but less elegant
-	/*
-	//int       nr_of_tasks = tasks/sizeof(TASKDATA) -1; // nice, but not used
-	int i;
-	for (i=0; tasks[i].taskname != NULL; i++)
-	{
-		OSTaskCreateExt(
-			tasks[i].taskname, 					// taskname
-			NULL, 								// not used
-			&tasks[i].stack[tasks[i].stacksize-1], 	// top of stack
-			tasks[i].priority,					// priority
-            tasks[i].priority, 					// not used
-			tasks[i].stack, 					// bottom of stack
-			tasks[i].stacksize, 				// size of stack
-			NULL, 								// not used
-			tasks[i].option);					// enable stackchecking
-	}
-	*/
 }
 
-
-//////////////////////////////////////////////////////////////////////////////
-// func: displayStackData
-// args: priority (== process-id)
-// comm: functions retrieves and displays StackData-information
-//       the os-call is optional and set in the STACKDATA array
-// note: function is important, to check if task has enough memory, or
-//       if task has too much memory
-//////////////////////////////////////////////////////////////////////////////
-void displayStackData(int priority)
-{
-    OS_STK_DATA stackdata; // allocate structure
-	INT8U       error;
-
-	if ((error = OSTaskStkChk(priority, &stackdata))) // get data onto this struct
-	    return;
-
-    UART_puts("\n\rStackData for process "); UART_putint(priority);
-    UART_puts(", Usage=");     UART_putint((int)stackdata.OSUsed/4);
-    UART_puts(" - Free=");	 UART_putint((int)stackdata.OSFree/4);
-}
-
-
-void displayAllStackData()
-{
-	PTASKDATA ptd = tasks; // tasks == &tasks[0]: both are addresses of first struct
-	for (; ptd->taskname != NULL; ptd++)
-		displayStackData(ptd->priority);
-}

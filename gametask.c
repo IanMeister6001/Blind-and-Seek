@@ -49,16 +49,6 @@ void GameTask(void *pdata)
 
 		//Bereken het verschil tussen de heading die de speler heeft en de heading die de speler moet hebben.
 		headingDifference = heading - GPSData->bearing;
-        if(headingDifference < 0){
-        	UART_puts("negatief: ");
-        	int bulshit = headingDifference * -1;
-		UART_putint(bulshit);
-        }
-        if(headingDifference > 0){
-        	UART_puts("positief: ");
-		UART_putint(headingDifference);
-        }
-		UART_puts("\r\n");
 
 		//Het verschil in heading is negatief.
 		// Dit betekent dat de speler naar rechts moet
@@ -100,7 +90,6 @@ void GameTask(void *pdata)
 			else if(gedrukt == NOODKNOP_ON)
 			{
 				UART_puts("NOOD! \r\n");
-				//GPSData->functiecode = 6;
 			}
 
 			//Doe deze flagpost terug naar knoptask om aan te geven dat je de ingedrukte toets

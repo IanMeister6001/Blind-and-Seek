@@ -57,7 +57,6 @@ void MakeHandles()
 //////////////////////////////////////////////////////////////////////////////
 void InitProgram(void)
 {
-   	LCD_puts(version);
 	UART_puts(version); UART_puts("\n\r");
 
 	OSinfo();  //Output OS info to UART.
@@ -80,17 +79,19 @@ void InitBoard(void)
 	UART3_init();
 	UARTGPS_init();
 	UARTBT_init();
-	BUZZER_init();
     MP3_init();
     I2C_Initialize();
     Compass_Initialize();
     Knoppen_Init();
-    //LCD_init();
-    //playFirst();
+
     //Comment deze weg als de RN2483A niet is aangesloten.
     RN2483A_init(); //Initialize RN2483.
+
+    //Delay om te wachten tot dat TTN klaar is om berichten te ontvangen
     DELAY_ms(4000);
     SendZoekLocatie();
+
+    //Delay om er voor te zorgen dat het TTN niet twee berichten heel kort achter elkaar krijgt
     DELAY_ms(4000);
 }
 

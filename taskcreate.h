@@ -17,5 +17,3 @@ typedef struct TaskData
 } TASKDATA, *PTASKDATA;	// name of struct, and pointer to struct
 
 extern void CreateTasks(void);
-extern void displayAllStackData(void);
-extern void displayStackData(int);
