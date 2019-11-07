@@ -92,7 +92,6 @@ void InitBoard(void)
     DELAY_ms(4000);
     SendZoekLocatie();
     DELAY_ms(4000);
-
 }
 
 int main (void)

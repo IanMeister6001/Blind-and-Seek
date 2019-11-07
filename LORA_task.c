@@ -3,9 +3,12 @@
 //#include "speelveld.h"
 void SendZoekLocatie()
 {
-	//VELD_GPS verstopper;
-	verstopper = veld_ikzoek();  // locatie van de verstopper
-	BuildMessage(42,verstopper.lat*100000,verstopper.lon*100000);
+	do
+	{
+		verstopper = veld_ikzoek();  // locatie van de verstopper
+	} while(veld_binnen(&verstopper) == 0);
+
+		BuildMessage(42,verstopper.lat*100000,verstopper.lon*100000);
 }
 
 void BuildMessage(INT8U functiecode,int lat,int lon)
@@ -53,7 +56,7 @@ void LORATask(void *pdata)
     		PlocatieGPS = OSMboxPend(MessageHandle, WAIT_FOREVER, &error);
     		if(PlocatieGPS->functiecode == NOODKNOP_ON)
     			break;
-    		OSTimeDly(5);
+    		OSTimeDly(20);
     	}
 
     }
